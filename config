@@ -1,0 +1,12 @@
+{
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces", "hyprland/mode"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["clock"],
+    "hyprland/window": {
+        "max-length": 50
+    },
+    "clock": {
+        "format-alt": "{%H:%M}"
+    }
+}
