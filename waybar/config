@@ -1,12 +1,36 @@
 {
-    "layer": "top",
-    "modules-left": ["hyprland/workspaces", "hyprland/mode"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["clock"],
-    "hyprland/window": {
-        "max-length": 50
-    },
-    "clock": {
-        "format-alt": "{%H:%M}"
-    }
+"output":"eDP-1",
+"layer": "top",
+"modules-left":["cpu","memory"],
+"modules-center":["hyprland/workspaces","hyprland/window"],
+"modules-right":["network","pulseaudio","clock"],
+
+
+"cpu": {
+"interval": 2,
+"format":" {usage}%",
+},
+"memory": {
+"format": " {percentage}%"
+},
+
+
+"network": {
+"format-wifi": " ",
+"format-ethernet":"Cabo",
+"format-disconnected": "",
+"tooltip-format": "{ipaddr}",
+"tooltip-format-wifi": "{essid} ({signalStrength}%)  | {ipaddr}",
+"tooltip-format-ethernet": "{ifname} 🖧 | {ipaddr}",
+},
+"pulseaudio": {
+"format": " {volume}%",
+"justify": "center",
+"on-click": "pavucontrol",
+"tooltip":false,
+},
+"clock": {
+"format": "{:%H:%M}",
+"interval":30,
+},
 }
