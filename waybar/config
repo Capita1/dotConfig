@@ -2,7 +2,7 @@
 "output":"eDP-1",
 "layer": "top",
 "modules-left":["cpu","memory"],
-"modules-center":["hyprland/workspaces","hyprland/window"],
+"modules-center":["hyprland/workspaces","hyprland/window","custom/logo"],
 "modules-right":["network","pulseaudio","clock"],
 
 
@@ -14,6 +14,12 @@
 "format": " {percentage}%"
 },
 
+"custom/logo": {
+"format": "",
+"justify": "center",
+"on-click": "wofi --show drun",
+"tooltip":false,
+},
 
 "network": {
 "format-wifi": " ",
