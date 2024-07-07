@@ -7,22 +7,23 @@
 
 
 "cpu": {
-"interval": 2,
+"interval": 1,
 "format":" {usage}%",
 },
 "memory": {
+"interval": 5,
 "format": " {percentage}%"
 },
 
 "custom/logo": {
-"format": "",
+"format": "  ",
 "justify": "center",
 "on-click": "wofi --show drun",
 "tooltip":false,
 },
 
 "network": {
-"format-wifi": " ",
+"format-wifi": "",
 "format-ethernet":"Cabo",
 "format-disconnected": "",
 "tooltip-format": "{ipaddr}",
@@ -30,13 +31,14 @@
 "tooltip-format-ethernet": "{ifname} 🖧 | {ipaddr}",
 },
 "pulseaudio": {
-"format": " {volume}%",
+"format": " {volume}%",
 "justify": "center",
 "on-click": "pavucontrol",
 "tooltip":false,
 },
 "clock": {
-"format": "{:%H:%M}",
+"format": " {:%H:%M}",
 "interval":30,
+"tooltip-format":"{:%A,%d/%m/%Y}",
 },
 }

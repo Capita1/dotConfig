@@ -1,21 +1,31 @@
+/*amarelo #fbec02 azul #23abb2 fundo 1b1219*/
 *{
-font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-font-size:13px;
-color:white;
+font-family:FontAwesome;
+font-size:14px;
+color:#fbec02;
 letter-spacing:-0.5px;
+text-shadow:0.5px 0.5px 1 #23abb2,1px 1px 1 #23abb2;
+font-weight:lighter;
 }
+
 window#waybar{
 background:transparent;
 }
 
-#cpu,#memory,#workspaces,#window,#network,#pulseaudio,#clock{
-background-color:black;
-border: 1px solid white;
-border-radius: 30px;
-padding:0 10px;
+.tudo,#cpu,#memory,#workspaces,#window,.center-modules,#network,#pulseaudio,#clock{
+background:#1b1219;
+border: 2px solid #1e9fa8;
+border-radius: 3px 3px 7px 3px;
+
+padding:0 5px;
 margin:5px;
 }
+
 #workspaces{
 padding:0;
+}
+
+.tudo > tooltip label{
+background-color: transparent;
 }
 
