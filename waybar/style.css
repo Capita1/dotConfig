@@ -1,31 +1,26 @@
-/*amarelo #fbec02 azul #23abb2 fundo 1b1219*/
+/*amarelo #fbec02 azul #23abb2 fundo #1b1219*/
 *{
-font-family:FontAwesome;
-font-size:14px;
+font-family:FontAwesome,Play;
+font-size:15px;
 color:#fbec02;
-letter-spacing:-0.5px;
-text-shadow:0.5px 0.5px 1 #23abb2,1px 1px 1 #23abb2;
-font-weight:lighter;
+text-shadow:0.5px 0.5px 1 #48c3c5,1px 1px 1 #48c3c5;
 }
 
 window#waybar{
-background:transparent;
+background: linear-gradient(180deg,#1d131b 0%, #131317 100%);
+border-bottom: 2px solid #48c3c5;
 }
 
-.tudo,#cpu,#memory,#workspaces,#window,.center-modules,#network,#pulseaudio,#clock{
-background:#1b1219;
-border: 2px solid #1e9fa8;
-border-radius: 3px 3px 7px 3px;
-
+tooltip,#cpu,#memory,#taskbar,#window,#workspaces,#custom-logo,#network,#pulseaudio,#clock{
+background:#1d131b;
+border: 2px solid #48c3c5;
+border-radius:0 0 3px 0;
 padding:0 5px;
 margin:5px;
 }
 
-#workspaces{
-padding:0;
-}
-
-.tudo > tooltip label{
-background-color: transparent;
-}
+#taskbar,#workspaces{
+padding:0;}
+#custom-logo{
+padding:0 10;}
 
