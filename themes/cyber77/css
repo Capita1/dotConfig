@@ -1,7 +1,3 @@
-@define-color textcolor1 #000000;
-@define-color textcolor2 #000000;
-@define-color textcolor3 #FFFFFF;
-
 *{
 font-family:FontAwesome,Play;
 font-size:15px;
