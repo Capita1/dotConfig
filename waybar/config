@@ -44,6 +44,8 @@
 
 "output":"HDMI-A-1",
 "modules-center": ["wlr/taskbar","custom/logo","hyprland/workspaces"],
+"position":"bottom",
+"layer":"bottom",
 "custom/logo": {
 "format": "",
 "justify": "center",
