@@ -1,11 +1,10 @@
-{
-"output":"eDP-1",
+[{
+"output":["eDP-1"],
 "layer": "top",
 "position":"top",
 "modules-left":["custom/logo","cpu","memory"],
 "modules-center":["wlr/taskbar","hyprland/window","hyprland/workspaces"],
 "modules-right":["network","pulseaudio","clock"],
-
 
 "cpu": {
 "interval": 1,
@@ -15,7 +14,6 @@
 "interval": 5,
 "format": " {percentage}%"
 },
-
 "custom/logo": {
 "format": "",
 "justify": "center",
@@ -40,5 +38,17 @@
 "format": " {:%H:%M}",
 "interval":30,
 "tooltip-format":"{:%A,%d/%m/%Y}",
-},
 }
+
+},{
+
+"output":"HDMI-A-1",
+"modules-center": ["wlr/taskbar","custom/logo","hyprland/workspaces"],
+"custom/logo": {
+"format": "",
+"justify": "center",
+"on-click": "wofi --show drun",
+"tooltip":false,
+},
+ 
+}]
