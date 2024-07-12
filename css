@@ -1,0 +1,46 @@
+@define-color textcolor1 #000000;
+@define-color textcolor2 #000000;
+@define-color textcolor3 #FFFFFF;
+
+*{
+font-family:FontAwesome,Play;
+font-size:15px;
+}
+
+window#waybar{
+background-color:#240f16;
+background:transparent;
+}
+
+tooltip,#custom-menu,#cpu,#workspaces button,#memory,#taskbar,#window,#network,#pulseaudio,#clock{
+color:#239499;
+background-color:#12101d;
+background-position:left;
+background-size:1px;
+padding:0 5px;
+margin:5px;
+
+/*funciona
+border: 1px solid #48c3c5;
+border-radius:0 0 3px 0;*/
+
+background-image: linear-gradient(180deg, #48c3c5, #48c3c5),linear-gradient(225deg, #48c3c5, #48c3c5),linear-gradient(0deg, #48c3c5, #48c3c5),linear-gradient(90deg, #48c3c5, #48c3c5),linear-gradient(135deg, transparent 9px, #48c3c5 10px, #48c3c5 1px, transparent 12px);
+background-position: bottom left,top left,top right,top right,bottom right;
+background-size: calc(100% - 7px) 1px,1px 100%,100% 1px,1px calc(100% - 7px),10px 12px;
+background-repeat: no-repeat;
+}
+
+#taskbar{
+padding:0;
+}
+#custom-menu{
+padding:0 10;}
+
+#workspaces button.focused {
+    background-color:white;
+}
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+

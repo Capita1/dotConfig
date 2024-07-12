@@ -1,0 +1,63 @@
+{
+"output":["eDP-1"],
+"layer": "top",
+"position":"top",
+"modules-left":["custom/menu","cpu","memory"],
+"modules-center":["wlr/taskbar","hyprland/window","hyprland/workspaces"],
+"modules-right":["network","pulseaudio","clock"],
+
+"cpu": {
+"interval": 1,
+"format":" {usage}%",
+},
+"memory": {
+"interval": 5,
+"format": " {percentage}%"
+},
+"custom/menu": {
+"format": "",
+"justify": "center",
+"on-click": "wofi --show drun",
+"tooltip":false,
+},
+
+"network": {
+"format-wifi": "",
+"format-ethernet":"",
+"format-disconnected": "",
+"tooltip-format": "{ipaddr}",
+"tooltip-format-wifi": "{essid} ({signalStrength}%)  | {ipaddr}",
+"tooltip-format-ethernet": "{ifname} ether | {ipaddr}",
+},
+"pulseaudio": {
+"format": " {volume}%",
+"justify": "center",
+"on-click": "pavucontrol",
+"tooltip":false,
+},
+"clock": {
+"format": " {:%H:%M}",
+"interval":30,
+"tooltip-format":"{:%A,%d/%m/%Y}",
+},
+
+"hyprland/workspaces": {
+"format": "{icon}{windows}",
+"format-window-separator": " ",
+"window-rewrite-default": "",
+"window-rewrite": {
+"class<librewolf>": "",
+"class<mousepad>": "",
+"class<thunar>": "",
+"class<mpv>": "",
+"class<kitty>": "",
+"title<.*nvim.*>": "",
+"title<.*youtube.*>": "",
+"title<.*telegram.*>": "",
+"title<.*whatsapp.*>": "",
+"title<.*instagram.*>": "",
+"title<.*gmail.*>": "",
+"title<.*github.*>": "", 
+},
+
+}}
