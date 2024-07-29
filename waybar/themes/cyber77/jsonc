@@ -1,10 +1,10 @@
 {
-"output":["eDP-1"],
+"output":["eDP-1","VGA-1"],
 "layer": "top",
 "position":"top",
-"modules-left":["custom/menu","cpu","memory"],
-"modules-center":["wlr/taskbar","hyprland/window","hyprland/workspaces"],
-"modules-right":["network","pulseaudio","clock"],
+"modules-left":["custom/menu","cpu","memory","disk"],
+"modules-center":["hyprland/workspaces"],
+"modules-right":["network","backlight","pulseaudio","clock"],
 
 "cpu": {
 "interval": 1,
@@ -12,15 +12,29 @@
 },
 "memory": {
 "interval": 5,
-"format": " {percentage}%"
+"format": " {percentage}%",
+"tooltip-format": "{used:0.1f}GiB usado",
+},
+"disk": {
+"interval": 30,
+"format": " {percentage_used}%",
+"path": "/",
+"tooltip": true,
+"unit": "GB",
+"tooltip-format": "{free} de {total} Disponível"
 },
 "custom/menu": {
 "format": "",
 "justify": "center",
 "on-click": "wofi --show drun",
+"on-click-right": "killall wpaperd & wpaperd -d",
 "tooltip":false,
 },
 
+"backlight": {
+// "device": "acpi_video1",
+"format": " {percent}%",
+},
 "network": {
 "format-wifi": "",
 "format-ethernet":"",
@@ -30,37 +44,89 @@
 "tooltip-format-ethernet": "{ifname} ether | {ipaddr}",
 },
 "pulseaudio": {
-"format": " {volume}%",
+"format": "{icon}{volume}%",
 "justify": "center",
-"on-click": "pavucontrol",
-"tooltip":false,
+"max-volume": 100,
+"scroll-step": 10,
+"tooltip-format": "Pulseaudio",
+"format-icons": {
+"format-muted": " ",
+"default": [
+" ",
+" ",
+" "
+]},
+"on-click": "pavucontrol"
 },
 "clock": {
 "format": " {:%H:%M}",
 "interval":30,
-"tooltip-format":"{:%A,%d/%m/%Y}",
+"format-alt": " {:%d/%m/%Y}",
+"format-alt-click": "click-left",
+"tooltip-format": "<tt><small>{calendar}</small></tt>",
+"calendar": {
+"mode": "months",
+"weeks-pos": "right",
+"format": {
+"months": "<span><b>{}</b></span>",
+"days": "<span><b>{}</b></span>",
+"weeks": "<span color='gray'><b>W{}</b></span>",
+"weekdays": "<span color='grey'><b>{}</b></span>",
+"today": "<span color='white'><b><u>{}</u></b></span>"
+}
 },
-
+"actions": {
+"on-click-forward": "shift_up",
+"on-click-backward": "shift_down",
+"on-scroll-up": "shift_up",
+"on-scroll-down": "shift_down"
+}
+},
 "hyprland/workspaces": {
+"on-scroll-up": "hyprctl dispatch workspace r+1",
+"on-scroll-down": "hyprctl dispatch workspace r-1",
 "format": "{icon}{windows}",
-"format-window-separator": " ",
+"format-icons":{
+"1":"¹",
+"2":"²",
+"3":"³",
+"4":"⁴",
+"5":"⁵",
+"6":"⁶",
+"7":"⁷",
+"8":"⁸",
+"9":"⁹",
+"10":"¹⁰",
+},
+"format-window-separator": "<span color='#fdee00'> + </span>",
 "window-rewrite-default": "",
 "window-rewrite": {
-"class<librewolf>": "",
-"class<mousepad>": "",
-"class<thunar>": "",
+//apps
 "class<mpv>": "",
-"class<stremio>": "",
-"class<rhythmbox>": "",
+"class<vlc>": "",
 "class<kitty>": "",
-"title<.*nvim.*>": "",
+"class<kitty> title<.*nvim.*>": "",
+"class<thunar>": "",
+"class<steam>": "",
+"class<mousepad>": "",
+
+"class<libreoffice>": "",
+"title<.*calc.*>": "",
+"title<.*write.*>": "",
+
+"title<.*planify.*>": "",
 "title<.*stremio.*>": "",
-"title<.*youtube.*>": "",
-"title<.*telegram.*>": "",
-"title<.*whatsapp.*>": "",
-"title<.*instagram.*>": "",
-"title<.*gmail.*>": "",
-"title<.*github.*>": "", 
+
+//icones do navegador 
+"class<librewolf>": "",
+"class<librewolf> title<.*whatsapp.*>": "",
+"class<librewolf> title<.*telegram.*>": "",
+"class<librewolf> title<.*instagram.*>": "",
+"class<librewolf> title<.*discord.*>": "",
+"class<librewolf> title<.*gmail.*>": "",
+"class<librewolf> title<.*outlook.*>": "",
+"class<librewolf> title<.*youtube.*>": "",
+"class<librewolf> title<.*github.*>": "", 
 },
 
 }}
