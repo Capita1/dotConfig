@@ -1,5 +1,5 @@
 {
-"output":["eDP-1","VGA-1"],
+"output":["*"],
 "layer": "top",
 "position":"top",
 "modules-left":["custom/menu","cpu","memory","disk"],
@@ -8,16 +8,16 @@
 
 "cpu": {
 "interval": 1,
-"format":" {usage}%",
+"format":"󰻠 {usage}%",
 },
 "memory": {
 "interval": 5,
-"format": " {percentage}%",
+"format": " {percentage}%",
 "tooltip-format": "{used:0.1f}GiB usado",
 },
 "disk": {
 "interval": 30,
-"format": " {percentage_used}%",
+"format": "󰋊 {percentage_used}%",
 "path": "/",
 "tooltip": true,
 "unit": "GB",
@@ -32,13 +32,15 @@
 },
 
 "backlight": {
-// "device": "acpi_video1",
-"format": " {percent}%",
+"device": "acpi_video1",
+"format": "{percent}%",
+"tooltip-format":"󰖨",
 },
 "network": {
+"on-click": "kitty nmtui",
 "format-wifi": "",
-"format-ethernet":"",
-"format-disconnected": "",
+"format-ethernet":"",
+"format-disconnected": "",
 "tooltip-format": "{ipaddr}",
 "tooltip-format-wifi": "{essid} ({signalStrength}%)  | {ipaddr}",
 "tooltip-format-ethernet": "{ifname} ether | {ipaddr}",
@@ -47,10 +49,9 @@
 "format": "{icon}{volume}%",
 "justify": "center",
 "max-volume": 100,
-"scroll-step": 10,
-"tooltip-format": "Pulseaudio",
+"scroll-step": 5,
 "format-icons": {
-"format-muted": " ",
+"format-muted": " ",
 "default": [
 " ",
 " ",
@@ -59,9 +60,9 @@
 "on-click": "pavucontrol"
 },
 "clock": {
-"format": " {:%H:%M}",
+"format": "󰥔 {:%H:%M}",
 "interval":30,
-"format-alt": " {:%d/%m/%Y}",
+"format-alt": " {:%d/%m/%Y}",
 "format-alt-click": "click-left",
 "tooltip-format": "<tt><small>{calendar}</small></tt>",
 "calendar": {
@@ -98,34 +99,36 @@
 "9":"⁹",
 "10":"¹⁰",
 },
-"format-window-separator": "<span color='#fdee00'> + </span>",
+"format-window-separator": "<span color='#48c3c5'> <b>+</b> </span>",
 "window-rewrite-default": "",
 "window-rewrite": {
 //apps
 "class<mpv>": "",
 "class<vlc>": "",
-"class<kitty>": "",
+"class<kitty>": "",
 "class<kitty> title<.*nvim.*>": "",
+"title<.*neovide.*>": "",
+"title<.*torrent.*>": "󱑤",
 "class<thunar>": "",
-"class<steam>": "",
+"class<steam>": "󰓓",
 "class<mousepad>": "",
 
 "class<libreoffice>": "",
-"title<.*calc.*>": "",
-"title<.*write.*>": "",
+"title<.*calc.*>": "󰈛",
+"title<.*write.*>": "󰈬",
 
-"title<.*planify.*>": "",
+"title<.*planify.*>": "",
 "title<.*stremio.*>": "",
 
 //icones do navegador 
-"class<librewolf>": "",
-"class<librewolf> title<.*whatsapp.*>": "",
+"class<librewolf>": "",
+"class<librewolf> title<.*whatsapp.*>": "󰖣",
 "class<librewolf> title<.*telegram.*>": "",
 "class<librewolf> title<.*instagram.*>": "",
-"class<librewolf> title<.*discord.*>": "",
+"class<librewolf> title<.*discord.*>": "󰙯",
 "class<librewolf> title<.*gmail.*>": "",
 "class<librewolf> title<.*outlook.*>": "",
-"class<librewolf> title<.*youtube.*>": "",
+"class<librewolf> title<.*youtube.*>": "󰗃",
 "class<librewolf> title<.*github.*>": "", 
 },
 

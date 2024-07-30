@@ -1,20 +1,20 @@
 @define-color yellow #fdee00;
-@define-color text-unfocused #ee4f47;
+@define-color unfocused #ee4f47;
 @define-color text #79a2ac;
 @define-color border #48c3c5;
-@define-color background #240f16;
+@define-color background rgba(36, 15, 22, 0.7);
 @define-color boxbackground #12101d;
 *{
-font-family:FontAwesome,Play;
+font-family:Symbols Nerd Font Mono,Play;
 font-size:15px;
-font-weight:600;
+transition:none;
 }
 
 window#waybar{
 background:@background;
 }
 
-tooltip,#custom-menu,#cpu,#memory,#disk,#workspaces button.active, button:hover,#taskbar,#window,#network,#backlight,#pulseaudio,#clock{
+tooltip,#custom-menu,#cpu,#memory,#disk,#workspaces button.active,#taskbar,#window,#network,#backlight,#pulseaudio,#clock{
 color:@text;
 background:@boxbackground;
 padding:2px 5px;
@@ -29,12 +29,15 @@ background-repeat: no-repeat;
 padding:0 9px;}
 
 #workspaces button:hover,#workspaces button.focused,#workspaces button {
-color:@text-unfocused;
-transition: none;
+color:@unfocused;
+/*transition: all 0.3s ease;*/
 }
 #workspaces button.urgent {
 color: @yellow;
 }
+
+
+
 
 
  
