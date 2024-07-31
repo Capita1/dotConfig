@@ -1,0 +1,37 @@
+[Added Associations]
+text/plain=kitty.desktop;nvim.desktop;
+image/jpeg=feh.desktop;krita_jpeg.desktop;
+application/x-shellscript=org.xfce.mousepad.desktop;wine-extension-txt.desktop;
+image/png=feh.desktop;
+text/css=org.xfce.mousepad.desktop;
+text/x-csrc=org.xfce.mousepad.desktop;wine-extension-txt.desktop;
+application/json=org.xfce.mousepad.desktop;
+application/toml=org.xfce.mousepad.desktop;
+text/html=librewolf.desktop;org.xfce.mousepad.desktop;
+application/pdf=librewolf.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
+font/ttf=org.fontforge.FontForge.desktop;
+application/vnd.oasis.opendocument.formula-template=org.fontforge.FontForge.desktop;
+application/vnd.microsoft.portable-executable=wine.desktop;
+application/octet-stream=org.fontforge.FontForge.desktop;
+video/x-matroska=mpv.desktop;
+audio/mpeg=mpv.desktop;org.gnome.Rhythmbox3.desktop;vlc.desktop;
+video/mp4=mpv.desktop;
+text/x-lua=neovide.desktop;
+application/x-zerosize=org.xfce.mousepad.desktop;neovide.desktop;
+text/x-python=neovide.desktop;
+
+[Default Applications]
+text/plain=org.xfce.mousepad.desktop
+image/png=feh.desktop
+image/jpeg=feh.desktop
+application/pdf=librewolf.desktop
+text/html=librewolf.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
+font/ttf=org.fontforge.FontForge.desktop
+application/vnd.oasis.opendocument.formula-template=org.fontforge.FontForge.desktop
+application/vnd.microsoft.portable-executable=wine.desktop
+application/octet-stream=org.fontforge.FontForge.desktop
+audio/mpeg=vlc.desktop
+application/x-zerosize=neovide.desktop
+text/x-python=neovide.desktop

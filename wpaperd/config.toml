@@ -1,7 +1,6 @@
 [eDP-1]
-path = "~/Imagens/Wallpapers/"
-duration = "5m"
-
+path = "~/Documentos/Imagens/Wallpapers/"
 [HDMI-A-1]
-path = "~/Imagens/Wallpapers/"
-duration = "5m"
+path = "~/Documentos/Imagens/Wallpapers/"
+duration="5m"
+
