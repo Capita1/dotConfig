@@ -1,0 +1,40 @@
+@define-color yellow yellow;
+@define-color unfocused gray;
+@define-color text white;
+@define-color border white;
+@define-color background rgba(0,0,0,0.7);
+@define-color boxbackground black;
+*{
+font-family:Comic Sans,Symbols Nerd Font Mono;
+font-size:15px;
+transition:none;
+}
+
+window#waybar{
+background:@background;
+}
+
+tooltip,#custom-menu,#cpu,#memory,#disk,#workspaces button.active,#taskbar,#window,#network,#backlight,#pulseaudio,#clock{
+color:@text;
+border:1px solid @border;
+border-radius:7px;
+background:@boxbackground;
+padding:2px 5px;
+margin:5px;
+}
+#custom-menu{
+padding:0 9px;}
+
+#workspaces button:hover,#workspaces button.focused,#workspaces button {
+color:@unfocused;
+transition:none;
+}
+#workspaces button.urgent {
+color: @yellow;
+}
+
+
+
+
+
+ 
