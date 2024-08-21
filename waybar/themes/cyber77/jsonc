@@ -111,6 +111,7 @@
 "title<.*torrent.*>": "󱑤",
 "class<thunar>": "",
 "class<steam>": "󰓓",
+"class<lutris>": "",
 "class<mousepad>": "",
 
 "class<libreoffice>": "",

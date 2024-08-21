@@ -3,6 +3,7 @@ application/octet-stream=org.xfce.mousepad.desktop
 text/plain=org.xfce.mousepad.desktop
 application/pdf=org.pwmt.zathura.desktop
 application/epub+zip=org.pwmt.zathura.desktop
+application/x-python-bytecode=org.xfce.mousepad.desktop
 
 [Added Associations]
 application/octet-stream=org.xfce.mousepad.desktop;
@@ -14,3 +15,8 @@ application/epub+zip=org.pwmt.zathura.desktop;
 text/html=librewolf.desktop;org.xfce.mousepad.desktop;neovide.desktop;
 text/css=org.xfce.mousepad.desktop;neovide.desktop;
 application/x-theme=neovide.desktop;
+image/jpeg=krita_jpeg.desktop;feh.desktop;
+application/x-shellscript=org.xfce.mousepad.desktop;neovide.desktop;
+video/x-matroska=mpv.desktop;
+application/x-python-bytecode=org.xfce.mousepad.desktop;
+video/mp4=mpv.desktop;
