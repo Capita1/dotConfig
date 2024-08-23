@@ -14,12 +14,12 @@ window#waybar{
 background:@background;
 }
 
-tooltip,#custom-menu,#cpu,#memory,#disk,#battery,#workspaces button.active,#taskbar,#window,#tray,#network,#backlight,#pulseaudio,#clock{
+tooltip,#custom-menu,#temperature,#cpu,#memory,#disk,#battery,#workspaces button.active,#taskbar,#window,#tray,#network,#backlight,#pulseaudio,#clock{
 color:@text;
 border:1px solid @border;
-border-radius:7px;
+border-radius:5px;
 background:@boxbackground;
-padding:2px 5px;
+padding:0px 5px;
 margin:5px;
 }
 #custom-menu{
@@ -31,22 +31,6 @@ transition:none;
 }
 #workspaces button.urgent {
 color: @yellow;
-}
-
-
-#workspaces button {
-    animation: ws_normal 20s ease-in-out 1;
-}
-
-#workspaces button.active {
-
-    animation: ws_active 20s ease-in-out 1;
-    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
-}
-
-#workspaces button:hover {
-    animation: ws_hover 20s ease-in-out 1;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 

@@ -1,0 +1,6 @@
+#wofi config
+stylesheet=../waybar/themes/simples/wofi
+width=300
+term=kitty
+insensitive=false
+hide_scroll=true

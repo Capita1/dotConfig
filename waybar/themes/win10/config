@@ -1,0 +1,6 @@
+#wofi config
+stylesheet=../waybar/themes/win10/wofi
+width=300
+term=kitty
+insensitive=false
+hide_scroll=true
