@@ -26,8 +26,8 @@
 "custom/menu": {
 "format": "",
 "justify": "center",
-"on-click": "wofi --show drun",
-"on-click-right": "killall wpaperd & wpaperd -d",
+"on-click": "sh ~/.config/waybar/launch.sh",
+"on-click-right": "sh ~/.config/waybar/launch.sh cyber77",
 "tooltip":false,
 },
 
@@ -111,6 +111,7 @@
 "title<.*torrent.*>": "󱑤",
 "class<thunar>": "",
 "class<steam>": "󰓓",
+
 "class<lutris>": "",
 "class<mousepad>": "",
 

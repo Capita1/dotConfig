@@ -14,7 +14,7 @@ window#waybar{
 background:@background;
 }
 
-tooltip,#custom-menu,#cpu,#memory,#disk,#workspaces button.active,#taskbar,#window,#network,#backlight,#pulseaudio,#clock{
+tooltip,#custom-menu,#cpu,#memory,#disk,#battery,#workspaces button.active,#taskbar,#window,#tray,#network,#backlight,#pulseaudio,#clock{
 color:@text;
 border:1px solid @border;
 border-radius:7px;
@@ -34,6 +34,20 @@ color: @yellow;
 }
 
 
+#workspaces button {
+    animation: ws_normal 20s ease-in-out 1;
+}
+
+#workspaces button.active {
+
+    animation: ws_active 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button:hover {
+    animation: ws_hover 20s ease-in-out 1;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
 
 
 

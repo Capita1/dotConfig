@@ -1,2 +1,3 @@
+#!/bin/bash
 killall wofi
-wofi --show drun
+wofi -S $1 -W 300 -t kitty -b -i  
