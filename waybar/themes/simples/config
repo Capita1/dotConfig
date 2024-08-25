@@ -2,5 +2,5 @@
 stylesheet=../waybar/themes/simples/wofi
 width=300
 term=kitty
-insensitive=false
+insensitive=true
 hide_scroll=true

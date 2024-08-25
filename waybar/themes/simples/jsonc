@@ -2,17 +2,21 @@
 "output":["*"],
 "layer": "top",
 "position":"top",
+"height": 20,
+"margin-top": 5,
+"margin-left": 5,
+"margin-right": 5,
 "modules-left":["custom/menu","temperature","cpu","memory","disk"],
 "modules-center":["hyprland/workspaces"],
-"modules-right":["tray","network","backlight","pulseaudio","battery","clock"],
+"modules-right":["tray","network","pulseaudio","backlight","battery","clock"],
 
 "temperature": {
 "thermal-zone": 2,
 "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
 "critical-threshold": 80,
 "format-critical": "{icon}{temperatureC}°C",
-"format": "{icon}{temperatureC}°C",
-"format-icons": ["", "", ""]
+"format": "{icon}",
+"format-icons": ["", "", ""],
 },
 "cpu": {
 "interval": 1,
@@ -37,9 +41,10 @@
 "warning": 30,
 "critical": 15
 },
-"format": "{icon} {capacity}%",
-"format-charging": "car.{capacity}%",
-"format-plugged": "{capacity}%",
+"format": "{icon}",
+"tooltip-format": "󰂎{capacity}%",
+"format-charging": "󰂄{capacity}%",
+"format-plugged": "󱐋",
 "format-alt": "{icon}{time}",
 // "format-good": "",
 // "format-full": "",
@@ -55,8 +60,8 @@
 
 "backlight": {
 "device": "acpi_video1",
-"format": "{percent}%",
-"tooltip-format":"󰖨",
+"format": "",
+"tooltip-format":"󰖨 {percent}%",
 },
 "network": {
 "on-click": "kitty nmtui",
@@ -68,7 +73,8 @@
 "tooltip-format-ethernet": "{ifname} ether | {ipaddr}",
 },
 "pulseaudio": {
-"format": "{icon}{volume}%",
+"format": "{icon}",
+"tooltip-format": "{volume}%",
 "justify": "center",
 "max-volume": 100,
 "scroll-step": 5,

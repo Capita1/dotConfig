@@ -5,27 +5,32 @@
 @define-color background rgba(0,0,0,0.7);
 @define-color boxbackground black;
 *{
-font-family:Comic Sans,Symbols Nerd Font Mono;
+font-family:Blender Pro Bold,Symbols Nerd Font Mono;
 font-size:15px;
 transition:none;
+min-height: 0;
+min-width: 0;
 }
 
 window#waybar{
-background:@background;
+background:none;
 }
 
-tooltip,#custom-menu,#temperature,#cpu,#memory,#disk,#battery,#workspaces button.active,#taskbar,#window,#tray,#network,#backlight,#pulseaudio,#clock{
+tooltip,#custom-menu,#temperature,#cpu,#memory,#disk,#battery,#workspaces button.active,#taskbar,#tray,#network,#backlight,#pulseaudio,#clock{
+border:1px solid @text;
 color:@text;
-border:1px solid @border;
 border-radius:5px;
 background:@boxbackground;
-padding:0px 5px;
-margin:5px;
+padding:5px;
+margin:0px 3px;
 }
-#custom-menu{
-padding:0 9px;}
+#workspaces,#workspaces button.active{
+border-radius:5px;
+background:@background;
+margin:0px;
+}
 
-#workspaces button:hover,#workspaces button.focused,#workspaces button {
+#workspaces ,#workspaces button.focused,#workspaces button {
 color:@unfocused;
 transition:none;
 }
@@ -33,6 +38,11 @@ transition:none;
 color: @yellow;
 }
 
-
+#custom-menu{
+margin-left:0px;
+}
+#clock{
+margin-right:0px;
+}
 
  

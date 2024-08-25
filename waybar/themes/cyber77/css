@@ -8,25 +8,22 @@
 font-family:Symbols Nerd Font Mono,Play;
 font-size:15px;
 transition:none;
+min-height: 0;
+min-width: 0;
 }
-
 window#waybar{
 background:@background;
 }
-
 tooltip,#custom-menu,#cpu,#memory,#disk,#workspaces button.active,#taskbar,#window,#network,#backlight,#pulseaudio,#clock{
 color:@text;
-padding:2px 5px;
-margin:5px;
+padding:3px 5px;
+margin:3px;
 /*BEVEL*/
 background-image:linear-gradient(180deg, @border, @border),linear-gradient(225deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(135deg, transparent 9px, @border 10px, @border 1px, transparent 12px),linear-gradient(180deg, @boxbackground, @boxbackground),linear-gradient(135deg,@boxbackground, @boxbackground),linear-gradient(135deg, @boxbackground,@boxbackground 65%, transparent 75%);
 background-position:bottom left,top left,top right,top right,bottom right,top left,top right,bottom right;
 background-size:calc(100% - 7px) 1px,1px 100%,100% 1px,1px calc(100% - 7px),10px 12px,calc(100% - 7px),10px calc(100% - 7px),10px 12px;
 background-repeat: no-repeat;
 }
-#custom-menu{
-padding:0 9px;}
-
 #workspaces button:hover,#workspaces button.focused,#workspaces button {
 color:@unfocused;
 transition:none;

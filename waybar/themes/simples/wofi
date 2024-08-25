@@ -1,7 +1,7 @@
 @define-color text-unfocused gray;
 @define-color text white;
 @define-color border white;
-@define-color background black;
+@define-color background rgba(0, 0, 0, 0.7);
 @define-color boxbackground black;
 
 *{
@@ -11,12 +11,14 @@ box-shadow: none;
 }
 window{
 width:10px;
+border-radius:7px;
+border:1px solid @border;
 }
 #input,#entry:selected{
 padding:5px;
 margin:5px;
 }
-#input:focus,#entry:selected,#expander-box{
+#input,#input:focus,#entry:selected,#expander-box{
 /*SELECIONADO*/
 color:@text;
 border:1px solid @border;

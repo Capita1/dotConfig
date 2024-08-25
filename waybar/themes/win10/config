@@ -2,5 +2,5 @@
 stylesheet=../waybar/themes/win10/wofi
 width=300
 term=kitty
-insensitive=false
+insensitive=true
 hide_scroll=true

@@ -6,6 +6,7 @@ if [ -z "$1" ]; then
 else
 	cd ~/.config/waybar/themes/$1/
 	cp config ~/.config/wofi
+	cp hyprland.conf ~/.config/hypr
 	killall waybar
 	waybar -c jsonc -s css
 	killall wpaperd
