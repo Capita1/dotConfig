@@ -1,5 +1,5 @@
 #wofi config
-stylesheet=../waybar/themes/cyber77/wofi
+stylesheet=css
 width=300
 term=kitty
 insensitive=true

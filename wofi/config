@@ -1,6 +1,6 @@
 #wofi config
-stylesheet=../waybar/themes/cyber77/wofi
+stylesheet=css
 width=300
 term=kitty
-insensitive=false
+insensitive=true
 hide_scroll=true
