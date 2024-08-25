@@ -14,9 +14,6 @@
     ],
     "modules-center": [],
     "modules-right": [
-        "cpu",
-        "memory",
-        "disk",
         "tray",
         "pulseaudio",
         "network",

@@ -12,7 +12,7 @@ else
 	cd $dir
 	cp -r $dir/$1/* $config
 	killall waybar & killall wpaperd
-	waybar & wpaperd
+	waybar & wpaperd -d
 fi
 
 
