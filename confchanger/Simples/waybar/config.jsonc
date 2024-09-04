@@ -1,3 +1,4 @@
+//SIMPLES
 {
 "output":["*"],
 "layer": "top",
@@ -6,18 +7,10 @@
 "margin-top": 5,
 "margin-left": 5,
 "margin-right": 5,
-"modules-left":["custom/menu","temperature","cpu","memory","disk"],
+"modules-left":["custom/menu","cpu","memory","disk"],
 "modules-center":["hyprland/workspaces"],
 "modules-right":["tray","network","pulseaudio","backlight","battery","clock"],
 
-"temperature": {
-"thermal-zone": 2,
-"hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
-"critical-threshold": 80,
-"format-critical": "{icon}{temperatureC}°C",
-"format": "{icon}",
-"format-icons": ["", "", ""],
-},
 "cpu": {
 "interval": 1,
 "format":"󰻠 {usage}%",
@@ -53,8 +46,8 @@
 "custom/menu": {
 "format": "",
 "justify": "center",
-"on-click": "sh ~/.config/waybar/launch.sh",
-"on-click-right": "sh ~/.config/waybar/launch.sh simples",
+"on-click": "sh ~/.config/confchanger/confchanger",
+"on-click-right": "sh ~/.config/confchanger/confchanger Simples",
 "tooltip":false,
 },
 
@@ -127,7 +120,7 @@
 "9":"⁹",
 "10":"¹⁰",
 },
-"format-window-separator": "<span color='#48c3c5'> <b>+</b> </span>",
+"format-window-separator": "<span color='gray'><b> + </b></span>",
 "window-rewrite-default": "",
 "window-rewrite": {
 //apps
@@ -135,25 +128,21 @@
 "class<vlc>": "",
 "class<kitty>": "",
 "class<kitty> title<.*nvim.*>": "",
-"title<.*neovide.*>": "",
-"title<.*torrent.*>": "󱑤",
 "class<thunar>": "",
 "class<steam>": "󰓓",
-
 "class<lutris>": "",
 "class<mousepad>": "",
-
 "class<libreoffice>": "",
 "title<.*calc.*>": "󰈛",
 "title<.*write.*>": "󰈬",
-
-"title<.*planify.*>": "",
 "title<.*stremio.*>": "",
-
+"title<.*telegram.*>": "",
+"title<.*whatsapp.*>": "󰖣",
+"title<.*neovide.*>": "",
+"title<.*torrent.*>": "󱑤",
+"title<.*blender.*>": "󰂫",
 //icones do navegador 
 "class<librewolf>": "",
-"class<librewolf> title<.*whatsapp.*>": "󰖣",
-"class<librewolf> title<.*telegram.*>": "",
 "class<librewolf> title<.*instagram.*>": "",
 "class<librewolf> title<.*discord.*>": "󰙯",
 "class<librewolf> title<.*gmail.*>": "",

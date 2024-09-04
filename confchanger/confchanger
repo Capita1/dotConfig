@@ -1,18 +1,14 @@
 #!/bin/bash
-menu='wofi'
-config=/home/user/.config/
-dir=/home/user/.config/confchanger/
+
+config=/home/$(whoami)/.config/
+
 if [ -z "$1" ]; then
-	cd $dir
-	killall $menu
-	shopt -s lastpipe
-	ls -d */ | sed 's/\///g' | $menu -d | read ch
-	sh $dir/confchanger $ch
+	cd $config/confchanger
+	killall wofi
+	sh confchanger $(ls -d */ | sed 's/\///g' | wofi -d)
 else
-	cd $dir
-	cp -r $dir/$1/* $config
+	cd $config/confchanger
+	cp -r $config/confchanger/$1/* $config
 	killall waybar & killall wpaperd
 	waybar & wpaperd -d
 fi
-
-

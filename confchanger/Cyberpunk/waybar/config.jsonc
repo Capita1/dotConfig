@@ -1,10 +1,11 @@
+//CYBERPUNK
 {
 "output":["*"],
 "layer": "top",
 "position":"top",
-"modules-left":["custom/menu","cpu","memory","disk"],
+"modules-left":["custom/menu","cpu","memory","disk","battery"],
 "modules-center":["hyprland/workspaces"],
-"modules-right":["network","backlight","pulseaudio","clock"],
+"modules-right":["network","tray","backlight","pulseaudio","clock"],
 
 "cpu": {
 "interval": 1,
@@ -23,11 +24,24 @@
 "unit": "GB",
 "tooltip-format": "{free} de {total} Disponível"
 },
+"battery": {
+"states": {
+"good": 95,
+"warning": 30,
+"critical": 15
+},
+"format-charging": "󰂄{capacity}%",
+"format-plugged": "󱐋󰚥󱐋",
+"format-alt": "{icon}{time}",
+"format": "{icon} {capacity}%",
+"format-icons": ["","","","",""]
+},
+
 "custom/menu": {
 "format": "",
 "justify": "center",
-"on-click": "sh ~/.config/waybar/launch.sh",
-"on-click-right": "sh ~/.config/waybar/launch.sh cyber77",
+"on-click": "sh ~/.config/confchanger/confchanger",
+"on-click-right": "sh ~/.config/confchanger/confchanger Cyberpunk",
 "tooltip":false,
 },
 
