@@ -35,8 +35,8 @@
 "critical": 15
 },
 "format": "{icon}",
-"tooltip-format": "󰂎{capacity}%",
-"format-charging": "󰂄{capacity}%",
+"tooltip-format": "{capacity}%",
+"format-charging": "󰂄",
 "format-plugged": "󱐋",
 "format-alt": "{icon}{time}",
 // "format-good": "",
@@ -54,7 +54,8 @@
 "backlight": {
 "device": "acpi_video1",
 "format": "",
-"tooltip-format":"󰖨 {percent}%",
+"tooltip-format":"{percent}%",
+"scroll-step": 5,
 },
 "network": {
 "on-click": "kitty nmtui",
@@ -81,6 +82,7 @@
 "on-click": "pavucontrol"
 },
 "clock": {
+"timezone": "America/Sao_Paulo",
 "format": "󰥔 {:%H:%M}",
 "interval":30,
 "format-alt": " {:%d/%m/%Y}",
@@ -95,7 +97,7 @@
 "weeks": "<span color='gray'><b>W{}</b></span>",
 "weekdays": "<span color='grey'><b>{}</b></span>",
 "today": "<span color='white'><b><u>{}</u></b></span>"
-}
+},
 },
 "actions": {
 "on-click-forward": "shift_up",
@@ -104,51 +106,5 @@
 "on-scroll-down": "shift_down"
 }
 },
-"hyprland/workspaces": {
-"on-scroll-up": "hyprctl dispatch workspace r+1",
-"on-scroll-down": "hyprctl dispatch workspace r-1",
-"format": "{icon}{windows}",
-"format-icons":{
-"1":"¹",
-"2":"²",
-"3":"³",
-"4":"⁴",
-"5":"⁵",
-"6":"⁶",
-"7":"⁷",
-"8":"⁸",
-"9":"⁹",
-"10":"¹⁰",
-},
-"format-window-separator": "<span color='gray'><b> + </b></span>",
-"window-rewrite-default": "",
-"window-rewrite": {
-//apps
-"class<mpv>": "",
-"class<vlc>": "",
-"class<kitty>": "",
-"class<kitty> title<.*nvim.*>": "",
-"class<thunar>": "",
-"class<steam>": "󰓓",
-"class<lutris>": "",
-"class<mousepad>": "",
-"class<libreoffice>": "",
-"title<.*calc.*>": "󰈛",
-"title<.*write.*>": "󰈬",
-"title<.*stremio.*>": "",
-"title<.*telegram.*>": "",
-"title<.*whatsapp.*>": "󰖣",
-"title<.*neovide.*>": "",
-"title<.*torrent.*>": "󱑤",
-"title<.*blender.*>": "󰂫",
-//icones do navegador 
-"class<librewolf>": "",
-"class<librewolf> title<.*instagram.*>": "",
-"class<librewolf> title<.*discord.*>": "󰙯",
-"class<librewolf> title<.*gmail.*>": "",
-"class<librewolf> title<.*outlook.*>": "",
-"class<librewolf> title<.*youtube.*>": "󰗃",
-"class<librewolf> title<.*github.*>": "", 
-},
 
-}}
+

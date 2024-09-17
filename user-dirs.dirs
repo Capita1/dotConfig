@@ -7,9 +7,9 @@
 # 
 XDG_DOCUMENTS_DIR="$HOME/Documentos"
 XDG_DOWNLOAD_DIR="$HOME/Documentos/Downloads"
-XDG_PICTURES_DIR="$HOME/Documentos/Imagens"
-XDG_MUSIC_DIR="$HOME/Entretenimento/Músicas"
-XDG_VIDEOS_DIR="$HOME/Entretenimento/Videos"
+XDG_PICTURES_DIR="$HOME/Imagens"
+XDG_MUSIC_DIR="$HOME/Músicas"
+XDG_VIDEOS_DIR="$HOME/Videos"
 XDG_DESKTOP_DIR="$HOME/"
 XDG_TEMPLATES_DIR="$HOME/"
 XDG_PUBLICSHARE_DIR="$HOME/"

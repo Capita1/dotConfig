@@ -1,9 +1,7 @@
-@define-color yellow yellow;
-@define-color unfocused gray;
+@define-color unfocused #b3b3b3;
 @define-color text white;
 @define-color border white;
-@define-color background rgba(0,0,0,0.7);
-@define-color boxbackground black;
+@define-color background rgba(0,0,0,0.5);
 *{
 font-family:Blender Pro Bold,Symbols Nerd Font Mono;
 font-size:15px;
@@ -15,39 +13,31 @@ min-width: 0;
 window#waybar{
 background:none;
 }
-
-tooltip,#custom-menu,#temperature,#cpu,#memory,#disk,#battery,#workspaces button.active,#taskbar,#tray,#network,#backlight,#pulseaudio,#clock{
-border:1px solid @text;
-color:@text;
-border-radius:5px;
-background:@boxbackground;
+.modules-left,.modules-center,.modules-right{
+border:1px solid @border;
+border-radius:20px;
+background:@background;
+padding:0px;
+}
+#custom-menu,#cpu,#memory,#disk,#tray,#network,#pulseaudio,#backlight,#battery,#clock,tooltip,#workspaces button.active{
+border:0.5px solid @border;
+border-radius:20px;
 padding:5px;
 margin:0px 3px;
-}
-#workspaces,#workspaces button.active{
-border-radius:5px;
+color:@text;
 background:@background;
-margin:0px;
 }
-
-#workspaces ,#workspaces button.focused,#workspaces button {
+#workspaces,#workspaces button {
 color:@unfocused;
 transition:none;
 margin:0px;
 }
 #workspaces button.urgent {
-color: @yellow;
+color:yellow;
 }
-#workspaces{
-border:0.5px solid @border;
-border-radius:7px;
-margin:0px;
-}
-#custom-menu{
+#custom-menu,#workspaces button.active,#tray,#network{
 margin-left:0px;
 }
-#clock{
+#disk,#workspaces button.active,#clock{
 margin-right:0px;
 }
-
- 

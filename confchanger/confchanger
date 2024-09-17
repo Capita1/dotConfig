@@ -9,6 +9,10 @@ if [ -z "$1" ]; then
 else
 	cd $config/confchanger
 	cp -r $config/confchanger/$1/* $config
+	cat $config/confchanger/icons.jsonc >> $config/waybar/config.jsonc
 	killall waybar & killall wpaperd
+	# Wait until the processes have been shut down
+	while pgrep -x waybar >/dev/null; do sleep 1; done
+	while pgrep -x wpaperd >/dev/null; do sleep 1; done
 	waybar & wpaperd -d
 fi

@@ -1,6 +1,0 @@
-#wofi config
-stylesheet=css
-width=300
-term=kitty
-insensitive=true
-hide_scroll=true

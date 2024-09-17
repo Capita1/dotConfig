@@ -11,7 +11,7 @@ box-shadow: none;
 }
 window{
 width:10px;
-border-radius:7px;
+border-radius:20px;
 border:1px solid @border;
 }
 #input,#entry:selected{
@@ -22,7 +22,7 @@ margin:5px;
 /*SELECIONADO*/
 color:@text;
 border:1px solid @border;
-border-radius:5px;
+border-radius:20px;
 background:@boxbackground;
 padding:0px 5px;
 margin:5px;
