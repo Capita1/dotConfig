@@ -1,0 +1,18 @@
+#!/bin/bash
+
+killall wofi
+#se $1 estiver vazio
+if [ -z "$1" ]; then
+	choice=$(echo -e "0: Logout\n1: Desligar\n2: Reiniciar" | wofi -d | cut -d ':' -f 1)
+else
+	wofi -S $1
+fi
+
+case "$choice" in
+  0) sudo shutdown -r now & ;;
+  1) sudo shutdown -r now & ;;
+  2) sudo shutdown -h now & ;;
+esac
+
+
+
