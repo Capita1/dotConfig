@@ -1,4 +1,6 @@
 #wofi config
+prompt=Pesquisa
+location=7
 stylesheet=css
 width=300
 term=kitty

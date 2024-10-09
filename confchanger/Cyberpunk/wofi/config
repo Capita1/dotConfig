@@ -1,6 +1,18 @@
 #wofi config
+prompt=I really want to stay at your house
+location=2
 stylesheet=css
 width=300
 term=kitty
 insensitive=true
 hide_scroll=true
+
+#center 0
+#top_left 1
+#top 2
+#top_right 3
+#right 4
+#bottom_right 5
+#bottom 6
+#bottom_left 7
+#left 8 

@@ -1,4 +1,5 @@
-#wofi config
+#simples
+prompt=Vigiai!
 stylesheet=css
 width=300
 term=kitty
