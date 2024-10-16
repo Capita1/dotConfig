@@ -3,7 +3,7 @@
 killall wofi
 #se $1 estiver vazio
 if [ -z "$1" ]; then
-	choice=$(echo -e "0: Logout\n1: 󰐥 Desligar\n2: 󰜉 Reiniciar" | wofi -d | cut -d ':' -f 1)
+	choice=$(echo -e "0: Logout 󰍃\n1: Desligar 󰐥\n2: Reiniciar 󰜉" | wofi -d | cut -d ':' -f 1)
 else
 	wofi -S $1
 fi
