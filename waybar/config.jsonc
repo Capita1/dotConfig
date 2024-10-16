@@ -143,11 +143,11 @@
 			"class<librewolf>": "",
 			"class<thorium-browser>": "",
 			"title<.*torrent.*>": "󱑤",
-			"title<.*OBS.*>": "󰑋",
-			//Reprodução
+			"class<com.obsproject.Studio>": "󰑋",
+			//Multimidia
 			"class<mpv>": "",
 			"class<vlc>": "",
-			"title<.*stremio.*>": "",
+			"class<com.stremio.stremio>": "",
 			//Jogo
 			"class<steam>": "󰓓",
 			"class<lutris>": "",
@@ -157,8 +157,8 @@
 			"class<mousepad>": "",
 			"class<neovide>": "",
 			"class<libreoffice>": "",
-			"title<.*calc.*>": "󰈛",
-			"title<.*write.*>": "󰈬",
+			"class<libreoffice-calc>": "󰈛",
+			"class<libreoffice-write>": "󰈬",
 			//Geral
 			"title<.*BTCUSD.*>":"",
 			"title<.*MONERO.*>":"",
