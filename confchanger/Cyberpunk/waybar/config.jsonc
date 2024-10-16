@@ -6,7 +6,7 @@
 	"position":"top",
 	"modules-left":["custom/menu","cpu","memory","disk","battery"],
 	"modules-center":["hyprland/workspaces"],
-	"modules-right":["network","tray","backlight","pulseaudio","clock"],
+	"modules-right":["tray","custom/notification","network","backlight","pulseaudio","clock"],
 	"cpu": {
 		"interval": 1,
 		"format":"󰻠 {usage}%",
@@ -47,6 +47,7 @@
 		"device": "acpi_video1",
 		"format": "{percent}%",
 		"tooltip-format":"󰖨",
+		"scroll-step": 5,
 	},
 	"network": {
 		"on-click": "kitty nmtui",

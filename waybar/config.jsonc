@@ -6,7 +6,7 @@
 	"position":"top",
 	"modules-left":["custom/menu","cpu","memory","disk","battery"],
 	"modules-center":["hyprland/workspaces"],
-	"modules-right":["network","tray","backlight","pulseaudio","clock"],
+	"modules-right":["tray","custom/notification","network","backlight","pulseaudio","clock"],
 	"cpu": {
 		"interval": 1,
 		"format":"󰻠 {usage}%",
@@ -47,6 +47,7 @@
 		"device": "acpi_video1",
 		"format": "{percent}%",
 		"tooltip-format":"󰖨",
+		"scroll-step": 5,
 	},
 	"network": {
 		"on-click": "kitty nmtui",
@@ -95,6 +96,25 @@
 			"on-scroll-up": "shift_up",
 			"on-scroll-down": "shift_down"
 		},
+	},	"custom/notification": {
+		"tooltip": false,
+		"format": "{icon}",
+		"format-icons": {
+			"notification": "󱅫",
+			"none": "󰂚",
+			"dnd-notification": "󱅫",
+			"dnd-none": "󰂛",
+			"inhibited-notification": "󱅫",
+			"inhibited-none": "󰂚",
+			"dnd-inhibited-notification": "󱅫",
+			"dnd-inhibited-none": "󰂛"
+		},
+		"return-type": "json",
+		"exec-if": "which swaync-client",
+		"exec": "swaync-client -swb",
+		"on-click": "swaync-client -t -sw",
+		"on-click-right": "swaync-client -d -sw",
+		"escape": true
 	},
 	"hyprland/workspaces": {
 		"on-scroll-up": "hyprctl dispatch workspace r+1",
@@ -118,6 +138,7 @@
 			//Apps
 			"class<kitty>": "",
 			"class<blender>": "󰂫",
+			"class<anki>": "",
 			"class<thunar>": "",
 			"class<librewolf>": "",
 			"class<thorium-browser>": "",
@@ -155,8 +176,8 @@
 	},
 },
 {
-	"height": 33,
-	"width":30,
+	"height": 900,
+	"width":40,
 	"output":["HDMI-A-1"],
 	"name": "bottom",
 	"layer": "top",
@@ -164,5 +185,22 @@
 	"position": "left",
 	"modules-left": [], 
 	"modules-center":["hyprland/workspaces"],
-	"modules-right": [], 
+	"modules-right": [],
+	"hyprland/workspaces": {
+		"on-scroll-up": "hyprctl dispatch workspace r-1",
+		"on-scroll-down": "hyprctl dispatch workspace r+1",
+		"format": "{icon}",
+		"format-icons":{
+			"1":"¹",
+			"2":"²",
+			"3":"³",
+			"4":"⁴",
+			"5":"⁵",
+			"6":"⁶",
+			"7":"⁷",
+			"8":"⁸",
+			"9":"⁹",
+			"10":"¹⁰",
+		},
+	}, 
 }]

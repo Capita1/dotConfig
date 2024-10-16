@@ -9,7 +9,7 @@
 	"margin-right": 5,
 	"modules-left":["custom/menu","cpu","memory","disk"],
 	"modules-center":["hyprland/workspaces"],
-	"modules-right":["tray","network","pulseaudio","backlight","battery","clock"],
+	"modules-right":["tray","custom/notification","network","pulseaudio","backlight","battery","clock"],
 	"cpu": {
 		"interval": 1,
 		"format":"󰻠 {usage}%",

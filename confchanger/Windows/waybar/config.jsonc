@@ -1,4 +1,5 @@
-{
+[{
+    //WINDOWS
     "layer": "bottom",
     "position": "bottom",
     "mod": "dock",
@@ -15,9 +16,10 @@
     "modules-center": [],
     "modules-right": [
         "tray",
-        "pulseaudio",
+	"pulseaudio",
         "network",
-        "clock"
+        "clock",
+	"custom/notification"
     ],
     "hyprland/workspaces": {
         "icon-size": 32,
@@ -111,5 +113,25 @@
 ]
 },
 "on-click": "pavucontrol"
-}
 },
+"custom/notification": {
+"tooltip": false,
+"format": "{icon}	",
+"format-icons": {
+"notification": "󱅫",
+"none": "󰂚",
+"dnd-notification": "󱅫",
+"dnd-none": "󰂛",
+"inhibited-notification": "󱅫",
+"inhibited-none": "󰂚",
+"dnd-inhibited-notification": "󱅫",
+"dnd-inhibited-none": "󰂛"
+},
+"return-type": "json",
+"exec-if": "which swaync-client",
+"exec": "swaync-client -swb",
+"on-click": "swaync-client -t -sw",
+"on-click-right": "swaync-client -d -sw",
+"escape": true
+},
+}]
