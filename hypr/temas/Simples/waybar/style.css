@@ -1,0 +1,39 @@
+@define-color unfocused #b3b3b3;
+@define-color text white;
+@define-color border white;
+@define-color background rgba(0,0,0,0.5);
+*{
+font-family:Blender Pro Bold,Symbols Nerd Font Mono;
+font-size:15px;
+transition:none;
+min-height: 0;
+min-width: 0;
+}
+
+window#waybar{
+background:none;
+}
+.modules-left,.modules-center,.modules-right{
+border:1px solid @border;
+border-radius:20px;
+background:@background;
+padding:0px;
+}
+#custom-menu,#cpu,#memory,#disk,#tray,#custom-notification,#network,#pulseaudio,#backlight,#battery,#clock,tooltip,#workspaces button.active{
+border:0.5px solid @border;
+border-radius:20px;
+padding:6px;
+margin:0px 3px;
+color:@text;
+background:@background;
+}
+#custom-menu,#workspaces button.active,#tray,#network,#disk,#workspaces button.active,#clock,#workspaces,#workspaces button {
+transition:none;
+margin:0px;
+}
+#workspaces button.urgent {
+color:yellow;
+}
+#workspaces,#workspaces button {
+color:@unfocused;
+}

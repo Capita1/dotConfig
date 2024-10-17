@@ -1,0 +1,36 @@
+@define-color text-unfocused gray;
+@define-color text white;
+@define-color border white;
+@define-color background rgba(0, 0, 0, 0.7);
+@define-color boxbackground black;
+
+*{
+font-family:Play;
+font-size:15px;
+box-shadow: none;
+}
+window{
+width:10px;
+border-radius:20px;
+border:1px solid @border;
+}
+#input,#entry:selected{
+padding:5px;
+margin:5px;
+}
+#input,#input:focus,#entry:selected,#expander-box{
+/*SELECIONADO*/
+color:@text;
+border:1px solid @border;
+border-radius:20px;
+background:@boxbackground;
+padding:0px 5px;
+margin:5px;
+}
+window, #input{
+/*NÃO SELECIONADO*/
+color:@text-unfocused;
+background:@background;
+border:0.5px solid @border;
+}
+

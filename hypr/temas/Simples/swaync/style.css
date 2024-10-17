@@ -1,0 +1,32 @@
+@define-color text-unfocused gray;
+@define-color text white;
+@define-color border white;
+@define-color background rgba(0, 0, 0, 0.7);
+@define-color boxbackground black;
+
+*{
+font-family:Play;
+font-size:15px;
+box-shadow: none;
+}
+*{
+font-family:Symbols Nerd Font Mono,Play;
+font-size:15px;
+color:@text;
+border-radius:0px;
+}
+.notification,.control-center{
+color:@text;
+border:1px solid @border;
+border-radius:20px;
+background:@boxbackground;
+padding:0px 5px;
+margin:5px;
+}
+.control-center{
+color:@text-unfocused;
+background:@background;
+}
+
+
+
