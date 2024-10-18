@@ -31,9 +31,6 @@ transition:none;
 #workspaces button.urgent {
 color: @yellow;
 }
-
-
-
-
-
- 
+#wlr-taskbar{
+margin:50px;
+}

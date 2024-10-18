@@ -29,17 +29,16 @@ if [ "$1" = "logout" ]; then
 	  2) systemctl reboot & ;;
 	esac
 fi
-if [ "$1" = "theme" ]; then
+if [ "$1" = "temas" ]; then
 	apps=("waybar" "wpaperd" "swaync") ; len=${#apps[@]}
 	config=/home/$(whoami)/.config/
 	cd $config/hypr/temas
 	if [ -z "$2" ]; then
-		sh $config/hypr/menus theme $(ls -d */ | sed 's/\///g' | wofi -d)
+		sh $config/hypr/menus temas $(ls -d */ | sed 's/\///g' | wofi -d)
 	else
 		cp -r $2/* $config
 		cat icons.jsonc >> $config/waybar/config.jsonc
-		#espere ate os processos fecharem
-		killall $apps
+		killall waybar ; killall wpaperd ; killall swaync
 		waybar & wpaperd -d & swaync
 	fi
 fi

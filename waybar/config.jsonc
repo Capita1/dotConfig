@@ -1,41 +1,36 @@
 [{
 	"width":30,
-	"output":["eDP-1"],
+	"output":["HDMI-A-1"],
 	"name": "bottom",
 	"layer": "top",
 	"margin": "0px",
 	"position": "left",
-	"modules-left": [], 
+	"modules-left": ["wlr/taskbar"], 
 	"modules-center":["hyprland/workspaces"],
 	"modules-right": ["custom/menu"],
-		"custom/menu": {
+	"wlr/taskbar": {
+		"format": "{icon}",
+		"icon-size": 10,
+		"on-click-middle": "close",
+		"tooltip-format": "{title}",
+		"ignore-list": [],
+		"on-click": "activate"
+	},	
+	"custom/menu": {
 		"format": "",
 		"justify": "center",
-		"on-click": "sh ~/.config/confchanger/confchanger",
-		"on-click-right": "sh ~/.config/confchanger/confchanger Simples",
+		"on-click": "sh ~/.config/hypr/menus temas",
+		"on-click-right": "sh ~/.config/hypr/menus temas Cyberpunk",
 		"tooltip":false,
 	},	
 	"hyprland/workspaces": {
 		"on-scroll-up": "hyprctl dispatch workspace r-1",
 		"on-scroll-down": "hyprctl dispatch workspace r+1",
-		"format": "{icon}",
-		"format-icons":{
-			"1":"¹",
-			"2":"²",
-			"3":"³",
-			"4":"⁴",
-			"5":"⁵",
-			"6":"⁶",
-			"7":"⁷",
-			"8":"⁸",
-			"9":"⁹",
-			"10":"¹⁰",
-		},
 	}, 
 },
 {
 	//CYBERPUNK
-	"output":["HDMI-A-1"],
+	"output":["eDP-1"],
 	"height": 33,
 	"layer": "top",
 	"position":"top",
@@ -98,6 +93,7 @@
 		"justify": "center",
 		"max-volume": 100,
 		"scroll-step": 5,
+		"on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"format-icons": {
 			"format-muted": " ",
 			"default": [
