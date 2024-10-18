@@ -1,6 +1,6 @@
 [{
 	"width":30,
-	"output":["HDMI-A-1"],
+	"output":["eDP-1"],
 	"name": "bottom",
 	"layer": "top",
 	"margin": "5px 0px 5px 5px",
@@ -35,7 +35,7 @@
 },
 {
 	//SIMPLES
-	"output":["eDP-1"],
+	"output":["HDMI-A-1"],
 	"height": 33,
 	"layer": "top",
 	"position":"top",
