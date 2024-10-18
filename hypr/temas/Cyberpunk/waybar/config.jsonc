@@ -1,36 +1,24 @@
 [{
-	"width":30,
-	"output":["eDP-1"],
+	"width":35,
+	"output":["HDMI-A-1"],
 	"name": "bottom",
 	"layer": "top",
 	"margin": "0px",
 	"position": "left",
-	"modules-left": ["wlr/taskbar"], 
+	"modules-left": [], 
 	"modules-center":["hyprland/workspaces"],
-	"modules-right": ["custom/menu"],
-	"wlr/taskbar": {
-		"format": "{icon}",
-		"icon-size": 10,
-		"on-click-middle": "close",
-		"tooltip-format": "{title}",
-		"ignore-list": [],
-		"on-click": "activate"
-	},	
-	"custom/menu": {
-		"format": "",
-		"justify": "center",
-		"on-click": "sh ~/.config/hypr/menus temas",
-		"on-click-right": "sh ~/.config/hypr/menus temas Cyberpunk",
-		"tooltip":false,
-	},	
+	"modules-right": [],	
+	"include": "~/.config/hypr/temas/icons.json",
 	"hyprland/workspaces": {
 		"on-scroll-up": "hyprctl dispatch workspace r-1",
 		"on-scroll-down": "hyprctl dispatch workspace r+1",
-	}, 
+		"format-window-separator": "\n",
+		"format": " {icon}\n{windows}",
+	},
 },
 {
 	//CYBERPUNK
-	"output":["HDMI-A-1"],
+	"output":["eDP-1"],
 	"height": 33,
 	"layer": "top",
 	"position":"top",
@@ -127,4 +115,26 @@
 			"on-scroll-up": "shift_up",
 			"on-scroll-down": "shift_down"
 		},
+	},	
+	"custom/notification": {
+		"tooltip": false,
+		"format": "{icon}",
+		"format-icons": {
+			"notification": "󱅫",
+			"none": "󰂚",
+			"dnd-notification": "󱅫",
+			"dnd-none": "󰂛",
+			"inhibited-notification": "󱅫",
+			"inhibited-none": "󰂚",
+			"dnd-inhibited-notification": "󱅫",
+			"dnd-inhibited-none": "󰂛"
+		},
+		"return-type": "json",
+		"exec-if": "which swaync-client",
+		"exec": "swaync-client -swb",
+		"on-click": "swaync-client -t -sw",
+		"on-click-right": "swaync-client -d -sw",
+		"escape": true,
 	},
+	"include": "~/.config/hypr/temas/icons.json",
+}]
