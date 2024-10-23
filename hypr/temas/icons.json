@@ -35,13 +35,15 @@
 		"class<steam>": "󰓓",
 		"class<lutris>": "",
 		"title<.*minecraft.*>": "󰍳",
+		"class<ru-turikhay-tlauncher-bootstrap-Bootstrap>": "󰍳",
 		//Texto
 		"class<kitty> title<.*nvim.*>": "",
 		"class<mousepad>": "",
 		"class<neovide>": "",
+		"class<org.pwmt.zathura>": "",
 		"class<libreoffice>": "",
 		"class<libreoffice-calc>": "󰈛",
-		"class<libreoffice-write>": "󰈬",
+		"class<libreoffice-writer>": "󰈬",
 		//Geral
 		"title<.*BTCUSD.*>":"",
 		"title<.*MONERO.*>":"",

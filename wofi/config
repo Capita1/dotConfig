@@ -1,9 +1,0 @@
-#wofi config
-prompt=I really want to stay at your house
-location=2
-stylesheet=css
-width=300
-term=kitty
-insensitive=true
-hide_scroll=true
-key_exit=space

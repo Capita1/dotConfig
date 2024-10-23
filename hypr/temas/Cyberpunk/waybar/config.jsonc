@@ -57,8 +57,8 @@
 	"custom/menu": {
 		"format": "",
 		"justify": "center",
-		"on-click": "sh ~/.config/confchanger/confchanger",
-		"on-click-right": "sh ~/.config/confchanger/confchanger Cyberpunk",
+		"on-click": "sh ~/.config/hypr/menus",
+		"on-click-right": "sh ~/.config/hypr/menus temas Cyberpunk",
 		"tooltip":false,
 	},
 	"backlight": {

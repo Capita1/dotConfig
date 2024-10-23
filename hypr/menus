@@ -13,7 +13,7 @@ fi
 
 #se $1 igual a altab
 if [ "$1" = "altab" ]; then
-	janela=$(hyprctl clients | sed '/class/!d' | cut -d ':' -f 2 | wofi -S dmenu --columns=2 --height=250 --width=250 --location=0 --hide_search=true --prompt=Apps)
+	janela=$(hyprctl clients | sed '/class/!d' | cut -d ':' -f 2 | wofi -S dmenu --columns=4 --height=150 --width=500 --location=0 --hide_search=true --prompt=Apps)
 	#se tem algo em $janela
 	if [ -n "$janela" ]; then
 		hyprctl dispatch focuswindow $janela
@@ -30,13 +30,14 @@ if [ "$1" = "logout" ]; then
 	esac
 fi
 if [ "$1" = "temas" ]; then
-	apps=("waybar" "wpaperd" "swaync") ; len=${#apps[@]}
 	config=/home/$(whoami)/.config/
-	cd $config/hypr/temas
 	if [ -z "$2" ]; then
-		sh $config/hypr/menus temas $(ls -d */ | sed 's/\///g' | wofi -d)
+		cd $config/hypr/temas/
+		sh $config/hypr/menus $1 $(ls -d */ | sed 's/\///g' | wofi -d)
 	else
-		cp -r $2/* $config
+		cd $config/hypr/temas/$2
+		ln -r -s -f * $config
+		cp hypr/style.conf ../../
 		killall waybar ; killall wpaperd ; killall swaync
 		waybar & wpaperd -d & swaync
 	fi
