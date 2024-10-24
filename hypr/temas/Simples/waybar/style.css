@@ -1,4 +1,4 @@
-@define-color unfocused #b3b3b3;
+@define-color unfocused rgba(255,255,255,0.5);
 @define-color text white;
 @define-color border white;
 @define-color background rgba(0,0,0,0.5);
@@ -11,7 +11,9 @@ min-width: 0;
 }
 
 window#waybar{
-background:none;
+background:@background;
+border:solid @border 1px;
+border-radius:20px;
 }
 .modules-left,.modules-center,.modules-right{
 border:1px solid @border;
@@ -36,4 +38,8 @@ color:yellow;
 }
 #workspaces,#workspaces button {
 color:@unfocused;
+}
+#custom-nada{
+border-radius:20px;
+padding:10px;
 }

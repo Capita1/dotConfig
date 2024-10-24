@@ -1,8 +1,8 @@
 @define-color text-unfocused gray;
 @define-color text white;
 @define-color border white;
-@define-color background rgba(0, 0, 0, 0.7);
-@define-color boxbackground black;
+@define-color background rgba(0, 0, 0, 0.5);
+
 
 *{
 font-family:Play;
@@ -23,14 +23,14 @@ margin:5px;
 color:@text;
 border:1px solid @border;
 border-radius:20px;
-background:@boxbackground;
-padding:0px 5px;
+background:@background;
+padding:5px;
 margin:5px;
 }
 window, #input{
 /*NÃO SELECIONADO*/
 color:@text-unfocused;
 background:@background;
-border:0.5px solid @border;
+border:1px solid @border;
 }
 

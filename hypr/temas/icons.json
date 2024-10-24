@@ -24,6 +24,7 @@
 		"class<anki>": "",
 		"class<thunar>": "",
 		"class<librewolf>": "",
+		"class<org.telegram.desktop>": "",
 		"class<thorium-browser>": "",
 		"title<.*torrent.*>": "󱑤",
 		"class<com.obsproject.Studio>": "󰑋",

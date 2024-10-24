@@ -2,7 +2,11 @@
 prompt=Pesquisa
 location=7
 stylesheet=css
-width=300
+width=350
+height=450
 term=kitty
 insensitive=true
 hide_scroll=true
+allow_images=true
+
+hide_search=true

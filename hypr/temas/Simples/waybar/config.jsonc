@@ -3,9 +3,11 @@
 	"output":["HDMI-A-1"],
 	"name": "bottom",
 	"layer": "top",
-	"margin": "0px",
+	"margin-top": 5,
+	"margin-left": 5,
+	"margin-bottom": 5,
 	"position": "left",
-	"modules-left": [], 
+	"modules-left": ["custom/player"], 
 	"modules-center":["hyprland/workspaces"],
 	"modules-right": [],	
 	"include": "~/.config/hypr/temas/icons.json",
@@ -14,6 +16,12 @@
 		"on-scroll-down": "hyprctl dispatch workspace r+1",
 		"format-window-separator": "\n",
 		"format": " {icon}\n{windows}",
+	},
+	"custom/player": {
+		"interval": 1,
+		"on-click": "playerctl --player=vlc play-pause",
+		"text":"a" ,
+//		"playerctl metadata --format "Tocando: {{ artist }} - {{ album }} - {{ title }}"
 	},
 },
 {
@@ -63,8 +71,8 @@
 	"custom/menu": {
 		"format": "",
 		"justify": "center",
-		"on-click": "sh ~/.config/confchanger/confchanger",
-		"on-click-right": "sh ~/.config/confchanger/confchanger Simples",
+		"on-click": "sh ~/.config/hypr/menus",
+		"on-click-right": "sh ~/.config/hypr/menus temas Simples",
 		"tooltip":false,
 	},
 	"backlight": {

@@ -1,13 +1,11 @@
 
 /*base background color*/
-@define-color bg_main rgba(25, 25, 25, 0.65);
-@define-color bg_main_tooltip rgba(0, 0, 0, 0.7);
-
+@define-color bg_main rgba(0, 0, 0, 0.9);
 
 /*base background color of selections */
 @define-color bg_hover rgba(200, 200, 200, 0.3);
 /*base background color of active elements */
-@define-color bg_active rgba(100, 100, 100, 0.5);
+@define-color bg_active rgba(100, 100, 100, 0.3);
 
 /*base border color*/
 @define-color border_main rgba(255, 255, 255, 0.2);
@@ -22,7 +20,7 @@ text-shadow: none;
 box-shadow: none;
 border: none;
 border-radius: 0;
-font-family:"Symbols Nerd Font Mono","Segoe UI", "Ubuntu";
+font-family:"Symbols Nerd Font Mono","Segoe UI";
 font-weight: 600;
 font-size: 12.7px;
 }
@@ -34,6 +32,7 @@ background: @bg_active;
 }
 .control-center{
 /*NÃO SELECIONADO*/
+background: @bg_main;
 min-width: 130px;
 margin-left: 2px;
 margin-right: 2px;
