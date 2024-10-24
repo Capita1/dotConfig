@@ -4,6 +4,7 @@
 if pgrep -x "wofi" > /dev/null
 then
 	killall wofi
+	exit 1
 fi
 
 #se $1 estiver vazio
