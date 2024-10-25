@@ -20,8 +20,8 @@
 	"custom/player": {
 		"interval": 1,
 		"on-click": "playerctl --player=vlc play-pause",
-		"text":"a" ,
-//		"playerctl metadata --format "Tocando: {{ artist }} - {{ album }} - {{ title }}"
+		"return-type": "json",
+		"exec":"sh ~/musica",
 	},
 },
 {

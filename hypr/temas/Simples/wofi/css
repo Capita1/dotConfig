@@ -1,11 +1,10 @@
-@define-color text-unfocused gray;
+@define-color text-unfocused rgba(255, 255, 255, 0.7);
 @define-color text white;
 @define-color border white;
 @define-color background rgba(0, 0, 0, 0.5);
-
-
+@define-color none rgba(0, 0, 0, 0);
 *{
-font-family:Play;
+font-family:"Segoe";
 font-size:15px;
 box-shadow: none;
 }
@@ -13,13 +12,10 @@ window{
 width:10px;
 border-radius:20px;
 border:1px solid @border;
+background:@background;
 }
-#input,#entry:selected{
-padding:5px;
-margin:5px;
-}
-#input,#input:focus,#entry:selected,#expander-box{
-/*SELECIONADO*/
+
+#entry,#entry:selected,#expander-box{
 color:@text;
 border:1px solid @border;
 border-radius:20px;
@@ -27,10 +23,18 @@ background:@background;
 padding:5px;
 margin:5px;
 }
-window, #input{
-/*NÃO SELECIONADO*/
+#entry{
 color:@text-unfocused;
-background:@background;
-border:1px solid @border;
+background:none;
+border:1px solid @none;
 }
-
+#input{
+display: none;
+margin: -1000px 5px; 
+}
+img,#img{
+margin:0px 10px;
+height: 5px;
+max-width: 10%;
+max-height: 10%
+}

@@ -1,0 +1,15 @@
+#!/bin/bash
+if [ "$(playerctl status)" = "Playing" ]; then
+ico="󰐊"
+fi
+if [ "$(playerctl status)" = "Paused" ]; then
+ico="󰏤"
+fi
+#se $1 não tiver vazio
+if [ -n "$1" ]; then
+	killall wofi
+	playerctl $1 $2
+	atual=$(playerctl metadata --format "{{ artist }} - {{ title }}")
+	volume=$(echo $( awk "BEGIN { print int($(playerctl volume)*100)}"))
+	echo -e "$ico $atual \n $volume % " | wofi -d --width=400 --height=80 --location=2 --sort-order=default -a 
+fi

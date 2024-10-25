@@ -8,5 +8,5 @@ term=kitty
 insensitive=true
 hide_scroll=true
 allow_images=true
-
+sort_order=alphabetical
 hide_search=true

@@ -39,7 +39,7 @@ padding: 0px 16px;
 background: @bg_active;
 }
 
-#custom-menu:hover,#taskbar button:hover,#tray > widget:hover,#network:hover,#pulseaudio:hover,#clock:hover {
+#custom-menu:hover,#taskbar button:hover,#tray > widget:hover,#network:hover,#pulseaudio:hover,#clock:hover,#custom-notification:hover {
 color: @content_main;
 background: @bg_hover;
 }

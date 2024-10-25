@@ -1,7 +1,9 @@
 #simples
 prompt=Vigiai!
 stylesheet=css
-width=300
+width=400
 term=kitty
 insensitive=true
 hide_scroll=true
+allow_images=true
+hide_search=true

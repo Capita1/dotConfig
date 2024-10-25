@@ -1,8 +1,8 @@
 @define-color text-unfocused gray;
 @define-color text white;
 @define-color border white;
-@define-color background rgba(0, 0, 0, 0.7);
-@define-color boxbackground black;
+@define-color background rgba(0, 0, 0, 0.5);
+
 
 *{
 font-family:Play;
@@ -19,7 +19,7 @@ border-radius:0px;
 color:@text;
 border:1px solid @border;
 border-radius:20px;
-background:@boxbackground;
+background:@background;
 padding:0px 5px;
 margin:5px;
 }

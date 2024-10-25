@@ -14,7 +14,7 @@ fi
 
 #se $1 igual a altab
 if [ "$1" = "altab" ]; then
-	janela=$(hyprctl clients | sed '/class/!d' | cut -d ':' -f 2 | wofi -S dmenu --columns=4 --height=150 --width=500 --location=0 --hide_search=true --prompt=Apps)
+	janela=$(hyprctl clients | sed '/class/!d' | cut -d ':' -f 2 | wofi -S dmenu --columns=2 --height=150 --width=500 --location=0 --prompt=Apps)
 	#se tem algo em $janela
 	if [ -n "$janela" ]; then
 		hyprctl dispatch focuswindow $janela
@@ -34,7 +34,7 @@ if [ "$1" = "temas" ]; then
 	config=/home/$(whoami)/.config/
 	if [ -z "$2" ]; then
 		cd $config/hypr/temas/
-		sh $config/hypr/menus $1 $(ls -d */ | sed 's/\///g' | wofi -d)
+		sh $config/hypr/scripts/menus $1 $(ls -d */ | sed 's/\///g' | wofi -d --width=200 --height=200)
 	else
 		cd $config/hypr/temas/$2
 		ln -r -s -f * $config

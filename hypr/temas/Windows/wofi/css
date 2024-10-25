@@ -25,30 +25,20 @@ font-weight: 600;
 font-size: 12.7px;
 }
 window{
-width:10px;
 background:  @bg_main;
 border-top: 1px solid @border_main;
 color: @content_main;
 }
-#input,#entry:selected{
+#entry,#entry:selected,#expander-box{
+background: @bg_active;
 padding:5px;
 margin:5px;
-}
-#input:focus,#entry:selected,#expander-box{
-/*SELECIONADO*/
-background: @bg_active;
-}
-#input,#entry{
-/*NÃO SELECIONADO*/
-min-width: 130px;
-margin-left: 2px;
-margin-right: 2px;
-padding-left: 8px;
-padding-right: 8px;
-color: white;
 transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+#entry{
+background:none;
+}
 #input{
-        display: none;
-        margin: -1000px 5px; 
+display: none;
+margin: -1000px 5px; 
 }
