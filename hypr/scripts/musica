@@ -1,15 +1,18 @@
 #!/bin/bash
-if [ "$(playerctl status)" = "Playing" ]; then
-ico="󰐊"
-fi
-if [ "$(playerctl status)" = "Paused" ]; then
-ico="󰏤"
-fi
+
 #se $1 não tiver vazio
 if [ -n "$1" ]; then
-	killall wofi
-	playerctl $1 $2
-	atual=$(playerctl metadata --format "{{ artist }} - {{ title }}")
-	volume=$(echo $( awk "BEGIN { print int($(playerctl volume)*100)}"))
-	echo -e "$ico $atual \n $volume % " | wofi -d --width=400 --height=80 --location=2 --sort-order=default -a 
+	playerctl $1 $2	
 fi
+if [ "$(playerctl status)" = "Playing" ]; then
+	ico="󰐊"
+fi
+if [ "$(playerctl status)" = "Paused" ]; then
+	ico="󰏤"
+fi
+artista=$(playerctl metadata --format "{{ artist }}")
+titulo=$(playerctl metadata --format "{{ title }}")
+album=$(playerctl metadata --format "{{ album }}")
+volume=$(echo $( awk "BEGIN { print int($(playerctl volume)*100)}"))
+duracao=$(playerctl metadata --format "{{ duration(mpris:length) }}")
+notify-send "$(echo -e "$ico $artista - $titulo\n\t $volume%\t󰀥 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000

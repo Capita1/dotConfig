@@ -12,6 +12,11 @@ if [ -z "$1" ]; then
 	wofi -S drun	
 fi
 
+#se $1 igual a area
+if [ "$1" = "area" ]; then
+	cliphist list | wofi --dmenu | cliphist decode | wl-copy
+fi
+
 #se $1 igual a altab
 if [ "$1" = "altab" ]; then
 	janela=$(hyprctl clients | sed '/class/!d' | cut -d ':' -f 2 | wofi -S dmenu --columns=2 --height=150 --width=500 --location=0 --prompt=Apps)

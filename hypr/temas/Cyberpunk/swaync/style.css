@@ -6,7 +6,7 @@
 @define-color boxbackground #12101d;
 
 *{
-font-family:Symbols Nerd Font Mono,Play;
+font-family:"Symbols Nerd Font Mono","Play";
 font-size:15px;
 color:@text;
 border-radius:0px;
