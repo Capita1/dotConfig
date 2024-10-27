@@ -1,21 +1,14 @@
 //CYBERPUNK
 [{
-	"width":35,
+	"height": 33,
 	"output":["HDMI-A-1"],
-	"name": "bottom",
 	"layer": "top",
 	"margin": "0px",
-	"position": "left",
+	"position": "top",
 	"modules-left": [], 
 	"modules-center":["hyprland/workspaces"],
 	"modules-right": [],	
 	"include": "~/.config/hypr/temas/icons.json",
-	"hyprland/workspaces": {
-		"on-scroll-up": "hyprctl dispatch workspace r-1",
-		"on-scroll-down": "hyprctl dispatch workspace r+1",
-		"format-window-separator": "\n",
-		"format": " {icon}\n{windows}",
-	},
 },
 {
 	"output":["eDP-1"],

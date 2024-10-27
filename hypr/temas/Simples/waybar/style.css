@@ -5,32 +5,20 @@
 *{
 font-family:Blender Pro Bold,Symbols Nerd Font Mono;
 font-size:15px;
+min-height:0px;
+min-width:0px;
 transition:none;
-min-height: 0;
-min-width: 0;
 }
-
-window#waybar{
-background:@background;
-border:solid @border 1px;
-border-radius:20px;
-}
-.modules-left,.modules-center,.modules-right{
+window#waybar,#custom-menu,#cpu,#memory,#disk,#tray,#custom-notification,#network,#pulseaudio,#backlight,#battery,#clock,tooltip,#workspaces button.active{
 border:1px solid @border;
-border-radius:20px;
-background:@background;
-padding:0px;
-}
-#custom-menu,#cpu,#memory,#disk,#tray,#custom-notification,#network,#pulseaudio,#backlight,#battery,#clock,tooltip,#workspaces button.active{
-border:0.5px solid @border;
 border-radius:20px;
 padding:6px;
 margin:0px 3px;
 color:@text;
 background:@background;
+min-width:18px;
 }
-#custom-menu,#workspaces button.active,#tray,#network,#disk,#workspaces button.active,#clock,#workspaces,#workspaces button {
-transition:none;
+#custom-menu,#workspaces,#workspaces button,#workspaces button.active,#clock{
 margin:0px;
 }
 #workspaces button.urgent {
@@ -38,8 +26,8 @@ color:yellow;
 }
 #workspaces,#workspaces button {
 color:@unfocused;
+
 }
-#custom-nada{
-border-radius:20px;
-padding:10px;
+.modules-center{
+padding:0px;
 }

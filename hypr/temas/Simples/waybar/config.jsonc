@@ -71,8 +71,8 @@
 	"custom/menu": {
 		"format": "",
 		"justify": "center",
-		"on-click": "sh ~/.config/hypr/menus",
-		"on-click-right": "sh ~/.config/hypr/menus temas Simples",
+		"on-click": "sh ~/.config/hypr/scripts/menus",
+		"on-click-right": "sh ~/.config/hypr/scripts/menus temas Simples",
 		"tooltip":false,
 	},
 	"backlight": {

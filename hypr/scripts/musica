@@ -5,14 +5,14 @@ if [ -n "$1" ]; then
 	playerctl $1 $2	
 fi
 if [ "$(playerctl status)" = "Playing" ]; then
-	ico="󰐊"
+	ico="󰏤"
 fi
 if [ "$(playerctl status)" = "Paused" ]; then
-	ico="󰏤"
+	ico="󰐊"
 fi
 artista=$(playerctl metadata --format "{{ artist }}")
 titulo=$(playerctl metadata --format "{{ title }}")
 album=$(playerctl metadata --format "{{ album }}")
 volume=$(echo $( awk "BEGIN { print int($(playerctl volume)*100)}"))
 duracao=$(playerctl metadata --format "{{ duration(mpris:length) }}")
-notify-send "$(echo -e "$ico $artista - $titulo\n\t $volume%\t󰀥 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000
+notify-send -e "$(echo -e "$ico $artista - $titulo\n\t $volume%\t󰀥 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000
