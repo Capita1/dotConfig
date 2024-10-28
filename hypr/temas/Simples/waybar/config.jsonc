@@ -72,7 +72,7 @@
 		"format": "",
 		"justify": "center",
 		"on-click": "sh ~/.config/hypr/scripts/menus",
-		"on-click-right": "sh ~/.config/hypr/scripts/menus temas Simples",
+		"on-click-right": "wpaperctl next",
 		"tooltip":false,
 	},
 	"backlight": {

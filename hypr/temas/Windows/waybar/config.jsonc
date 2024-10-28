@@ -20,8 +20,8 @@
 	},
 	"custom/menu": {
 	"format": "",
-	"on-click": "sh /home/user/.config/hypr/menus",
-	"on-click-right": "sh /home/user/.config/hypr/menus temas Windows",
+	"on-click": "sh /home/user/.config/hypr/scripts/menus",
+	"on-click-right": "wpaperctl next",
 	"tooltip": false
 	},
 	"wlr/taskbar": {
