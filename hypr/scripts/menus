@@ -19,7 +19,7 @@ fi
 
 #se $1 igual a altab
 if [ "$1" = "altab" ]; then
-	janela=$(hyprctl clients | sed '/class/!d' | cut -d ':' -f 2 | wofi -S dmenu --columns=2 --height=150 --width=500 --location=0 --prompt=Apps)
+	janela=$(hyprctl clients | sed '/class/!d' | cut -d ':' -f 2 | wofi -d --columns=2 --height=100 --width=400 --location=0 --prompt=Apps)
 	#se tem algo em $janela
 	if [ -n "$janela" ]; then
 		hyprctl dispatch focuswindow $janela
@@ -28,23 +28,25 @@ fi
 
 #se $1 igual a logout
 if [ "$1" = "logout" ]; then
-	choice=$(echo -e "0: Sair 󰍃\n1: Desligar 󰐥\n2: Reiniciar 󰜉" | wofi -d | cut -d ':' -f 1)
+	choice=$(echo -e "0: Sair 󰍃\n1: Desligar 󰐥\n2: Reiniciar 󰜉" | wofi -d --width=200 --height=150 | cut -d ':' -f 1)
 	case "$choice" in
 	  0) killall Hyprland & ;;
 	  1) systemctl poweroff & ;;
 	  2) systemctl reboot & ;;
 	esac
 fi
+#se $1 igual a temas
 if [ "$1" = "temas" ]; then
 	config=/home/$(whoami)/.config/
-	if [ -z "$2" ]; then
-		cd $config/hypr/temas/
-		sh $config/hypr/scripts/menus $1 $(ls -d */ | sed 's/\///g' | wofi -d --width=200 --height=200)
-	else
+	#se tem algo em $2
+	if [ -n "$2" ]; then
 		cd $config/hypr/temas/$2
 		ln -r -s -f * $config
 		cp hypr/style.conf ../../
 		killall waybar ; killall wpaperd ; killall swaync
 		waybar & wpaperd -d & swaync
+	else
+		cd $config/hypr/temas/
+		sh $config/hypr/scripts/menus $1 $(ls -d */ | sed 's/\///g' | wofi -d --width=200 --height=200)
 	fi
 fi
