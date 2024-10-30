@@ -26,7 +26,10 @@ color:yellow;
 }
 #workspaces,#workspaces button {
 color:@unfocused;
-
+}
+#workspaces button:hover{
+border:1px solid @border;
+border-radius:20px;
 }
 .modules-center{
 padding:0px;

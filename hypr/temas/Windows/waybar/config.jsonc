@@ -19,7 +19,7 @@
 	"on-scroll-down": "hyprctl dispatch workspace r-1"
 	},
 	"custom/menu": {
-	"format": "",
+	"format": "\t",
 	"on-click": "sh /home/user/.config/hypr/scripts/menus",
 	"on-click-right": "wpaperctl next",
 	"tooltip": false
@@ -75,7 +75,7 @@
 	"pulseaudio": {
 		"max-volume": 150,
 		"scroll-step": 10,
-		"format": "{icon}",
+		"format": "{icon}",
 		"tooltip-format": "{volume}%",
 		"format-icons": {
 			"format-muted": " ",

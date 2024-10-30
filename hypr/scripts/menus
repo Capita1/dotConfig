@@ -1,4 +1,5 @@
 #!/bin/bash
+opcoes="apps\nbaixar\narea\naltab\nlogout\ntemas"
 
 #se wofi estiver rodando
 if pgrep -x "wofi" > /dev/null
@@ -9,7 +10,32 @@ fi
 
 #se $1 estiver vazio
 if [ -z "$1" ]; then
+	sh ~/.config/hypr/scripts/menus $(echo -e $opcoes | wofi -d --width=200 --height=150)  
+fi
+
+#se $1 igual a apps
+if [ "$1" = "apps" ]; then
 	wofi -S drun	
+fi
+#se $1 igual a baixar
+if [ "$1" = "baixar" ]; then
+	if [ -z "$2" ]; then
+	tipo=$(echo -e "audio\nvideo" | wofi -d --width=200 --height=150 ) 
+	else
+	tipo=$2
+	fi
+	if [ -z "$3" ]; then
+	url=$(cliphist list | wofi -d | cliphist decode)
+	else
+	url=$3
+	fi
+
+	if [ "$tipo" = "audio" ]; then
+		yt-dlp -f 'bestaudio' --extract-audio --audio-format mp3 --embed-metadata "$url"
+	fi
+	if [ "$tipo" = "video" ]; then
+		yt-dlp -f 'bestvideo+bestaudio/bestvideo+bestaudio' --merge-output-format mp4 --embed-metadata "$url"
+	fi
 fi
 
 #se $1 igual a area
