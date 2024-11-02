@@ -25,7 +25,7 @@
 	"tooltip": false
 	},
 	"wlr/taskbar": {
-		"format": "{icon}",
+		"format": "{icon}{title:.17}",
 		"icon-size": 28,
 		"spacing": 3,
 		"on-click-middle": "close",

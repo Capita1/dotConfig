@@ -1,5 +1,5 @@
 #!/bin/bash
-opcoes="apps\nbaixar\narea\naltab\nlogout\ntemas"
+opcoes="apps\nbaixar\narea\ntela\naltab\nlogout\ntemas"
 
 #se wofi estiver rodando
 if pgrep -x "wofi" > /dev/null
@@ -41,6 +41,16 @@ fi
 #se $1 igual a area
 if [ "$1" = "area" ]; then
 	cliphist list | wofi --dmenu | cliphist decode | wl-copy
+fi
+
+#se $1 igual a tela
+if [ "$1" = "tela" ]; then
+	mon1=$(hyprctl monitors | grep -e 'availableModes' | cut -d ':' -f 2 | tr " " "\n" | wofi -d)
+	if [ -n "$mon1" ]; then 
+		echo "monitor=eDP-1,$mon1,0x0,1" | cat > ~/.config/hypr/edp.conf
+	else
+		exit 1	
+	fi
 fi
 
 #se $1 igual a altab

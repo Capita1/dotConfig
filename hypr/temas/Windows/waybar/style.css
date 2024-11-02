@@ -53,6 +53,7 @@ border-right:2px solid @border_main;
 margin-right:4px;
 }
 #taskbar button.active ,#taskbar button:hover,#taskbar button{
+min-width: 130px;
 border-bottom: 3px solid white;
 margin:0px 5px;
 padding:0px 10px;
