@@ -1,18 +1,20 @@
 #!/bin/bash
-
+player='playerctl --player vlc'
 #se $1 não tiver vazio
 if [ -n "$1" ]; then
-	playerctl $1 $2	
+	$player $1 $2	
 fi
-if [ "$(playerctl status)" = "Playing" ]; then
+if [ "$($player status)" = "Playing" ]; then
 	ico="󰏤"
 fi
-if [ "$(playerctl status)" = "Paused" ]; then
+if [ "$($player status)" = "Paused" ]; then
 	ico="󰐊"
 fi
-artista=$(playerctl metadata --format "{{ artist }}")
-titulo=$(playerctl metadata --format "{{ title }}")
-album=$(playerctl metadata --format "{{ album }}")
-volume=$(echo $( awk "BEGIN { print int($(playerctl volume)*100)}"))
-duracao=$(playerctl metadata --format "{{ duration(mpris:length) }}")
+artista=$($player metadata --format "{{ artist }}")
+titulo=$($player metadata --format "{{ title }}")
+album=$($player metadata --format "{{ album }}")
+volume=$(echo $( awk "BEGIN { print int($($player volume)*100)}"))
+duracao=$($player metadata --format "{{ duration(mpris:length) }}")
 notify-send -e "$(echo -e "$ico $artista - $titulo\n\t $volume%\t󰀥 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000
+clear
+echo -e "$ico $artista - $titulo\n $volume%\t󰀥 $album\t󱎫 $duracao"

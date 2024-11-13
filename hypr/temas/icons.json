@@ -27,6 +27,7 @@
 		"class<org.telegram.desktop>": "",
 		"class<thorium-browser>": "",
 		"title<.*torrent.*>": "󱑤",
+		"class<scrcpy>": "",
 		"class<com.obsproject.Studio>": "󰑋",
 		//Multimidia
 		"class<mpv>": "",

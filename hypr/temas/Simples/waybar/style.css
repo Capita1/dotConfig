@@ -18,7 +18,7 @@ color:@text;
 background:@background;
 min-width:18px;
 }
-#custom-menu,#workspaces,#workspaces button,#workspaces button.active,#clock{
+#custom-menu,#workspaces,#workspaces button,#workspaces button.active,#clock,#tray{
 margin:0px;
 }
 #workspaces button.urgent {
