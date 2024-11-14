@@ -14,10 +14,10 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <table>
   <tr>
     <td align="center">
-      <a href="#" title="defina o título do link">
+      <a href="instagram.com/gabriel.h.p.leite" title="instagram">
         <img src="https://avatars.githubusercontent.com/u/145567743?v=4" width="100px;" alt="Foto minha"/><br>
         <sub>
-          <b>Gabriel Henrique Pereira Leite</b>
+          <b>Eu</b>
         </sub>
       </a>
     </td>
