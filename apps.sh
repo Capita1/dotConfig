@@ -6,8 +6,8 @@ sudo pacman -S --needed git base-devel flatpak
 #BAIXAR E INSTALAR PARU
 if ! [ -x "$(command -v paru)" ]; then
 	echo -e 'paru não instalado\nInstalando...' >&2
-	git clone https://aur.archlinux.org/paru.git 
-	cd paru
+	git clone https://aur.archlinux.org/paru-bin.git 
+	cd paru-bin
 	makepkg -si
 else
 	echo 'paru já instalado.' >&2
