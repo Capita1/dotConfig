@@ -26,7 +26,6 @@ echo "CLI apps"
 sudo pacman -S --needed neofetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard
 echo "AUR apps"
 paru -S librewolf-bin #navegador
-paru -S waydroid #android container
 
 flatpak install org.ferdium.Ferdium #client de apps de mensagem
 flatpak install org.onionshare.OnionShare #serviços onion
