@@ -28,6 +28,7 @@
 		"class<thorium-browser>": "",
 		"title<.*torrent.*>": "󱑤",
 		"class<scrcpy>": "",
+		"class<.*waydroid.*>": "",
 		"class<com.obsproject.Studio>": "󰑋",
 		//Multimidia
 		"class<mpv>": "",
