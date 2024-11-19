@@ -10,15 +10,15 @@ min-width:0px;
 transition:none;
 }
 window#waybar,#custom-menu,#cpu,#memory,#disk,#tray,#custom-notification,#network,#pulseaudio,#backlight,#battery,#clock,tooltip,#workspaces button.active,#workspaces button:hover{
+color:@text;
 border:1px solid @border;
 border-radius:20px;
 padding:6px;
 margin:0px 3px;
-color:@text;
 background:@background;
 min-width:18px;
 }
-#custom-menu,#clock,#tray{
+#custom-menu,#clock,#cpu{
 margin:0px;
 }
 #workspaces button.urgent {

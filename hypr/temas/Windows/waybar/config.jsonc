@@ -1,5 +1,6 @@
 //WINDOWS
 [{
+	"include": "~/.config/hypr/temas/default.json",
 	"output":["*"],
 	"layer": "top",
 	"position": "bottom",
@@ -12,17 +13,9 @@
 	"modules-left": ["custom/menu","wlr/taskbar"],
 	"modules-center": [],
 	"modules-right": ["tray","network","pulseaudio","language","clock","custom/notification"],
-	"hyprland/workspaces": {
-	"icon-size": 32,
-	"spacing": 16,
-	"on-scroll-up": "hyprctl dispatch workspace r+1",
-	"on-scroll-down": "hyprctl dispatch workspace r-1"
-	},
 	"custom/menu": {
-	"format": "\t",
-	"on-click": "sh /home/user/.config/hypr/scripts/menus",
-	"on-click-right": "wpaperctl next",
-	"tooltip": false
+		"format": "\t",
+		"on-click": "sh /home/user/.config/hypr/scripts/menus apps",
 	},
 	"wlr/taskbar": {
 		"format": "{icon}{title:.17}",
@@ -63,33 +56,4 @@
 			"on-scroll-down": "shift_down"
 		}
 	},
-	"network": {
-		"on-click": "kitty nmtui",
-		"format-wifi": "",
-		"format-ethernet":"",
-		"format-disconnected": "",
-		"tooltip-format": "{ipaddr}",
-		"tooltip-format-wifi": "{essid} ({signalStrength}%) | {ipaddr}",
-		"tooltip-format-ethernet": "{ifname} ether | {ipaddr}",
-	},
-	"pulseaudio": {
-		"max-volume": 150,
-		"scroll-step": 10,
-		"format": "{icon}",
-		"tooltip-format": "{volume}%",
-		"format-icons": {
-			"format-muted": " ",
-			"default": [" "," "," "]
-		},
-		"on-click": "pavucontrol"
-	},
-	"hyprland/workspaces": {
-		"on-scroll-up": "hyprctl dispatch workspace r+1",
-		"on-scroll-down": "hyprctl dispatch workspace r-1",
-		"format": "{windows}",
-		"tooltip": true,
-		"window-rewrite-default": "[]",
-		"window-rewrite":{},
-	},
-	"include": "~/.config/hypr/temas/notification.json",
 }]
