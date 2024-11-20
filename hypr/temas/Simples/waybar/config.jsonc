@@ -24,7 +24,10 @@
 	"margin-top": 5,
 	"margin-left": 5,
 	"margin-right": 5,
-	"modules-left":["cpu","memory","disk"],
-	"modules-center":["hyprland/workspaces"],
-	"modules-right": ["tray","backlight","battery","clock"],	
+	"modules-left":["custom/menu","hyprland/workspaces"],
+	"modules-center":[],
+	"modules-right": ["backlight","battery","cpu","memory","disk","clock"],	
+	"custom/menu": {
+		"format": "2",
+	},
 }]

@@ -29,6 +29,7 @@
 	"exec":"sh ~/.config/hypr/scripts/musica bar",
 	"on-click": "playerctl --player vlc play-pause",
 	"on-click-right": "kitty -o font_size=1 cava",
+	"on-click-middle": "playerctl --player vlc next",
 	"tooltip":false,
 	"interval": 1,
 },		
