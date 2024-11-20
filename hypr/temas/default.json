@@ -28,7 +28,7 @@
 	"format": "{}",
 	"exec":"sh ~/.config/hypr/scripts/musica bar",
 	"on-click": "playerctl --player vlc play-pause",
-	"on-click-right": "kitty cava",
+	"on-click-right": "kitty -o font_size=1 cava",
 	"tooltip":false,
 	"interval": 1,
 },		
