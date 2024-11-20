@@ -23,7 +23,7 @@ sudo pacman -S --needed libreoffice-still neovide neovim mousepad zathura zathur
 echo "Midia"
 sudo pacman -S --needed feh vlc mpv playerctl
 echo "CLI apps"
-sudo pacman -S --needed neofetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard
+sudo pacman -S --needed neofetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard tealdeer
 echo "AUR apps"
 paru -S librewolf-bin #navegador
 

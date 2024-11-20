@@ -31,10 +31,12 @@ border-bottom:3px solid @text;
 #workspaces button,#workspaces button:hover{
 color:@unfocused;
 border-bottom:3px solid @unfocused;
+min-width:20px;
 }
 #workspaces button.urgent {
 color: @yellow;
 }
 #custom-music{
 color:@text;
+margin:5px;
 }

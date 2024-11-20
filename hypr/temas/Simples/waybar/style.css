@@ -1,15 +1,16 @@
+/*SIMPLES*/
 @define-color unfocused rgba(255,255,255,0.5);
 @define-color text white;
 @define-color border white;
 @define-color background rgba(0,0,0,0.5);
 *{
-font-family:Blender Pro Bold,Symbols Nerd Font Mono;
+font-family:Symbols Nerd Font Mono;
 font-size:15px;
 min-height:0px;
 min-width:0px;
 transition:none;
 }
-window#waybar,#custom-menu,#cpu,#memory,#disk,#tray,#custom-notification,#network,#pulseaudio,#backlight,#battery,#clock,tooltip,#workspaces button.active,#workspaces button:hover{
+tooltip,window#waybar,#custom-menu,#cpu,#memory,#disk,#tray,#custom-notification,#network,#pulseaudio,#backlight,#battery,#clock,#workspaces button.active,#workspaces button,#workspaces button:hover{
 color:@text;
 border:1px solid @border;
 border-radius:20px;
@@ -24,6 +25,9 @@ margin:0px;
 #workspaces button.urgent {
 color:yellow;
 }
-#workspaces,#workspaces button,#workspaces button:hover{
+#workspaces button{
 color:@unfocused;
+min-width:18px;
+border:1px solid transparent;
+background:none;
 }
