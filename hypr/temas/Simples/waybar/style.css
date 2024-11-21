@@ -4,7 +4,7 @@
 @define-color border white;
 @define-color background rgba(0,0,0,0.5);
 *{
-font-family:Symbols Nerd Font Mono;
+font-family:Noto San JP,Symbols Nerd Font Mono;
 font-size:15px;
 min-height:0px;
 min-width:0px;

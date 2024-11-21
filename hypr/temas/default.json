@@ -26,12 +26,13 @@
 },
 "custom/music": {
 	"format": "{}",
-	"exec":"sh ~/.config/hypr/scripts/musica bar",
+	"exec":"sh ~/.config/hypr/scripts/musica",
 	"on-click": "playerctl --player vlc play-pause",
 	"on-click-right": "kitty -o font_size=1 cava",
 	"on-click-middle": "playerctl --player vlc next",
 	"tooltip":false,
 	"interval": 1,
+	"escape":true,//PERMITE &,$
 },		
 "battery": {
 	"states": {
@@ -145,11 +146,9 @@
 		"class<anki>": "",
 		"class<thunar>": "",
 		"class<librewolf>": "",
-		"class<org.telegram.desktop>": "",
 		"class<thorium-browser>": "",
 		"title<.*torrent.*>": "󱑤",
 		"class<scrcpy>": "",
-		"class<.*waydroid.*>": "",
 		"class<com.obsproject.Studio>": "󰑋",
 		//Multimidia
 		"class<mpv>": "",
@@ -168,6 +167,7 @@
 		"class<libreoffice>": "",
 		"class<libreoffice-calc>": "󰈛",
 		"class<libreoffice-writer>": "󰈬",
+		"class<libreoffice-impress>": "󰈧",
 		//Geral
 		"title<.*BTCUSD.*>":"",
 		"title<.*MONERO.*>":"",
