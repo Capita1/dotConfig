@@ -15,7 +15,7 @@ fi
 
 
 echo "Interface"			
-sudo pacman -S --needed hyprland swaync waybar wofi wpaperd
+sudo pacman -S --needed hyprland swaync waybar wofi wpaperd nwg-look
 echo "Apps"
 sudo pacman -S --needed kitty pavucontrol blueman thunar thunar-media-tags-plugin thunar-shares-plugin thunar-volman ffmpegthumbnailer tumbler
 echo "Texto"			

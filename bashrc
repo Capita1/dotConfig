@@ -1,5 +1,4 @@
-if pgrep -x "Hyprland" > /dev/null
-then
+	[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"	
 	## synth-shell-prompt.sh
 	if [ -f /home/user/.config/synth-shell/synth-shell-prompt.sh ] && [ -n "$( echo $- | grep i )" ]; then
 		source /home/user/.config/synth-shell/synth-shell-prompt.sh
@@ -28,6 +27,3 @@ then
 	  sleep 1
 	  gsettings set org.gnome.desktop.interface gtk-theme $theme
 	}
-else
-	Hyprland
-fi
