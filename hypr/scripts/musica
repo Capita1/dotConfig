@@ -1,10 +1,6 @@
 #!/bin/bash
 local="/home/$(whoami)/.config/hypr/scripts/musica"
 player='playerctl --player vlc'
-#se $1 não está vazio
-if [ -n "$1" ]; then
-	$player $1 $2	
-fi
 #se $1 igual select
 if [ "$1" = "select" ]; then
 	if [ -z "$2" ]; then #se $2 estiver vazio
@@ -22,6 +18,8 @@ if [ "$1" = "select" ]; then
 			killall vlc ; cvlc "$2" ; exit 0
 		fi
 	fi
+elif [ -n "$1" ]; then #se $1 não está vazio
+	$player $1 $2	
 fi
 if [ "$($player status)" = "Playing" ]; then
 	ico="󰏤"
@@ -40,4 +38,4 @@ if [ -z "$1" ]; then
 	exit 0
 fi
 notify-send -e "$(echo -e "$ico $artista - $titulo\n\t $volume%\t󰀥 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000
-clear & echo -e "$ico $artista - $titulo\n $volume%\t󰀥 $album\t󱎫 $duracao"
+clear ; echo -e "$ico $artista - $titulo\n $volume%\t󰀥 $album\t󱎫 $duracao"
