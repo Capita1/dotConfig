@@ -1,11 +1,28 @@
 #!/bin/bash
+local="/home/$(whoami)/.config/hypr/scripts/musica"
 player='playerctl --player vlc'
-
-#se $1 não tiver vazio
+#se $1 não está vazio
 if [ -n "$1" ]; then
 	$player $1 $2	
 fi
-
+#se $1 igual select
+if [ "$1" = "select" ]; then
+	if [ -z "$2" ]; then #se $2 estiver vazio
+		sh $local select ~/Músicas
+	else
+		if [ -d "$2" ]; then #se $2 é diretorio
+			killall wofi
+			choice=$(echo -e "0: 󰐊 Tocar\n1:  Abrir" | wofi -d | cut -d ':' -f 1)
+			case "$choice" in
+				0) killall vlc ; cvlc "$2" ; exit 0 ;;
+				1) cd "$2" ; sh $local select "$2/$(ls -h | wofi -d)" ; exit 0 ;;
+			esac
+		fi
+		if [ -f "$2" ]; then #se $2 é arquivo
+			killall vlc ; cvlc "$2" ; exit 0
+		fi
+	fi
+fi
 if [ "$($player status)" = "Playing" ]; then
 	ico="󰏤"
 fi
@@ -17,12 +34,10 @@ titulo=$($player metadata --format "{{ title }}")
 album=$($player metadata --format "{{ album }}")
 volume=$(echo $( awk "BEGIN { print int($($player volume)*100)}"))
 duracao=$($player metadata --format "{{ duration(mpris:length) }}")
-
+#se $1 está vazio
 if [ -z "$1" ]; then
 	echo -e "$ico $artista - $titulo"
 	exit 0
 fi
-
 notify-send -e "$(echo -e "$ico $artista - $titulo\n\t $volume%\t󰀥 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000
-clear
-echo -e "$ico $artista - $titulo\n $volume%\t󰀥 $album\t󱎫 $duracao"
+clear & echo -e "$ico $artista - $titulo\n $volume%\t󰀥 $album\t󱎫 $duracao"

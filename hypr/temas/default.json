@@ -30,6 +30,8 @@
 	"on-click": "playerctl --player vlc play-pause",
 	"on-click-right": "kitty -o font_size=1 cava",
 	"on-click-middle": "playerctl --player vlc next",
+	"on-scroll-up": "playerctl --player vlc volume 0.05+",
+	"on-scroll-down": "playerctl --player vlc volume 0.05-",
 	"tooltip":false,
 	"interval": 1,
 	"escape":true,//PERMITE &,$
