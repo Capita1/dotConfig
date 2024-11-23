@@ -4,12 +4,13 @@ player='playerctl --player vlc'
 #se $1 igual select
 if [ "$1" = "select" ]; then
 	if [ -z "$2" ]; then #se $2 estiver vazio
-		sh $local select ~/Músicas
+		sh $local select /home/$(whoami)/Músicas
 	else
 		if [ -d "$2" ]; then #se $2 é diretorio
 			killall wofi
-			choice=$(echo -e "0: 󰐊 Tocar\n1:  Abrir" | wofi -d | cut -d ':' -f 1)
-			case "$choice" in
+			atual=$(echo "$2" | cut -d "/" -f 4,5)
+			sele=$(echo -e "0: 󰐊 Tocar $atual\n1:  Abrir $atual" | wofi -d | cut -d ':' -f 1)
+			case "$sele" in
 				0) killall vlc ; cvlc "$2" ; exit 0 ;;
 				1) cd "$2" ; sh $local select "$2/$(ls -h | wofi -d)" ; exit 0 ;;
 			esac
