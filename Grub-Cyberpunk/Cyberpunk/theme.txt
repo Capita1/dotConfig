@@ -15,9 +15,9 @@
     width = 50%
     top = 22%
     height = 45%	
-    item_font = "DroidLogo Regular 17"
+    item_font = "Play Regular 17"
     item_color = "#fb3048"
-    selected_item_font = "DroidLogo Regular 17"
+    selected_item_font = "Play Regular 17"
     selected_item_color = "#74d6cf"
     icon_width = 16
     icon_height = 16
