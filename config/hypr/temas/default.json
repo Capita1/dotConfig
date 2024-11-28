@@ -167,6 +167,7 @@
 		//Texto
 		"class<kitty> title<.*nvim.*>": "",
 		"class<mousepad>": "",
+		"class<obsidian>": "",
 		"class<neovide>": "",
 		"class<org.pwmt.zathura>": "",
 		"class<libreoffice>": "",
