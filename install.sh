@@ -1,7 +1,16 @@
 #!/bin/bash
 echo "Basico"
 sudo pacman -Syu #atualizar
-sudo pacman -S --needed git base-devel flatpak
+sudo pacman -S --needed base-devel flatpak
+
+if [ "$(pwd)" = "/home/$(whoami)/.config/dotConfig" ]; then
+	echo "Links"	
+	cp -r config/hypr/ ../
+	ln -rsf config/* ../
+	ln -rsf config/hypr/temas/Simples/* ~/.config/
+else
+	cd ~/.config/dotConfig 
+fi
 
 #BAIXAR E INSTALAR PARU
 if ! [ -x "$(command -v paru)" ]; then
@@ -12,38 +21,26 @@ if ! [ -x "$(command -v paru)" ]; then
 else
 	echo 'paru já instalado.' >&2
 fi
-if [ "$(pwd)" = "/home/$(whoami)/.config/dotConfig" ]; then
-echo "Links"	
-cp -r config/hypr/ ../
-ln -rsf config/* ../
-else
-echo "Não é .config/dotConfig"
-fi
+cd ~/.config/dotConfig 
 
 echo "Configs"	
-sudo rm ~/.bashrc & sudo ln -rsf bashrc ~/.bashrc
-sudo rm ~/.profile & sudo ln -rsf profile ~/.profile
-sudo rm /etc/hosts & sudo ln -rsf hosts /etc/
+sudo rm ~/.bashrc ; sudo ln -rsf bashrc ~/.bashrc
+sudo rm ~/.profile ; sudo ln -rsf profile ~/.profile
+sudo rm /etc/hosts ; sudo ln -rsf hosts /etc/
+
+######
+#APPS#
+######
 
 echo "Interface"			
 sudo pacman -S --needed hyprland swaync waybar wofi wpaperd nwg-look
 echo "Apps"
 sudo pacman -S --needed kitty pavucontrol blueman thunar thunar-media-tags-plugin thunar-shares-plugin thunar-volman ffmpegthumbnailer tumbler
 echo "Texto"			
-sudo pacman -S --needed libreoffice-still neovide neovim mousepad zathura zathura-pdf-mupdf ttf-terminus-nerd adobe-source-code-pro-fonts
+sudo pacman -S --needed libreoffice-still neovide neovim mousepad zathura zathura-pdf-mupdf 
 echo "Midia"
 sudo pacman -S --needed feh vlc mpv playerctl
 echo "CLI apps"
-sudo pacman -S --needed neofetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard tealdeer
-
-flatpak install org.ferdium.Ferdium #client de apps de mensagem
-flatpak install org.onionshare.OnionShare #serviços onion
-flatpak install	com.stremio.Stremio #stremio
-flatpak install	io.github.seadve.Mousai #reconhecedor de musica
-flatpak install io.gitlab.adhami3310.Converter #conversor de imagens
-flatpak install fr.handbrake.ghb #conversor de videos
-
-echo "Aplicando tema"
-cd config/hypr/temas/Simples
-ln -rsf * ~/.config/
-cp hypr/style.conf ~/.config/hypr/
+sudo pacman -S --needed neofetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard tealdeer unzip
+echo "Fontes"
+sudo pacman -S --needed ttf-nerd-fonts-symbols-mono ttf-terminus-nerd adobe-source-code-pro-fonts
