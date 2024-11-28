@@ -77,7 +77,7 @@ if [ "$1" = "temas" ]; then
 	#se tem algo em $2
 	if [ -n "$2" ]; then
 		cd $config/hypr/temas/$2
-		ln -r -s -f * $config
+		ln -rsf * $config
 		cp hypr/style.conf ../../
 		killall waybar ; killall wpaperd ; killall swaync
 		waybar & wpaperd -d & swaync

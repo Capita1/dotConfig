@@ -41,3 +41,8 @@ flatpak install	com.stremio.Stremio #stremio
 flatpak install	io.github.seadve.Mousai #reconhecedor de musica
 flatpak install io.gitlab.adhami3310.Converter #conversor de imagens
 flatpak install fr.handbrake.ghb #conversor de videos
+
+echo "Aplicando tema"
+cd config/hypr/temas/Simples
+ln -rsf * ~/.config
+cp hypr/style.conf ~/.config/hypr/
