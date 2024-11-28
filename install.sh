@@ -12,7 +12,17 @@ if ! [ -x "$(command -v paru)" ]; then
 else
 	echo 'paru já instalado.' >&2
 fi
+if [ "$(pwd)" = "/home/$(whoami)/.config/dotConfig" ]; then
+echo "Links"	
+ln -rsf * ../
+cp -r hypr/ ../
+else
+echo "Não é .config/dotConfig"
+fi
 
+echo "Configs"	
+sudo ln -rsf bashrc ~/.bashrc
+sudo ln -rsf hosts /etc/
 
 echo "Interface"			
 sudo pacman -S --needed hyprland swaync waybar wofi wpaperd nwg-look
@@ -24,8 +34,6 @@ echo "Midia"
 sudo pacman -S --needed feh vlc mpv playerctl
 echo "CLI apps"
 sudo pacman -S --needed neofetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard tealdeer
-echo "AUR apps"
-paru -S librewolf-bin #navegador
 
 flatpak install org.ferdium.Ferdium #client de apps de mensagem
 flatpak install org.onionshare.OnionShare #serviços onion

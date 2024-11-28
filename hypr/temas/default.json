@@ -151,6 +151,7 @@
 		"class<thunar>": "",
 		"class<librewolf>": "",
 		"class<thorium-browser>": "",
+		"class<zen-alpha>": "",
 		"title<.*torrent.*>": "󱑤",
 		"class<scrcpy>": "",
 		"class<com.obsproject.Studio>": "󰑋",
