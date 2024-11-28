@@ -14,8 +14,8 @@ else
 fi
 if [ "$(pwd)" = "/home/$(whoami)/.config/dotConfig" ]; then
 echo "Links"	
-cp -r hypr/ ../
-ln -rsf * ../
+cp -r config/hypr/ ../
+ln -rsf config/* ../
 else
 echo "Não é .config/dotConfig"
 fi
@@ -34,8 +34,6 @@ echo "Midia"
 sudo pacman -S --needed feh vlc mpv playerctl
 echo "CLI apps"
 sudo pacman -S --needed neofetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard tealdeer
-
-sudo sh ~/.config/hypr/scripts/menus temas simples #ativar tema
 
 flatpak install org.ferdium.Ferdium #client de apps de mensagem
 flatpak install org.onionshare.OnionShare #serviços onion
