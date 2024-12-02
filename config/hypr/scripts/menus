@@ -29,11 +29,12 @@ if [ "$1" = "baixar" ]; then
 	else
 	url=$3
 	fi
-	cd ~/Músicas
 	if [ "$tipo" = "audio" ]; then
+		cd ~/Músicas
 		yt-dlp -f 'bestaudio' --extract-audio --audio-format mp3 --embed-metadata "$url"
 	fi
 	if [ "$tipo" = "video" ]; then
+		cd ~/Videos
 		yt-dlp -f 'bestvideo+bestaudio/bestvideo+bestaudio' --merge-output-format mp4 --embed-metadata "$url"
 	fi
 fi
