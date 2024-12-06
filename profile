@@ -1,4 +1,4 @@
-export GTK_THEME=Adwaita:dark
+#!/bin/bash
 if pgrep -x "Hyprland" > /dev/null ; then
 	echo "Σ"
 else
