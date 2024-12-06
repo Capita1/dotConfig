@@ -8,10 +8,10 @@ if [ "$1" = "select" ]; then
 	else
 		if [ -d "$2" ]; then #se $2 é diretorio
 			killall wofi
-			atual=$(echo "$2" | cut -d "/" -f 4,5)
+			atual=$(echo "$2" | cut -d "/" -f 5,6)
 			sele=$(echo -e "0: 󰐊 Tocar $atual\n1:  Abrir $atual" | wofi -d | cut -d ':' -f 1)
 			case "$sele" in
-				0) killall vlc ; cvlc "$2" ; exit 0 ;;
+				0) killall vlc ; cvlc -Z "$2" ; exit 0 ;;
 				1) cd "$2" ; sh $local select "$2/$(ls -h | wofi -d)" ; exit 0 ;;
 			esac
 		fi

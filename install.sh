@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Basico"
 sudo pacman -Syu #atualizar
-sudo pacman -S --needed base-devel flatpak
+sudo pacman -S --needed base-devel flatpak github-cli
 
 if [ "$(pwd)" = "/home/$(whoami)/.config/dotConfig" ]; then
 	echo "Links"	
@@ -11,17 +11,6 @@ if [ "$(pwd)" = "/home/$(whoami)/.config/dotConfig" ]; then
 else
 	cd ~/.config/dotConfig 
 fi
-
-#BAIXAR E INSTALAR PARU
-if ! [ -x "$(command -v paru)" ]; then
-	echo -e 'paru não instalado\nInstalando...' >&2
-	git clone https://aur.archlinux.org/paru-bin.git 
-	cd paru-bin
-	makepkg -si
-else
-	echo 'paru já instalado.' >&2
-fi
-cd ~/.config/dotConfig 
 
 echo "Configs"	
 sudo rm ~/.bashrc ; sudo ln -rsf bashrc ~/.bashrc
@@ -33,10 +22,10 @@ sudo rm /etc/hosts ; sudo ln -rsf hosts /etc/
 ######
 
 echo "Interface"			
-sudo pacman -S --needed hyprland swaync waybar wofi wpaperd nwg-look
+sudo pacman -S --needed hyprland swaync waybar wofi wpaperd nwg-look polkit-kde-agent xdg-desktop-portal-gtk xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-hyprland
 echo "Apps"
-sudo pacman -S --needed kitty pavucontrol blueman thunar thunar-media-tags-plugin thunar-shares-plugin thunar-volman ffmpegthumbnailer tumbler
-echo "Texto"			
+sudo pacman -S --needed kitty pavucontrol blueman thunar thunar-media-tags-plugin thunar-shares-plugin thunar-volman ffmpegthumbnailer tumbler gvfs gparted
+echo "Texto"
 sudo pacman -S --needed libreoffice-still neovide neovim mousepad zathura zathura-pdf-mupdf 
 echo "Midia"
 sudo pacman -S --needed feh vlc mpv playerctl
