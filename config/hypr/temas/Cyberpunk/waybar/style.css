@@ -6,6 +6,8 @@
 @define-color boxbackground rgba(18, 16, 29, 1);
 window#waybar{
 background:@background;
+transition-property: background-color;
+transition-duration: .5s;
 }
 *{
 font-family:Symbols Nerd Font Mono,Play;
@@ -15,8 +17,9 @@ min-height: 0;
 min-width: 0;
 border-radius:0px;
 }
-tooltip,#custom-menu,#cpu,#memory,#disk,#battery,#taskbar,#window,#tray,#network,#backlight,#pulseaudio,#clock,#custom-notification{
+tooltip,#cpu,#memory,#disk,#bluetooth,#battery,#taskbar,#window,#tray,#network,#backlight,#pulseaudio,#clock,#custom-notification,#custom-play,#custom-menu,#group-music{
 color:@text;
+min-width:15px;
 padding:3px 5px;
 margin:3px;
 background-image:linear-gradient(180deg, @border, @border),linear-gradient(225deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(135deg, transparent 9px, @border 10px, @border 1px, transparent 12px),linear-gradient(180deg, @boxbackground, @boxbackground),linear-gradient(135deg,@boxbackground, @boxbackground),linear-gradient(135deg, @boxbackground,@boxbackground 65%, transparent 75%);
@@ -25,18 +28,20 @@ background-size:calc(100% - 7px) 1px,1px 100%,100% 1px,1px calc(100% - 7px),10px
 background-repeat: no-repeat;
 }
 #workspaces button.active{
-color:@text;
-border-bottom:3px solid @text;
+color:@border;
+border-bottom:3px solid @border;
+transition: all 0.2s linear;
 }
-#workspaces button,#workspaces button:hover{
+#workspaces button{
 color:@unfocused;
 border-bottom:3px solid @unfocused;
 min-width:20px;
+transition: all 1s linear;
 }
 #workspaces button.urgent {
 color: @yellow;
 }
 #custom-music{
 color:@text;
-margin:5px;
+margin:8px;
 }

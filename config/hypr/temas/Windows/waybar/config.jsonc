@@ -15,13 +15,14 @@
 	"modules-right": ["tray","network","pulseaudio","language","clock","custom/notification"],
 	"custom/menu": {
 		"format": "",
-		"on-click": "sh /home/user/.config/hypr/scripts/menus apps",
+		"on-click": "sh ~/.config/hypr/scripts/menus apps",
+		"on-click-right": "sh ~/.config/hypr/scripts/menus",
 	},
 	"custom/workspaces": {
 		"format": "",
 		"tooltip-format":"{}",
 		"exec":"hyprctl activeworkspace | cut -d ' ' -f 3",
-		"on-click": "sh /home/user/.config/hypr/scripts/menus altab",
+		"on-click": "sh ~/.config/hypr/scripts/menus altab",
 		"tooltip":true,
 		"interval": 1,
 		"escape":true,

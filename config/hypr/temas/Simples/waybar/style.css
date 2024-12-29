@@ -10,7 +10,7 @@ min-height:0px;
 min-width:0px;
 transition:none;
 }
-tooltip,window#waybar,#custom-menu,#cpu,#memory,#disk,#tray,#custom-notification,#network,#pulseaudio,#backlight,#battery,#clock,#workspaces button.active,#workspaces button,#workspaces button:hover{
+tooltip,window#waybar,#custom-menu,#cpu,#memory,#disk,#tray,#custom-notification,#network,#pulseaudio,#backlight,#battery,#clock,#workspaces button.active,#workspaces button{
 color:@text;
 border:1px solid @border;
 border-radius:20px;
@@ -19,15 +19,26 @@ margin:0px 3px;
 background:@background;
 min-width:18px;
 }
-#custom-menu,#clock,#cpu{
+#custom-menu,#clock{
 margin:0px;
+}
+#custom-music{
+margin:0px 8px;
 }
 #workspaces button.urgent {
 color:yellow;
+}
+#workspaces button:hover{
+color:@text;
+transition: all 0.5s linear;
 }
 #workspaces button{
 color:@unfocused;
 min-width:18px;
 border:1px solid transparent;
 background:none;
+transition: all 0.5s linear;
+}
+#workspaces button.active{
+transition: all 0.2s linear;
 }

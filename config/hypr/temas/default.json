@@ -1,4 +1,93 @@
 {
+"group/hardware": {
+	"orientation": "inherit",
+	"drawer": {
+		"transition-duration": 300,
+		"children-class": "not-memory",
+		"transition-left-to-right": true
+	},
+	"modules": ["custom/menu","cpu","memory","disk","backlight","bluetooth","battery",]
+},
+"group/music": {
+	"orientation": "inherit",
+	"drawer": {
+		"transition-duration": 300,
+		"children-class": "not-memory",
+		"transition-left-to-right": true
+	},
+	"modules": ["custom/play","custom/music"]
+},
+"custom/play": {
+	"format": "󰐑",
+	"justify": "center",
+	"on-click": "sh ~/.config/hypr/scripts/musica play-pause",
+	"on-click-right": "sh ~/.config/hypr/scripts/musica select",
+	"on-click-middle": "kitty -o font_size=1 cava",
+	"on-click-backward": "sh ~/.config/hypr/scripts/musica previous",
+	"on-click-forward": "sh ~/.config/hypr/scripts/musica next",
+	"on-scroll-up": "sh ~/.config/hypr/scripts/musica volume 0.05+",
+	"on-scroll-down": "sh ~/.config/hypr/scripts/musica volume 0.05-",
+	"tooltip":false,
+},
+"custom/music": {
+	"format": "{}",
+	"exec":"sh ~/.config/hypr/scripts/musica",
+	"on-click": "sh ~/.config/hypr/scripts/musica play-pause",
+	"tooltip":false,
+	"interval": 1,
+	"escape":true,//PERMITE &,$
+},
+"custom/notification": {
+	"tooltip": false,
+	"format": "{icon}",
+	"format-icons": {
+		"notification": "󱅫",
+		"none": "󰂚",
+		"dnd-notification": "󱅫",
+		"dnd-none": "󰂛",
+		"inhibited-notification": "󱅫",
+		"inhibited-none": "󰂚",
+		"dnd-inhibited-notification": "󱅫",
+		"dnd-inhibited-none": "󰂛"
+	},
+	"return-type": "json",
+	"exec-if": "which swaync-client",
+	"exec": "swaync-client -swb",
+	"on-click": "swaync-client -t -sw",
+	"on-click-right": "swaync-client -d -sw",
+	"escape": true
+},
+"backlight": {
+	"device": "acpi_video1",
+	"format": "󰍹 {icon}",
+	"tooltip-format":"{percent}%",
+	"format-icons": [
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	"scroll-step": 5
+},
+"bluetooth": {
+	"format": " {status}",
+	"format-disabled": "",
+	"format-off": "",
+	"interval": 30,
+	"on-click": "blueman-manager",
+	"format-no-controller": ""
+},
 "clock": {
 	"timezone": "America/Sao_Paulo",
 	"format": "󰥔 {:%H:%M}",
@@ -23,22 +112,9 @@
 		"on-scroll-up": "shift_up",
 		"on-scroll-down": "shift_down"
 	}
-},
-"custom/music": {
-	"format": "{}",
-	"exec":"sh ~/.config/hypr/scripts/musica",
-	"on-click": "playerctl --player vlc play-pause",
-	"on-click-right": "kitty -o font_size=1 cava",
-	"on-click-middle": "playerctl --player vlc next",
-	"on-scroll-up": "playerctl --player vlc volume 0.05+",
-	"on-scroll-down": "playerctl --player vlc volume 0.05-",
-	"tooltip":false,
-	"interval": 1,
-	"escape":true,//PERMITE &,$
-},		
+},	
 "battery": {
 	"states": {
-		// "good": 95,
 		"warning": 30,
 		"critical": 15
 	},
@@ -47,8 +123,6 @@
 	"format-charging": "󰂄",
 	"format-plugged": "󱐋",
 	"format-alt": "{icon}{time}",
-	// "format-good": "",
-	// "format-full": "",
 	"format-icons": ["", "", "", "", ""]
 },
 "custom/menu": {
@@ -57,12 +131,6 @@
 	"on-click": "sh ~/.config/hypr/scripts/menus",
 	"on-click-right": "wpaperctl next",
 	"tooltip":false,
-},
-"backlight": {
-	"device": "acpi_video1",
-	"format": "",
-	"tooltip-format":"{percent}%",
-	"scroll-step": 5,
 },
 "network": {
 	"on-click": "kitty nmtui",
@@ -102,26 +170,6 @@
 	"tooltip": true,
 	"unit": "GB",
 	"tooltip-format": "{free} de {total} Disponível"
-},
-"custom/notification": {
-	"tooltip": false,
-	"format": "{icon}",
-	"format-icons": {
-		"notification": "󱅫",
-		"none": "󰂚",
-		"dnd-notification": "󱅫",
-		"dnd-none": "󰂛",
-		"inhibited-notification": "󱅫",
-		"inhibited-none": "󰂚",
-		"dnd-inhibited-notification": "󱅫",
-		"dnd-inhibited-none": "󰂛"
-	},
-	"return-type": "json",
-	"exec-if": "which swaync-client",
-	"exec": "swaync-client -swb",
-	"on-click": "swaync-client -t -sw",
-	"on-click-right": "swaync-client -d -sw",
-	"escape": true
 },
 "hyprland/workspaces": {
 	"on-scroll-up": "hyprctl dispatch workspace r+1",
@@ -188,5 +236,9 @@
 		"title<.*youtube.*>": "󰗃",
 		"title<.*github.*>": "", 
 	},
+	"persistent-workspaces": {
+		"*": 5
+	}
 },
+
 }
