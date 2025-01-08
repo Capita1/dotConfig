@@ -1,5 +1,4 @@
 #!/bin/bash
-sh ~/.profile
 
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"	
 

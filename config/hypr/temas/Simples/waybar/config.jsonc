@@ -8,9 +8,9 @@
 	"margin-left": 5,
 	"margin-top": 5,
 	"margin-right": 5,
-	"modules-left":["custom/menu","cpu","memory","disk"],
+	"modules-left":["group/hardware","group/music"],
 	"modules-center":["hyprland/workspaces"],
-	"modules-right":["tray","custom/notification","network","pulseaudio","backlight","battery","clock"],
+	"modules-right":["tray","custom/notification","network","pulseaudio","clock"],
 	"custom/menu": {
 		"format": "󰣇",
 	},

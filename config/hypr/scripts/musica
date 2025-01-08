@@ -1,6 +1,12 @@
 #!/bin/bash
+
+player='playerctl --player=vlc'
 local="/home/$(whoami)/.config/hypr/scripts/musica"
-player='playerctl --player vlc'
+#se $1 igual player
+if [ "$1" = "player" ]; then
+	pla=$(echo -e "player='playerctl --player=$(playerctl --list-all | wofi -d )'")
+	sed -i "3s/.*/$pla/" $local
+fi
 #se $1 igual select
 if [ "$1" = "select" ]; then
 	if [ -z "$2" ]; then #se $2 estiver vazio

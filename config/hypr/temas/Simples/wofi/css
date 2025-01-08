@@ -15,7 +15,7 @@ border:1px solid @border;
 background:@background;
 }
 
-#entry,#entry:selected,#expander-box{
+#input,#entry,#entry:selected,#expander-box{
 color:@text;
 border:1px solid @border;
 border-radius:20px;
@@ -28,13 +28,13 @@ color:@text-unfocused;
 background:none;
 border:1px solid @none;
 }
-#input{
-display: none;
-margin: -1000px 5px; 
-}
 img,#img{
 margin:0px 10px;
 height: 5px;
 max-width: 10%;
 max-height: 10%
 }
+/*#input{
+display: none;
+margin: -1000px 5px; 
+}*/

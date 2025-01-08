@@ -10,7 +10,8 @@ min-height:0px;
 min-width:0px;
 transition:none;
 }
-tooltip,window#waybar,#custom-menu,#cpu,#memory,#disk,#tray,#custom-notification,#network,#pulseaudio,#backlight,#battery,#clock,#workspaces button.active,#workspaces button{
+
+tooltip,window#waybar,#cpu,#memory,#disk,#bluetooth,#backlight,#battery,#tray,#network,#pulseaudio,#clock,#workspaces button.active,#workspaces button,#custom-notification,#custom-play,#custom-menu,#group-music{
 color:@text;
 border:1px solid @border;
 border-radius:20px;
@@ -41,4 +42,7 @@ transition: all 0.5s linear;
 }
 #workspaces button.active{
 transition: all 0.2s linear;
+}
+#cpu,#memory,#disk,#backlight,#bluetooth,#battery{
+min-width:50px;
 }

@@ -17,8 +17,15 @@
 	},
 	"modules": ["custom/play","custom/music"]
 },
+"custom/menu": {
+	"format": "",
+	"justify": "center",
+	"on-click": "sh ~/.config/hypr/scripts/menus",
+	"on-click-right": "wpaperctl next",
+	"tooltip":false,
+},
 "custom/play": {
-	"format": "󰐑",
+	"format": "󰎇",
 	"justify": "center",
 	"on-click": "sh ~/.config/hypr/scripts/musica play-pause",
 	"on-click-right": "sh ~/.config/hypr/scripts/musica select",
@@ -33,6 +40,12 @@
 	"format": "{}",
 	"exec":"sh ~/.config/hypr/scripts/musica",
 	"on-click": "sh ~/.config/hypr/scripts/musica play-pause",
+	"on-click-right": "sh ~/.config/hypr/scripts/musica select",
+	"on-click-middle": "kitty -o font_size=1 cava",
+	"on-click-backward": "sh ~/.config/hypr/scripts/musica previous",
+	"on-click-forward": "sh ~/.config/hypr/scripts/musica next",
+	"on-scroll-up": "sh ~/.config/hypr/scripts/musica volume 0.05+",
+	"on-scroll-down": "sh ~/.config/hypr/scripts/musica volume 0.05-",
 	"tooltip":false,
 	"interval": 1,
 	"escape":true,//PERMITE &,$
@@ -81,12 +94,16 @@
 	"scroll-step": 5
 },
 "bluetooth": {
-	"format": " {status}",
-	"format-disabled": "",
-	"format-off": "",
+	"format": "{icon}",
+	"tooltip-format": "{status}",
 	"interval": 30,
-	"on-click": "blueman-manager",
-	"format-no-controller": ""
+	"on-click": "rfkill toggle bluetooth",
+	"on-click-right": "blueman-manager",
+	"format-icons":{
+		"on":"󰂯 ",
+		"disabled":"󰂯 ",
+		"no-controller":"󰂯 󱓒",
+	},
 },
 "clock": {
 	"timezone": "America/Sao_Paulo",
@@ -114,23 +131,22 @@
 	}
 },	
 "battery": {
-	"states": {
-		"warning": 30,
-		"critical": 15
-	},
-	"format": "{icon}",
+	"format": "󰂍 {icon}", 
 	"tooltip-format": "{capacity}%",
-	"format-charging": "󰂄",
-	"format-plugged": "󱐋",
-	"format-alt": "{icon}{time}",
-	"format-icons": ["", "", "", "", ""]
-},
-"custom/menu": {
-	"format": "",
-	"justify": "center",
-	"on-click": "sh ~/.config/hypr/scripts/menus",
-	"on-click-right": "wpaperctl next",
-	"tooltip":false,
+	"format-charging": "󰂄 {icon}",
+	"format-plugged": " {icon}",
+	"format-icons":[
+		"󰁺",
+		"󰁻",
+		"󰁼",
+		"󰁽",
+		"󰁾",
+		"󰁿",
+		"󰂀",
+		"󰂁",
+		"󰂂",
+		"󰁹"
+	]
 },
 "network": {
 	"on-click": "kitty nmtui",
@@ -172,6 +188,11 @@
 	"tooltip-format": "{free} de {total} Disponível"
 },
 "hyprland/workspaces": {
+	"persistent-workspaces": {
+		"*":[1,2,3,4,5],
+	},
+	"all-output": true,
+	"active-only": false,
 	"on-scroll-up": "hyprctl dispatch workspace r+1",
 	"on-scroll-down": "hyprctl dispatch workspace r-1",
 	"on-click-forward": "hyprctl dispatch workspace r+1",
@@ -236,9 +257,6 @@
 		"title<.*youtube.*>": "󰗃",
 		"title<.*github.*>": "", 
 	},
-	"persistent-workspaces": {
-		"*": 5
-	}
 },
 
 }

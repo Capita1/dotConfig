@@ -27,6 +27,9 @@ background-position:bottom left,top left,top right,top right,bottom right,top le
 background-size:calc(100% - 7px) 1px,1px 100%,100% 1px,1px calc(100% - 7px),10px 12px,calc(100% - 7px),10px calc(100% - 7px),10px 12px;
 background-repeat: no-repeat;
 }
+#cpu,#memory,#disk,#backlight,#bluetooth,#battery{
+min-width:50px;
+}
 #workspaces button.active{
 color:@border;
 border-bottom:3px solid @border;
