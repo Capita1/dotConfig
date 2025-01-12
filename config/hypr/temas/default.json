@@ -4,18 +4,18 @@
 	"drawer": {
 		"transition-duration": 300,
 		"children-class": "not-memory",
-		"transition-left-to-right": true
+		"transition-left-to-right": false
 	},
-	"modules": ["custom/menu","cpu","memory","disk","backlight","bluetooth","battery",]
+	"modules": ["battery","cpu","memory","disk","backlight","bluetooth",],
 },
 "group/music": {
 	"orientation": "inherit",
 	"drawer": {
 		"transition-duration": 300,
 		"children-class": "not-memory",
-		"transition-left-to-right": true
+		"transition-left-to-right": false,
 	},
-	"modules": ["custom/play","custom/music"]
+	"modules": ["custom/playing","custom/music","custom/previous","custom/next",]
 },
 "custom/menu": {
 	"format": "",
@@ -24,32 +24,46 @@
 	"on-click-right": "wpaperctl next",
 	"tooltip":false,
 },
-"custom/play": {
-	"format": "󰎇",
-	"justify": "center",
-	"on-click": "sh ~/.config/hypr/scripts/musica play-pause",
-	"on-click-right": "sh ~/.config/hypr/scripts/musica select",
-	"on-click-middle": "kitty -o font_size=1 cava",
-	"on-click-backward": "sh ~/.config/hypr/scripts/musica previous",
-	"on-click-forward": "sh ~/.config/hypr/scripts/musica next",
-	"on-scroll-up": "sh ~/.config/hypr/scripts/musica volume 0.05+",
-	"on-scroll-down": "sh ~/.config/hypr/scripts/musica volume 0.05-",
-	"tooltip":false,
-},
+//MUSICA
 "custom/music": {
 	"format": "{}",
-	"exec":"sh ~/.config/hypr/scripts/musica",
+	"justify": "center",
+	"exec":"sh ~/.config/hypr/scripts/musica tocando",
 	"on-click": "sh ~/.config/hypr/scripts/musica play-pause",
 	"on-click-right": "sh ~/.config/hypr/scripts/musica select",
 	"on-click-middle": "kitty -o font_size=1 cava",
-	"on-click-backward": "sh ~/.config/hypr/scripts/musica previous",
-	"on-click-forward": "sh ~/.config/hypr/scripts/musica next",
 	"on-scroll-up": "sh ~/.config/hypr/scripts/musica volume 0.05+",
 	"on-scroll-down": "sh ~/.config/hypr/scripts/musica volume 0.05-",
 	"tooltip":false,
 	"interval": 1,
-	"escape":true,//PERMITE &,$
 },
+"custom/playing": {
+	"format": "{}",
+	"return-type": "json",
+	"exec":"sh ~/.config/hypr/scripts/musica",
+	"on-click": "sh ~/.config/hypr/scripts/musica select",
+	"on-click-right": "kitty -o font_size=1 cava",
+	"on-scroll-up": "sh ~/.config/hypr/scripts/musica volume 0.05+",
+	"on-scroll-down": "sh ~/.config/hypr/scripts/musica volume 0.05-",
+	"interval": 1,
+	"tooltip":true,
+	"escape":true,
+},
+"custom/next": {
+	"format": "󰒭",
+	"justify": "center",
+	"on-click": "sh ~/.config/hypr/scripts/musica next",
+	"on-click-right": "wpaperctl next",
+	"tooltip":false,
+},
+"custom/previous": {
+	"format": "󰒮",
+	"justify": "center",
+	"on-click": "sh ~/.config/hypr/scripts/musica previous",
+	"on-click-right": "wpaperctl next",
+	"tooltip":false,
+},
+//FIM MUSICA
 "custom/notification": {
 	"tooltip": false,
 	"format": "{icon}",
@@ -102,7 +116,7 @@
 	"format-icons":{
 		"on":"󰂯 ",
 		"disabled":"󰂯 ",
-		"no-controller":"󰂯 󱓒",
+		"no-controller":"󰂯 󰘚",
 	},
 },
 "clock": {

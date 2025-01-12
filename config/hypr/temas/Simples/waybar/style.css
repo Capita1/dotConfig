@@ -11,7 +11,7 @@ min-width:0px;
 transition:none;
 }
 
-tooltip,window#waybar,#cpu,#memory,#disk,#bluetooth,#backlight,#battery,#tray,#network,#pulseaudio,#clock,#workspaces button.active,#workspaces button,#custom-notification,#custom-play,#custom-menu,#group-music{
+tooltip,window#waybar,#cpu,#memory,#disk,#bluetooth,#backlight,#battery,#tray,#network,#pulseaudio,#clock,#workspaces button.active,#workspaces button,#custom-notification,#custom-menu{
 color:@text;
 border:1px solid @border;
 border-radius:20px;
@@ -23,7 +23,7 @@ min-width:18px;
 #custom-menu,#clock{
 margin:0px;
 }
-#custom-music{
+#custom-music,#custom-previous,#custom-next,#custom-playing{
 margin:0px 8px;
 }
 #workspaces button.urgent {

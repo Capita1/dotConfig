@@ -1,8 +1,5 @@
-[eDP-1]
-path = "~/Imagens/Wallpapers/Jogos/16.CYBERPUNK.jpg"
-#duration="5m"
-mode="stretch"
 [HDMI-A-1]
-path = "~/Imagens/Wallpapers/Animes/13.CYBERPUNK EDGERUNNERS.jpg"
+#path = "~/Imagens/Wallpapers/Animes/13.CYBERPUNK EDGERUNNERS.jpg"
+path = "~/Imagens/Wallpapers/Jogos/16.CYBERPUNK.jpg"
 #duration="5m"
 mode="stretch"

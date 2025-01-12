@@ -39,10 +39,25 @@ titulo=$($player metadata --format "{{ title }}")
 album=$($player metadata --format "{{ album }}")
 volume=$(echo $( awk "BEGIN { print int($($player volume)*100)}"))
 duracao=$($player metadata --format "{{ duration(mpris:length) }}")
+#se $1 igual a tocando
+if [ "$1" = "tocando" ]; then
+	echo -e "$ico"
+	exit 0
+fi
+#se $1 igual a mais
+if [ "$1" = "mais" ]; then
+	text="$titulo\n$artista\n$album"
+	tooltip="󰕾 $volume%"
+	printf "{ \"text\": \"%s\", \"tooltip\": \"%s\", \"class\": \"%s\" }\n" \
+	       "$text" "$tooltip" 
+	exit 0
+fi
 #se $1 está vazio
 if [ -z "$1" ]; then
-	echo -e "$ico $artista - $titulo"
+	text="$titulo - $artista"
+	tooltip="󰕾 $volume%"
+	printf "{ \"text\": \"%s\", \"tooltip\": \"%s\", \"class\": \"%s\" }\n" \
+	       "$text" "$tooltip" 
 	exit 0
 fi
 notify-send -e "$(echo -e "$ico $artista - $titulo\n\t $volume%\t󰀥 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000
-clear ; echo -e "$ico $artista - $titulo\n $volume%\t󰀥 $album\t󱎫 $duracao"

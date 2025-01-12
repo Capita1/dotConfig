@@ -17,7 +17,7 @@ min-height: 0;
 min-width: 0;
 border-radius:0px;
 }
-tooltip,#cpu,#memory,#disk,#bluetooth,#battery,#taskbar,#window,#tray,#network,#backlight,#pulseaudio,#clock,#custom-notification,#custom-play,#custom-menu,#group-music{
+tooltip,#cpu,#memory,#disk,#bluetooth,#battery,#taskbar,#window,#tray,#network,#backlight,#pulseaudio,#clock,#custom-notification,#custom-menu{
 color:@text;
 min-width:15px;
 padding:3px 5px;
@@ -44,7 +44,7 @@ transition: all 1s linear;
 #workspaces button.urgent {
 color: @yellow;
 }
-#custom-music{
+#custom-music,#custom-previous,#custom-next,#custom-playing{
 color:@text;
 margin:8px;
 }

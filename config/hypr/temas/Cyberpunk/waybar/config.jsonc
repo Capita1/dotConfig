@@ -6,11 +6,11 @@
 	"layer": "top",
 	"position":"top",
 	"margin": 0,
-	"modules-left":["group/hardware","group/music"],
+	"modules-left":["custom/menu","group/music"],
 	"modules-center":["hyprland/workspaces"],
 	"modules-right":["tray","custom/notification","network","pulseaudio","clock"],
 	"custom/menu": {
-		"format": "󰇅",
+		"format": "󰘨",
 	},
 },
 //TELA 2
