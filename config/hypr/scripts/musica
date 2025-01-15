@@ -12,17 +12,21 @@ if [ "$1" = "select" ]; then
 	if [ -z "$2" ]; then #se $2 estiver vazio
 		sh $local select /home/$(whoami)/Músicas
 	else
-		if [ -d "$2" ]; then #se $2 é diretorio
-			killall wofi
-			atual=$(echo "$2" | cut -d "/" -f 5,6)
-			sele=$(echo -e "0: 󰐊 Tocar $atual\n1:  Abrir $atual" | wofi -d | cut -d ':' -f 1)
-			case "$sele" in
-				0) killall vlc ; cvlc -Z "$2" ; exit 0 ;;
-				1) cd "$2" ; sh $local select "$2/$(ls -h | wofi -d)" ; exit 0 ;;
-			esac
+		killall wofi
+		cd "$2"
+		sele=$(echo -e "0: 󰐊 Tocar música \n1:  Tocar pasta\n2: 󰲸 Tocar playlist" | wofi -d | cut -d ':' -f 1)
+		case "$sele" in		
+			0) musica="$(find . -type f | cut -d '/' -f 2,3,4,5 | wofi -d)";;
+			1) musica="$(ls -h | wofi -d)";;
+			2) musica=".playlists/$(ls .playlists | wofi -d)";;
+		esac
+		if [ "$musica" = ".playlists/" ]; then
+			exit 0
 		fi
-		if [ -f "$2" ]; then #se $2 é arquivo
-			killall vlc ; cvlc "$2" ; exit 0
+		if [ -n "$musica" ]; then
+			killall vlc 
+			cvlc -Z "$musica"
+			exit 0
 		fi
 	fi
 elif [ -n "$1" ]; then #se $1 não está vazio
