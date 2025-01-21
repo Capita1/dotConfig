@@ -1,30 +1,35 @@
-//CYBERPUNK
+//json
 [{
+	"name": "cyberpunk",
 	"include": "~/.config/hypr/temas/default.json",
 	"output":["HDMI-A-1"],
 	"height": 33,
 	"layer": "top",
 	"position":"top",
 	"margin": 0,
-	"modules-left":["custom/menu","group/music"],
+	"modules-left":["custom/menu","cpu","memory","disk"],
 	"modules-center":["hyprland/workspaces"],
 	"modules-right":["tray","custom/notification","network","pulseaudio","clock"],
 	"custom/menu": {
 		"format": "󰘨",
 	},
 },
-//TELA 2
 {
+	"name": "musica",
 	"include": "~/.config/hypr/temas/default.json",
-	"output":["eDP-1"],
-	"height": 33,
-	"layer": "top",
-	"position":"top",
-	"margin": 0,
-	"modules-left": ["custom/menu","custom/music"], 
-	"modules-center":["hyprland/workspaces"],
-	"modules-right": ["tray","clock"],	
-	"custom/menu": {
-		"format": "2",
+	"output":["HDMI-A-1"],
+	"exclusive": false,
+	"width":10,
+	"layer": "bottom",
+	"position":"bottom",
+	"margin-bottom": 10,
+	"modules-center":["group/music"],
+	"group/music": {
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 200,
+			"transition-left-to-right": false,
+		},
+		"modules": ["custom/playing","custom/previous","custom/music","custom/next",]
 	},
 }]

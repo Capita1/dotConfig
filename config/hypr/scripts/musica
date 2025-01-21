@@ -14,11 +14,12 @@ if [ "$1" = "select" ]; then
 	else
 		killall wofi
 		cd "$2"
-		sele=$(echo -e "0: 󰐊 Tocar música \n1:  Tocar pasta\n2: 󰲸 Tocar playlist" | wofi -d | cut -d ':' -f 1)
+		sele=$(echo -e "0: 󰐊 Tocar música \n1:  Tocar pasta\n2: 󰲸 Tocar playlist\n3:  Tocar todas" | wofi -d | cut -d ':' -f 1)
 		case "$sele" in		
 			0) musica="$(find . -type f | cut -d '/' -f 2,3,4,5 | wofi -d)";;
 			1) musica="$(ls -h | wofi -d)";;
 			2) musica=".playlists/$(ls .playlists | wofi -d)";;
+			3) ln -rsf */* .todas/ ; musica=".todas";;
 		esac
 		if [ "$musica" = ".playlists/" ]; then
 			exit 0
@@ -30,7 +31,7 @@ if [ "$1" = "select" ]; then
 		fi
 	fi
 elif [ -n "$1" ]; then #se $1 não está vazio
-	$player $1 $2	
+	$player $1 $2
 fi
 if [ "$($player status)" = "Playing" ]; then
 	ico="󰏤"
@@ -58,7 +59,7 @@ if [ "$1" = "mais" ]; then
 fi
 #se $1 está vazio
 if [ -z "$1" ]; then
-	text="$titulo - $artista"
+	text="$titulo\n$artista"
 	tooltip="󰕾 $volume%"
 	printf "{ \"text\": \"%s\", \"tooltip\": \"%s\", \"class\": \"%s\" }\n" \
 	       "$text" "$tooltip" 

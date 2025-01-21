@@ -4,10 +4,13 @@
 @define-color border #48c3c5;
 @define-color background rgba(36, 15, 22, 0.7);
 @define-color boxbackground rgba(18, 16, 29, 1);
-window#waybar{
+window.cyberpunk#waybar{
 background:@background;
 transition-property: background-color;
 transition-duration: .5s;
+}
+window.musica#waybar{
+background:transparent;
 }
 *{
 font-family:Symbols Nerd Font Mono,Play;
@@ -17,10 +20,10 @@ min-height: 0;
 min-width: 0;
 border-radius:0px;
 }
-tooltip,#cpu,#memory,#disk,#bluetooth,#battery,#taskbar,#window,#tray,#network,#backlight,#pulseaudio,#clock,#custom-notification,#custom-menu{
+tooltip,#custom-menu,#cpu,#memory,#disk,#bluetooth,#battery,#taskbar,#window,#tray,#network,#backlight,#pulseaudio,#clock,#custom-notification{
 color:@text;
 min-width:15px;
-padding:3px 5px;
+padding:0px 7px;
 margin:3px;
 background-image:linear-gradient(180deg, @border, @border),linear-gradient(225deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(135deg, transparent 9px, @border 10px, @border 1px, transparent 12px),linear-gradient(180deg, @boxbackground, @boxbackground),linear-gradient(135deg,@boxbackground, @boxbackground),linear-gradient(135deg, @boxbackground,@boxbackground 65%, transparent 75%);
 background-position:bottom left,top left,top right,top right,bottom right,top left,top right,bottom right;
@@ -47,4 +50,6 @@ color: @yellow;
 #custom-music,#custom-previous,#custom-next,#custom-playing{
 color:@text;
 margin:8px;
+font-weight:bold;
+font-size:10px;
 }

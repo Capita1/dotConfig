@@ -10,38 +10,58 @@ min-height:0px;
 min-width:0px;
 transition:none;
 }
-
-tooltip,window#waybar,#cpu,#memory,#disk,#bluetooth,#backlight,#battery,#tray,#network,#pulseaudio,#clock,#workspaces button.active,#workspaces button,#custom-notification,#custom-menu{
-color:@text;
+.modules-left,.modules-center,.modules-right{
 border:1px solid @border;
+border-radius:20px;
+background:@background;
+}
+window.medidores#waybar *,.modules-center{
+border:transparent;
+}
+window#waybar{
+background:transparent;
+}
+#cpu,#memory,#disk,#bluetooth,#backlight,#battery,#tray,#network,#pulseaudio,#clock,#custom-notification,#custom-menu{
+color:@text;
 border-radius:20px;
 padding:6px;
 margin:0px 3px;
-background:@background;
 min-width:18px;
 }
-#custom-menu,#clock{
+#custom-menu,tooltip{
+background:@background;
 margin:0px;
+box-shadow: 0px 0px 1px 1px @border;
+border-radius:20px;
+min-width:20px;
+min-height:20px;
 }
 #custom-music,#custom-previous,#custom-next,#custom-playing{
 margin:0px 8px;
-}
-#workspaces button.urgent {
-color:yellow;
-}
-#workspaces button:hover{
-color:@text;
-transition: all 0.5s linear;
+font-weight:bold;
+font-size:10px;
 }
 #workspaces button{
+margin:0px 3px;
 color:@unfocused;
 min-width:18px;
 border:1px solid transparent;
 background:none;
 transition: all 0.5s linear;
+min-width:20px;
+min-height:20px;
 }
-#workspaces button.active{
+#workspaces button.active,#workspaces button:hover{
+color:@text;
+background:@background;
+border-radius:20px;
 transition: all 0.2s linear;
+}
+#workspaces button.urgent {
+color:yellow;
+}
+#workspaces button:hover{
+background:transparent;
 }
 #cpu,#memory,#disk,#backlight,#bluetooth,#battery{
 min-width:50px;
