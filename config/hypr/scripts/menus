@@ -5,12 +5,16 @@ opcoes="apps\nbaixar\narea\ntela\naltab\nlogout\ntemas"
 if pgrep -x "wofi" > /dev/null
 then
 	killall wofi
-	exit 1
+	exit 0
 fi
-
 #se $1 estiver vazio
 if [ -z "$1" ]; then
-	sh ~/.config/hypr/scripts/menus $(echo -e $opcoes | wofi -d --width=200 --height=150)  
+	escolha=$(echo -e $opcoes | wofi -d --width=200 --height=150)
+	if [ -z "$escolha" ]; then
+		exit 0
+	else	
+		sh ~/.config/hypr/scripts/menus $escolha
+	fi
 fi
 
 #se $1 igual a apps
@@ -67,14 +71,24 @@ fi
 if [ "$1" = "logout" ]; then
 	choice=$(echo -e "0: Sair 󰍃\n1: Desligar 󰐥\n2: Reiniciar 󰜉" | wofi -d --width=200 --height=150 | cut -d ':' -f 1)
 	case "$choice" in
-	  0) hyprctl dispatch exit & ;;
-	  1) systemctl poweroff & ;;
-	  2) systemctl reboot & ;;
+	  0) hyprctl dispatch exit ;;
+	  1) hyprctl dispatch exit & systemctl poweroff ;;
+	  2) hyprctl dispatch exit & systemctl reboot ;;
 	esac
 fi
 #se $1 igual a temas
 if [ "$1" = "temas" ]; then
 	config=/home/$(whoami)/.config/
+	#se não tem algo em $2
+	if [ -z "$2" ]; then
+		cd $config/hypr/temas/
+		tema=$(ls -d */ | sed 's/\///g' | wofi -d --width=200 --height=200)
+		#se não escolher tema
+		if [ -z "$tema" ]; then
+			exit 0
+		fi
+		sh $config/hypr/scripts/menus $1 "$tema"
+	fi
 	#se tem algo em $2
 	if [ -n "$2" ]; then
 		cd $config/hypr/temas/$2
@@ -82,8 +96,5 @@ if [ "$1" = "temas" ]; then
 		cp hypr/style.conf ../../
 		killall waybar ; killall wpaperd ; killall swaync
 		waybar & wpaperd -d & swaync
-	else
-		cd $config/hypr/temas/
-		sh $config/hypr/scripts/menus $1 $(ls -d */ | sed 's/\///g' | wofi -d --width=200 --height=200)
 	fi
 fi

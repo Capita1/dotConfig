@@ -14,12 +14,13 @@ if [ "$1" = "select" ]; then
 	else
 		killall wofi
 		cd "$2"
-		sele=$(echo -e "0: 󰐊 Tocar música \n1:  Tocar pasta\n2: 󰲸 Tocar playlist\n3:  Tocar todas" | wofi -d | cut -d ':' -f 1)
+		sele=$(echo -e "0:  Tocar música \n1: 󱧺 Tocar pasta\n2: 󰐑 Tocar playlist\n3: 󰴙 Tocar todas\n4: 󰥠 Mudar player" | wofi -d | cut -d ':' -f 1)
 		case "$sele" in		
 			0) musica="$(find . -type f | cut -d '/' -f 2,3,4,5 | wofi -d)";;
 			1) musica="$(ls -h | wofi -d)";;
 			2) musica=".playlists/$(ls .playlists | wofi -d)";;
 			3) ln -rsf */* .todas/ ; musica=".todas";;
+			4) $local player;;
 		esac
 		if [ "$musica" = ".playlists/" ]; then
 			exit 0
@@ -49,20 +50,21 @@ if [ "$1" = "tocando" ]; then
 	echo -e "$ico"
 	exit 0
 fi
+tooltip="󰕾 $volume%"
 #se $1 igual a mais
 if [ "$1" = "mais" ]; then
 	text="$titulo\n$artista\n$album"
-	tooltip="󰕾 $volume%"
-	printf "{ \"text\": \"%s\", \"tooltip\": \"%s\", \"class\": \"%s\" }\n" \
-	       "$text" "$tooltip" 
+	printf "{ \"text\": \"%s\", \"tooltip\": \"%s\",}\n" \
+	       "$text" "$tooltip" "aaa"
 	exit 0
 fi
 #se $1 está vazio
 if [ -z "$1" ]; then
 	text="$titulo\n$artista"
-	tooltip="󰕾 $volume%"
-	printf "{ \"text\": \"%s\", \"tooltip\": \"%s\", \"class\": \"%s\" }\n" \
-	       "$text" "$tooltip" 
+	printf "{ \"text\": \"%s\", \"tooltip\": \"%s\",}\n" \
+	       "$text" "$tooltip"
 	exit 0
 fi
-notify-send -e "$(echo -e "$ico $artista - $titulo\n\t $volume%\t󰀥 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000
+notify-send -e "$(echo -e "$ico $artista - $titulo\n$tooltip\t󰎅 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 1000
+sleep 1
+sh $local

@@ -25,18 +25,6 @@
 	"tooltip":false,
 },
 //MUSICA
-"custom/music": {
-	"format": "{}",
-	"justify": "center",
-	"exec":"sh ~/.config/hypr/scripts/musica tocando",
-	"on-click": "sh ~/.config/hypr/scripts/musica play-pause",
-	"on-click-right": "sh ~/.config/hypr/scripts/musica select",
-	"on-click-middle": "kitty -o font_size=1 cava",
-	"on-scroll-up": "sh ~/.config/hypr/scripts/musica volume 0.05+",
-	"on-scroll-down": "sh ~/.config/hypr/scripts/musica volume 0.05-",
-	"tooltip":false,
-	"interval": 1,
-},
 "custom/playing": {
 	"format": "{}",
 	"return-type": "json",
@@ -49,18 +37,24 @@
 	"tooltip":true,
 	"escape":true,
 },
+"custom/music": {
+	"format": "{}",
+	"justify": "center",
+	"exec":"sh ~/.config/hypr/scripts/musica tocando",
+	"on-click": "sh ~/.config/hypr/scripts/musica play-pause",
+	"tooltip":false,
+	"interval": 1,
+},
 "custom/next": {
 	"format": "󰒭",
 	"justify": "center",
 	"on-click": "sh ~/.config/hypr/scripts/musica next",
-	"on-click-right": "wpaperctl next",
 	"tooltip":false,
 },
 "custom/previous": {
 	"format": "󰒮",
 	"justify": "center",
 	"on-click": "sh ~/.config/hypr/scripts/musica previous",
-	"on-click-right": "wpaperctl next",
 	"tooltip":false,
 },
 //FIM MUSICA
