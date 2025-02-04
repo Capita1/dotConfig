@@ -48,7 +48,8 @@ transition: all 1s linear;
 color: @yellow;
 }
 #custom-music,#custom-previous,#custom-next,#custom-playing{
-color:@text;
+color:#96c8fa;
+text-shadow:-1px -1px 5px #475b66,    1px 1px 5px #475b66;
 margin:8px;
 font-weight:bold;
 font-size:10px;

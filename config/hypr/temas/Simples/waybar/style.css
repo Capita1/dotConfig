@@ -1,11 +1,11 @@
 /*SIMPLES*/
 @define-color unfocused rgba(255,255,255,0.5);
 @define-color text white;
-@define-color border white;
-@define-color background rgba(0,0,0,0.5);
+@define-color border rgba(128,128,128,0.4);
+@define-color background rgba(0,0,0, 0.3);
 *{
 font-family:Noto San JP,Symbols Nerd Font Mono;
-font-size:15px;
+font-size:100%;
 min-height:0px;
 min-width:0px;
 transition:none;
@@ -15,15 +15,12 @@ border:1px solid @border;
 border-radius:20px;
 background:@background;
 }
-window.medidores#waybar *,.modules-center{
-border:transparent;
-}
 window#waybar{
 background:transparent;
 }
 #cpu,#memory,#disk,#bluetooth,#backlight,#battery,#tray,#network,#pulseaudio,#clock,#custom-notification,#custom-menu{
 color:@text;
-border-radius:20px;
+border-radius:50%;
 padding:6px;
 margin:0px 3px;
 min-width:18px;
@@ -53,7 +50,7 @@ min-height:20px;
 }
 #workspaces button.active,#workspaces button:hover{
 color:@text;
-background-image: radial-gradient(circle farthest-side, black, transparent);
+background-image: radial-gradient(circle farthest-side, rgba(0,0,0, 0.5), transparent);
 border-radius:20px;
 transition: all 0.2s linear;
 }

@@ -1,8 +1,8 @@
-@define-color text-unfocused rgba(255, 255, 255, 0.7);
-@define-color text white;
-@define-color border white;
-@define-color background rgba(0, 0, 0, 0.5);
 @define-color none rgba(0, 0, 0, 0);
+@define-color text-unfocused rgba(255,255,255,0.5);
+@define-color text white;
+@define-color border rgba(128,128,128,0.4);
+@define-color background rgba(0,0,0, 0.3);
 *{
 font-family:"Segoe";
 font-size:15px;
