@@ -1,0 +1,78 @@
+/*NFSMW*/
+@define-color unfocused rgba(253,171,64,0.5);
+@define-color text rgba(255,220,81,1);
+@define-color border #c38a35;
+@define-color background rgba(40, 27, 10,0.5);
+*{
+font-family:Noto San JP,Symbols Nerd Font Mono;
+font-size:15px;
+min-height:0px;
+min-width:0px;
+transition:none;
+}
+tooltip{
+background: repeating-linear-gradient(-45deg,#281b0a,#281b0a 3px,black 3px,black 7px);
+}
+window#waybar{
+background:transparent;
+}
+tooltip,#cpu,#memory,#disk,#bluetooth,#backlight,#battery,#tray,#network,#pulseaudio,#clock,#workspaces button.active,#workspaces button,#custom-notification,#custom-menu{
+padding:6px;
+margin:0px 3px;
+min-width:18px;
+border:solid 2px transparent;
+}
+.modules-left{
+font-weight:bold;
+border-radius:20px;
+border:2px solid #c38a35;
+background:linear-gradient(180deg,black 20px,#38280f)
+}
+.modules-center,.modules-right{
+border-radius:20px;
+background:linear-gradient(180deg,rgba(0,0,0,0.8) 20px,#38280f);
+}
+.modules-right *{
+font-weight:bold;
+color:@text;
+}
+#custom-menu{
+font-size:20px;
+box-shadow: 0px 0px 1px 2.5px @border;
+background: repeating-linear-gradient(-45deg,#281b0a,#281b0a 3px,black 3px,black 7px);
+min-height:20px;
+min-width:20px;
+border-radius:50%;
+}
+#custom-trax{
+box-shadow: 0px 0px 1px 2px @border;
+color:black;
+padding:0px 5px 0px 1px;
+font-size:9px;
+background:#c38a35;
+border-radius:0px 20px 20px 0px;
+}
+#custom-menu,#clock{
+margin:0px;
+}
+#custom-music,#custom-previous,#custom-next,#custom-playing{
+margin:0px 8px;
+font-size:10px;
+}
+#workspaces{
+padding:0px 9px;
+}
+#workspaces button{
+color:@unfocused;
+min-width:18px;
+background:none;
+}
+#workspaces button:hover{color:@text;}
+#workspaces button.active{
+color:@text;
+transition: all 0.2s linear;
+background-image:linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border);
+background-position:top left,top left,top right,top right,bottom left,bottom left,bottom right,bottom right;
+background-size:1px 10% ,10% 1px;
+background-repeat: no-repeat;
+}

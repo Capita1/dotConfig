@@ -1,0 +1,11 @@
+#!/bin/bash
+#se albert estiver rodando
+if pgrep -x "albert" > /dev/null
+then
+	albert toggle 
+	exit 0
+else
+	albert
+	sleep 3
+	albert toggle 
+fi

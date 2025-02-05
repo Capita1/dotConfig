@@ -1,0 +1,39 @@
+@define-color text rgb(255,220,81);
+@define-color text-unfocused rgba(253,171,64,0.5);
+@define-color border #c38a35;
+*{
+font-family:"Segoe";
+font-size:15px;
+box-shadow: none;
+background:transparent;
+}
+window{
+background-image:linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border), repeating-linear-gradient(-45deg,#281b0a,#281b0a 10px,black 10px,black 20px);
+background-position:top left,top left,top right,top right,bottom left,bottom left,bottom right,bottom right,center;
+background-size:1px 10px,10px 1px,1px 10px,10px 1px,1px 10px,10px 1px,1px 10px,10px 1px,100%;
+background-repeat: no-repeat;
+}
+entry,#entry:selected,#expander-box{
+padding:5px;
+margin:5px;
+transition: all .2s linear;
+background-image:linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border);
+background-position:top left,top left,top right,top right,bottom left,bottom left,bottom right,bottom right;
+background-size:1px 5px,5px 1px;
+background-repeat: no-repeat;
+}
+#entry{
+color:@text-unfocused;
+background:none;
+transition: none;
+}
+img,#img{
+margin:0px 10px;
+height: 5px;
+max-width: 10%;
+max-height: 10%
+}
+#input{
+display: none;
+margin: -1000px 5px; 
+}

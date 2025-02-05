@@ -1,0 +1,33 @@
+@define-color text-unfocused rgba(253,171,64,0.5);
+@define-color text rgba(255,220,81,1);
+@define-color border #c38a35;
+@define-color background rgba(0, 0, 0, 0.5);
+*{
+font-family:Play;
+font-size:15px;
+box-shadow: none;
+border-radius:0px;
+border:none;
+font-weight:bold;
+}
+*{
+font-family:Symbols Nerd Font Mono;
+font-size:15px;
+color:@text;
+}
+.notification,.control-center{
+color:@text;
+background-image:linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border), repeating-linear-gradient(-45deg,#281b0a,#281b0a 10px,black 10px,black 20px);
+background-position:top left,top left,top right,top right,bottom left,bottom left,bottom right,bottom right,center;
+background-size:1px 10px ,10px 1px,1px 10px ,10px 1px,1px 10px ,10px 1px,1px 10px ,10px 1px,99% 99%;
+background-repeat: no-repeat;
+padding:0px 5px;
+margin:5px;
+}
+.control-center{
+color:@text-unfocused;
+background-image:linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border),linear-gradient(0deg, @border, @border),linear-gradient(90deg, @border, @border), repeating-linear-gradient(-45deg,#281b0a,#281b0a 10px,black 10px,black 20px);
+background-position:top left,top left,top right,top right,bottom left,bottom left,bottom right,bottom right,center;
+background-size:1px 20px ,20px 1px,1px 20px ,20px 1px,1px 20px ,20px 1px,1px 20px ,20px 1px,100%;
+background-repeat: no-repeat;
+}

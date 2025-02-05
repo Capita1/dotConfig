@@ -1,0 +1,46 @@
+//NFSMW
+[{
+	"include": "~/.config/hypr/temas/default.json",
+	"output":["HDMI-A-1"],
+	"height": 33,
+	"layer": "top",
+	"position":"top",
+	"margin-left": 5,
+	"margin-top": 5,
+	"margin-right": 5,
+	"modules-left":["custom/menu","group/music","custom/trax"],
+	"modules-center":["hyprland/workspaces"],
+	"modules-right":["tray","custom/notification","network","pulseaudio","clock"],
+	"custom/menu": {
+		"format": "󰣇",
+	},
+	"custom/playing": {
+		"format": "{}",
+		"exec":"sh ~/.config/hypr/scripts/musica mais",
+	},
+	"custom/trax": {
+		"format": "TRAX",
+		"justify": "center",
+		"tooltip":false,
+		"rotate": 270,
+	},
+	"hyprland/workspaces": {
+		"format-window-separator": "<span color='#b0b088'><b> + </b></span>",
+	},
+},
+{
+	"include": "~/.config/hypr/temas/default.json",
+	"output":["eDP-1"],
+	"height": 33,
+	"layer": "top",
+	"position":"top",
+	"margin-left": 5,
+	"margin-top": 5,
+	"margin-right": 5,
+	"modules-left": ["custom/menu","custom/music"], 
+	"modules-center":["hyprland/workspaces"],
+	"modules-right": ["tray","clock"],	
+	"custom/menu": {
+		"format": "2",
+	},
+}]
