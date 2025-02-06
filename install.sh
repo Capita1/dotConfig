@@ -24,8 +24,9 @@ echo "${YEL}Links${NC}"
 cp -r config/hypr/ ../
 ln -rsf config/* ../
 ln -rsf config/hypr/temas/Simples/* ~/.config/
-sudo rm ~/.bashrc ; sudo ln -rsf bashrc ~/.bashrc
-sudo rm ~/.profile ; sudo ln -rsf profile ~/.profile
+
+sudo rm ~/.bashrc ; sudo ln -rsf home/bashrc ~/.bashrc
+sudo rm ~/.profile ; sudo ln -rsf home/profile ~/.profile
 sudo rm /etc/hosts ; sudo ln -rsf hosts /etc/
 
 
