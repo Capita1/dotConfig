@@ -1,6 +1,6 @@
 //NFSMW
 [{
-	"include": "~/.config/hypr/temas/default.json",
+	"include": "~/.config/dotConfig/temas/default.json",
 	"output":["HDMI-A-1"],
 	"height": 33,
 	"layer": "top",
@@ -16,7 +16,7 @@
 	},
 	"custom/playing": {
 		"format": "{}",
-		"exec":"sh ~/.config/hypr/scripts/musica mais",
+		"exec":"musica mais",
 	},
 	"custom/trax": {
 		"format": "TRAX",
@@ -29,7 +29,7 @@
 	},
 },
 {
-	"include": "~/.config/hypr/temas/default.json",
+	"include": "~/.config/dotConfig/temas/default.json",
 	"output":["eDP-1"],
 	"height": 33,
 	"layer": "top",

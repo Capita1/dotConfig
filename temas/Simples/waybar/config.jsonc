@@ -1,7 +1,7 @@
 //json
 [{
 	"name": "simples",
-	"include": "~/.config/hypr/temas/default.json",
+	"include": "~/.config/dotConfig/temas/default.json",
 	"output":["HDMI-A-1"],
 	"height": 33,
 	"layer": "top",
@@ -18,7 +18,7 @@
 },
 {
 	"name": "medidores",
-	"include": "~/.config/hypr/temas/default.json",
+	"include": "~/.config/dotConfig/temas/default.json",
 	"output":["HDMI-A-1"],
 	"height": 33,
 	"exclusive": false,

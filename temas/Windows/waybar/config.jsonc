@@ -1,6 +1,6 @@
 //WINDOWS
 [{
-	"include": "~/.config/hypr/temas/default.json",
+	"include": "~/.config/dotConfig/temas/default.json",
 	"output":["*"],
 	"layer": "top",
 	"position": "bottom",

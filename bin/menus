@@ -1,6 +1,7 @@
 #!/bin/bash
+config=/home/$(whoami)/.config/
 opcoes="apps\nbaixar\narea\ntela\naltab\nlogout\ntemas"
-
+temas="$config/dotConfig/temas"
 #se wofi estiver rodando
 if pgrep -x "wofi" > /dev/null
 then
@@ -78,22 +79,21 @@ if [ "$1" = "logout" ]; then
 fi
 #se $1 igual a temas
 if [ "$1" = "temas" ]; then
-	config=/home/$(whoami)/.config/
 	#se não tem algo em $2
 	if [ -z "$2" ]; then
-		cd $config/hypr/temas/
+		cd $temas
 		tema=$(ls -d */ | sed 's/\///g' | wofi -d --width=200 --height=200)
 		#se não escolher tema
 		if [ -z "$tema" ]; then
 			exit 0
 		fi
-		sh $config/hypr/scripts/menus $1 "$tema"
+		menus $1 "$tema"
 	fi
 	#se tem algo em $2
 	if [ -n "$2" ]; then
-		cd $config/hypr/temas/$2
+		cd $temas/$2
 		ln -rsf * $config
-		cp hypr/style.conf ../../
+		cp hypr/style.conf $config/hypr/
 		killall waybar ; killall wpaperd ; killall swaync
 		waybar & wpaperd -d & swaync
 	fi

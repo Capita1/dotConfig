@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat bitico | grep -w "$1" 
+cat .bitico | grep -w "$1" 
 
 #0.abandon 00000000000
 #1.ability 00000000001
