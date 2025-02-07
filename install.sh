@@ -25,9 +25,10 @@ cp -r config/hypr/ ../
 ln -rsf config/* ../
 ln -rsf config/hypr/temas/Simples/* ~/.config/
 
-sudo rm ~/.bashrc ;  sudo rm ~/.profile 
-sudo ln -rsf home/.* ~/
-sudo rm /etc/hosts ; sudo ln -rsf hosts /etc/
+sudo ln -rsf bin/* /bin #as coisas de bin
+sudo rm ~/.bashrc ;  sudo rm ~/.profile #remove bashrc e profile
+sudo ln -rsf home/.* ~/ #as coisas de home
+sudo rm /etc/hosts ; sudo ln -rsf hosts /etc/ #hosts
 
 
 echo -e "${YEL}\nApps\n${NC}"
