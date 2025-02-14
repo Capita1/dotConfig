@@ -1,7 +1,7 @@
 /*SIMPLES*/
-@define-color unfocused rgba(255,255,255,0.5);
+@define-color unfocused rgba(255,255,255,0.4);
 @define-color text white;
-@define-color border rgba(128,128,128,0.4);
+@define-color border @unfocused;
 @define-color background rgba(0,0,0, 0.3);
 *{
 font-family:Noto San JP,Symbols Nerd Font Mono;

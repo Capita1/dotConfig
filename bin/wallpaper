@@ -1,5 +1,6 @@
 #!/bin/bash
 wallpapers=/home/$(whoami)/Imagens/Wallpapers/
+monitor="[HDMI-A-1]"
 cd $wallpapers
 
 #se wofi estiver rodando
@@ -17,18 +18,16 @@ case "$sele" in
 esac
 
 if [ -d "$foto" ];then #se $foto é diretorio
-	escolha="[HDMI-A-1]\npath = \"$wallpapers$foto\"\nduration=\"5m\"\nmode=\"stretch\""
+	escolha="$monitor\npath = \"$wallpapers$foto\"\nduration=\"5m\"\nmode=\"stretch\""
 else	#se não é diretório
-	escolha="[HDMI-A-1]\npath = \"$wallpapers$foto\"\nmode=\"stretch\""
+	escolha="$monitor\npath = \"$wallpapers$foto\"\nmode=\"stretch\""
 fi
 if [ "$sele" = "2" ]; then #se escolhi todos
-	escolha="[HDMI-A-1]\npath = \"$wallpapers\"\nduration=\"5m\"\nmode=\"stretch\""
+	escolha="$monitor\npath = \"$wallpapers\"\nduration=\"5m\"\nmode=\"stretch\""
 fi
 
 #se $foto não estiver vazio
 if [ -n "$foto" ]; then
-	rm ~/.config/wpaperd
-	mkdir ~/.config/wpaperd
 	echo -e "$escolha" > ~/.config/wpaperd/config.toml
 	killall wpaperd 
 	sleep 1

@@ -19,6 +19,7 @@ transition:none;
 min-height: 0;
 min-width: 0;
 border-radius:0px;
+background:transparent;
 }
 tooltip,#custom-menu,#cpu,#memory,#disk,#bluetooth,#battery,#taskbar,#window,#tray,#network,#backlight,#pulseaudio,#clock,#custom-notification{
 color:@text;
