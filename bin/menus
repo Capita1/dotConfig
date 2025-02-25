@@ -14,7 +14,7 @@ if [ -z "$1" ]; then
 	if [ -z "$escolha" ]; then
 		exit 0
 	else	
-		sh ~/.config/hypr/scripts/menus $escolha
+		menus $escolha
 	fi
 fi
 
@@ -61,10 +61,10 @@ fi
 
 #se $1 igual a altab
 if [ "$1" = "altab" ]; then
-	janela=$(hyprctl clients | sed '/class/!d' | cut -d ':' -f 2 | wofi -d --columns=2 --height=100 --width=400 --location=0 --prompt=Apps)
+	janela=$(hyprctl clients | sed '/class/!d' | cut -d ':' -f 2 | wofi -d --columns=2 --height=200 --width=400 --location=0 --prompt=Apps| cut -d ' ' -f 2)
 	#se tem algo em $janela
 	if [ -n "$janela" ]; then
-		hyprctl dispatch focuswindow "$janela"
+		hyprctl dispatch focuswindow "class:$janela"
 	fi
 fi
 

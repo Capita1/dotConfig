@@ -10,6 +10,15 @@ min-height:0px;
 min-width:0px;
 transition:none;
 }
+window.medidores#waybar *{
+border:none;
+background:transparent;
+}
+window.medidores#waybar .modules-center{
+border:1px solid @border;
+border-radius:20px;
+background:@background;
+}
 .modules-left,.modules-center,.modules-right{
 border:1px solid @border;
 border-radius:20px;

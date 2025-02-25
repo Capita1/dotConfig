@@ -70,8 +70,12 @@ fi
 #se $1 está vazio
 if [ -z "$1" ]; then
 	text="$titulo\n$artista"
+	if [ -z "$titulo" ]; then #se $titulo está vazio
+	text=""
+	fi
 	printf "{ \"text\": \"%s\", \"tooltip\": \"%s\",}\n" \
 	       "$text" "$tooltip"
 	exit 0
 fi
+
 notify-send -e "$(echo -e "$ico $artista - $titulo\n$tooltip\t󰎅 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000
