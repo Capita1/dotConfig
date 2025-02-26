@@ -2,6 +2,21 @@
 
 player='playerctl --player=vlc'
 local="musica"
+infos () {
+	if [ "$($player status)" = "Playing" ]; then
+		ico="󰏤"
+	fi
+	if [ "$($player status)" = "Paused" ]; then
+		ico="󰐊"
+	fi
+	artista=$($player metadata --format "{{ artist }}")
+	titulo=$($player metadata --format "{{ title }}")
+	album=$($player metadata --format "{{ album }}")
+	volume=$($player metadata --format "{{ volume * 100 }}" | cut -d "." -f 1)
+	duracao=$($player metadata --format '{{duration(position)}}/{{duration(mpris:length)}}')  
+}
+
+infos
 #se $1 igual player
 if [ "$1" = "player" ]; then
 	pla=$(echo -e "player='playerctl --player=$(playerctl --list-all | wofi -d )'")
@@ -34,28 +49,16 @@ if [ "$1" = "select" ]; then
 elif [ -n "$1" ]; then #se $1 não está vazio
 	$player $1 $2
 fi
-if [ "$($player status)" = "Playing" ]; then
-	ico="󰏤"
-fi
-if [ "$($player status)" = "Paused" ]; then
-	ico="󰐊"
-fi
-artista=$($player metadata --format "{{ artist }}")
-titulo=$($player metadata --format "{{ title }}")
-album=$($player metadata --format "{{ album }}")
-volume=$(echo $( awk "BEGIN { print int($($player volume)*100)}"))
-duracao=$($player metadata --format "{{ duration(mpris:length) }}")
 #se $1 igual a tocando
 if [ "$1" = "tocando" ]; then
 	echo -e "$ico"
 	exit 0
 fi
-tooltip="󰕾 $volume%"
 #se $1 igual a mais
 if [ "$1" = "mais" ]; then
 	text="$titulo\n$artista\n$album"
 	printf "{ \"text\": \"%s\", \"tooltip\": \"%s\",}\n" \
-	       "$text" "$tooltip"
+	       "$text" "󰕾 $volume%"
 	exit 0
 fi
 if [ "$1" = "cava" ]; then
@@ -74,8 +77,12 @@ if [ -z "$1" ]; then
 	text=""
 	fi
 	printf "{ \"text\": \"%s\", \"tooltip\": \"%s\",}\n" \
-	       "$text" "$tooltip"
+	       "$text" "󰕾 $volume%"
 	exit 0
 fi
-
-notify-send -e "$(echo -e "$ico $artista - $titulo\n$tooltip\t󰎅 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000
+for i in {1..10}
+do
+	infos
+	notify-send -e "$(echo -e "$ico $artista - $titulo\n󰕾 $volume%\t󰎅 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 500
+    sleep 0.3
+done
