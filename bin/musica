@@ -80,8 +80,9 @@ if [ -z "$1" ]; then
 	       "$text" "󰕾 $volume%"
 	exit 0
 fi
-for i in {1..10}
+for i in {1..9}
 do
+	#3 segundos
 	infos
 	notify-send -e "$(echo -e "$ico $artista - $titulo\n󰕾 $volume%\t󰎅 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 500
     sleep 0.3
