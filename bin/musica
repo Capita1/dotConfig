@@ -17,7 +17,7 @@ infos () {
 }
 notify () {
 infos
-notify-send -e "$(echo -e "$ico $artista - $titulo\n󰕾 $volume%\t󰎅 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 1000
+notify-send -e "$(echo -e "$ico $artista - $titulo\n󰕾 $volume%\t󰎅 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000
 sleep 0.5
 }
 infos
@@ -85,10 +85,5 @@ if [ -z "$1" ]; then
 	       "$text" "󰕾 $volume%"
 	exit 0
 fi
-
-for i in {1..6}
-do
-	notify
-done
-
+notify
 exit 0
