@@ -1,7 +1,6 @@
 //NFSMW
 [{
 	"include": "~/.config/dotConfig/temas/default.json",
-	"output":["HDMI-A-1"],
 	"height": 33,
 	"layer": "top",
 	"position":"top",
@@ -26,21 +25,5 @@
 	},
 	"hyprland/workspaces": {
 		"format-window-separator": "<span color='#b0b088'><b> + </b></span>",
-	},
-},
-{
-	"include": "~/.config/dotConfig/temas/default.json",
-	"output":["eDP-1"],
-	"height": 33,
-	"layer": "top",
-	"position":"top",
-	"margin-left": 5,
-	"margin-top": 5,
-	"margin-right": 5,
-	"modules-left": ["custom/menu","custom/music"], 
-	"modules-center":["hyprland/workspaces"],
-	"modules-right": ["tray","clock"],	
-	"custom/menu": {
-		"format": "2",
 	},
 }]

@@ -2,7 +2,6 @@
 [{
 	"name": "cyberpunk",
 	"include": "~/.config/dotConfig/temas/default.json",
-	"output":["HDMI-A-1"],
 	"height": 33,
 	"layer": "top",
 	"position":"top",
@@ -17,7 +16,6 @@
 {
 	"name": "musica",
 	"include": "~/.config/dotConfig/temas/default.json",
-	"output":["HDMI-A-1"],
 	"exclusive": false,
 	"width":10,
 	"layer": "bottom",

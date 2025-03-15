@@ -17,7 +17,14 @@ if [ -z "$1" ]; then
 		menus $escolha
 	fi
 fi
-
+if [ "$1" = "filtro" ]; then
+	if pgrep -x "gammastep" > /dev/null
+	then
+		killall gammastep
+		exit 0
+	fi
+	gammastep -O 4500
+fi
 #se $1 igual a apps
 if [ "$1" = "apps" ]; then
 	wofi -S drun	

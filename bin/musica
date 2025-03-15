@@ -1,7 +1,6 @@
 #!/bin/bash
 
 player='playerctl --player=vlc'
-local="musica"
 infos () {
 	if [ "$($player status)" = "Playing" ]; then
 		ico="󰏤"
@@ -25,12 +24,12 @@ infos
 #se $1 igual player
 if [ "$1" = "player" ]; then
 	pla=$(echo -e "player='playerctl --player=$(playerctl --list-all | wofi -d )'")
-	sed -i "3s/.*/$pla/" $local
+	sed -i "3s/.*/$pla/" ~/.config/dotConfig/bin/musica
 fi
 #se $1 igual select
 if [ "$1" = "select" ]; then
 	if [ -z "$2" ]; then #se $2 estiver vazio
-		sh $local select /home/$(whoami)/Músicas
+		sh musica select /home/$(whoami)/Músicas
 	else
 		killall wofi
 		cd "$2"
@@ -40,7 +39,7 @@ if [ "$1" = "select" ]; then
 			1) musica="$(ls -h | wofi -d)";;
 			2) musica=".playlists/$(ls .playlists | wofi -d)";;
 			3) ln -rsf */* .todas/ ; musica=".todas";;
-			4) $local player;;
+			4) musica player;;
 		esac
 		if [ "$musica" = ".playlists/" ]; then
 			exit 0

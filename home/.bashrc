@@ -2,7 +2,7 @@
 
 #se logado no tty1
 if [[ "$(tty)" == "/dev/tty1" ]] ; then
-	Hyprland
+	exec Hyprland &>/dev/null
 fi
 #se Hyprland estiver rodando
 if pgrep -x "Hyprland" > /dev/null ; then

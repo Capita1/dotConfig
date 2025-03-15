@@ -2,7 +2,6 @@
 [{
 	"name": "simples",
 	"include": "~/.config/dotConfig/temas/default.json",
-	"output":["HDMI-A-1"],
 	"height": 33,
 	"layer": "top",
 	"position":"top",
@@ -19,7 +18,6 @@
 {
 	"name": "medidores",
 	"include": "~/.config/dotConfig/temas/default.json",
-	"output":["HDMI-A-1"],
 	"height": 33,
 	"exclusive": false,
 	"layer": "bottom",

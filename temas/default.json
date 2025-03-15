@@ -1,4 +1,5 @@
 {
+"output":["HDMI-A-1"],
 "group/hardware": {
 	"orientation": "inherit",
 	"drawer": {
@@ -240,6 +241,7 @@
 		"class<mpv>": "",
 		"class<vlc>": "",
 		"class<com.stremio.stremio>": "",
+		"class<org.strawberrymusicplayer.strawberry>": "",
 		//Jogo
 		"class<steam>": "󰓓",
 		"class<lutris>": "",
