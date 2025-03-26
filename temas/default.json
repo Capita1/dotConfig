@@ -237,6 +237,7 @@
 		"title<.*torrent.*>": "󱑤",
 		"class<scrcpy>": "",
 		"class<com.obsproject.Studio>": "󰑋",
+		"class<com.moonlight_stream.Moonlight>": "󰄘",		
 		//Multimidia
 		"class<mpv>": "",
 		"class<vlc>": "",

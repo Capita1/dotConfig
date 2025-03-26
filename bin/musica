@@ -1,6 +1,7 @@
 #!/bin/bash
 
 player='playerctl --player=vlc'
+
 infos () {
 	if [ "$($player status)" = "Playing" ]; then
 		ico="󰏤"
@@ -15,11 +16,8 @@ infos () {
 	duracao=$($player metadata --format '{{duration(position)}}/{{duration(mpris:length)}}')  
 }
 notify () {
-infos
 notify-send -e "$(echo -e "$ico $artista - $titulo\n󰕾 $volume%\t󰎅 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000
-sleep 0.5
 }
-infos
 
 #se $1 igual player
 if [ "$1" = "player" ]; then
@@ -47,6 +45,8 @@ if [ "$1" = "select" ]; then
 		if [ -n "$musica" ]; then
 			killall vlc 
 			cvlc -Z "$musica"
+			sleep 0.1
+			$player volume 0.500000
 			exit 0
 		fi
 	fi
@@ -84,5 +84,6 @@ if [ -z "$1" ]; then
 	       "$text" "󰕾 $volume%"
 	exit 0
 fi
+infos
 notify
 exit 0
