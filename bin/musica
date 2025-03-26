@@ -53,6 +53,7 @@ if [ "$1" = "select" ]; then
 elif [ -n "$1" ]; then #se $1 não está vazio
 	$player $1 $2
 fi
+infos
 #se $1 igual a tocando
 if [ "$1" = "tocando" ]; then
 	echo -e "$ico"
