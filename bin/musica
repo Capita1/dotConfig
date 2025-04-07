@@ -43,10 +43,7 @@ if [ "$1" = "select" ]; then
 			exit 0
 		fi
 		if [ -n "$musica" ]; then
-			killall vlc 
 			cvlc -Z "$musica"
-			sleep 0.1
-			$player volume 0.500000
 			exit 0
 		fi
 	fi

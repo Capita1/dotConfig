@@ -1,7 +1,0 @@
-.include /etc/pulse/default.pa
-[...]
-load-module module-alsa-sink device=hw:0,0 sink_name=analog sink_properties=device.description=analog
-load-module module-alsa-sink device=hw:0,3 sink_name=hdmi sink_properties=device.description=hdmi
-load-module module-loopback sink=analog latency_msec=5
-[...]
-set-default-sink hdmi
