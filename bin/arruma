@@ -3,19 +3,20 @@ BLU='\033[0;34m'
 RED='\033[0;31m'
 YEL='\033[0;33m'
 NC='\033[0m' 
-
+flags="--noconfirm  --needed"
 echo -e "${BLU}███╗░░░███╗░█████╗░███╗░░██╗██╗░░░██╗████████╗███████╗███╗░░██╗░█████╗░░█████╗░░█████╗░\n████╗░████║██╔══██╗████╗░██║██║░░░██║╚══██╔══╝██╔════╝████╗░██║██╔══██╗██╔══██╗██╔══██╗\n██╔████╔██║███████║██╔██╗██║██║░░░██║░░░██║░░░█████╗░░██╔██╗██║██║░░╚═╝███████║██║░░██║\n██║╚██╔╝██║██╔══██║██║╚████║██║░░░██║░░░██║░░░██╔══╝░░██║╚████║██║░░██╗██╔══██║██║░░██║\n██║░╚═╝░██║██║░░██║██║░╚███║╚██████╔╝░░░██║░░░███████╗██║░╚███║╚█████╔╝██║░░██║╚█████╔╝\n╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░╚══╝░╚════╝░╚═╝░░╚═╝░╚════╝░╗░${NC}"
+
 echo -e "${YEL}Atualizando sistema${NC}"
-paru -Syu
+paru -Syu $flags
 
 echo -e "${YEL}Removendo pacotes orfãos${NC}"
-paru -Rns $(paru -Qdtq)
+paru -Rns $flags $(paru -Qdtq) 
 
 echo -e "${YEL}Limpando cache${NC}"
-homeCache="$(du -sh ~/.cache/)"
+paru -Scc $flags
+
+homeCache="$(sudo du -sh ~/.cache/)"
 varCache="$(sudo du -sh /var/cache/)"
-sudo rm -rf ~/.cache/*
-sudo rm -rf /var/cache/*
 echo -e "${YEL}Cache limpo:${NC}\n$homeCache\n$varCache"
 
 echo -e "${YEL}Apagando logs${NC}"

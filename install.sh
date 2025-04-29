@@ -1,4 +1,5 @@
 #!/bin/bash
+flags="--noconfirm  --needed"
 BLU='\033[0;34m'
 RED='\033[0;31m'
 YEL='\033[0;33m'
@@ -18,7 +19,7 @@ else
 fi
 
 echo -e "${YEL}\nAtualizando...\n${NC}"
-sudo pacman -Syu --needed base-devel 
+sudo pacman -Syu $flags base-devel  
 
 echo "${YEL}Links${NC}"	
 cp -r config/hypr/ ../
@@ -33,14 +34,14 @@ sudo rm /etc/hosts ; sudo ln -rsf hosts /etc/ #hosts
 
 echo -e "${YEL}\nApps\n${NC}"
 #Interface
-sudo pacman -S --needed hyprland swaync waybar wofi wpaperd nwg-look polkit-kde-agent xdg-desktop-portal-gtk xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-hyprland gtk-engine-murrine
+sudo pacman -S $flags hyprland swaync waybar wofi wpaperd nwg-look polkit-kde-agent xdg-desktop-portal-gtk xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-hyprland gtk-engine-murrine
 #Apps
-sudo pacman -S --needed kitty pavucontrol blueman thunar thunar-media-tags-plugin thunar-shares-plugin thunar-volman ffmpegthumbnailer tumbler gvfs gparted grim slurp gvfs-smb smbclient
+sudo pacman -S $flags kitty pavucontrol blueman thunar thunar-media-tags-plugin thunar-shares-plugin thunar-volman ffmpegthumbnailer tumbler gvfs gparted grim slurp gvfs-smb smbclient
 #Texto
-sudo pacman -S --needed libreoffice-still neovide neovim mousepad zathura zathura-pdf-mupdf 
+sudo pacman -S $flags libreoffice-still neovide neovim mousepad zathura zathura-pdf-mupdf 
 #Midia
-sudo pacman -S --needed feh vlc mpv playerctl
+sudo pacman -S $flags feh vlc mpv playerctl
 #CLI
-sudo pacman -S --needed neofetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard tealdeer unzip github-cli flatpak
+sudo pacman -S $flags neofetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard tealdeer unzip github-cli flatpak
 #Fontes
-sudo pacman -S --needed ttf-nerd-fonts-symbols-mono ttf-terminus-nerd adobe-source-code-pro-fonts
+sudo pacman -S $flags ttf-nerd-fonts-symbols-mono ttf-terminus-nerd adobe-source-code-pro-fonts
