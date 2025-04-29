@@ -1,0 +1,54 @@
+
+@define-color background rgba(0, 0, 64, 0.3);
+@define-color selected white;
+@define-color border rgba(255, 255, 255, 0.5);
+@define-color bborder rgba(0, 0, 0, 0.5);
+
+* {
+text-shadow: none;
+box-shadow: none;
+border: none;
+border-radius: 0;
+font-family:"Symbols Nerd Font Mono","Segoe UI Variable";
+font-weight: 600;
+font-size: 12.7px;
+}
+tooltip{
+background: linear-gradient(175deg,rgba(255, 255, 255, 0.7) 0%, @background 50%);
+border-radius:3px;
+border: 1px solid @border;
+}
+window#waybar{
+border-top:1px solid @border;
+background:  @background;
+color: @selected;
+}
+#custom-menu{
+font-size: 20px;
+border: 1px solid @border;
+box-shadow: 0px 0px 0px 1px @bborder;
+margin:1px 15px 1px 10px;
+padding: 8px;
+border-radius:20px;
+background: linear-gradient(180deg,rgba(201, 213, 221, 1) 0%, rgba(2, 58, 98, 1) 50%, rgba(2, 227, 253, 0) 100%);
+}
+#custom-menu:hover{
+text-shadow:-1px -1px 5px @border,    1px 1px 5px @border;
+}
+#tray > widget,#network,#pulseaudio,#language,#clock,#custom-notification{
+padding:0px 5px;
+}
+#taskbar button.active ,#taskbar button:hover,#taskbar button{
+min-width: 130px;
+border: 1px solid @border;
+box-shadow: 0px 0px 0px 1px @bborder;
+margin:1px 3px;
+border-radius:2px;
+background: linear-gradient(170deg,rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 50%);
+}
+#custom-desktop{
+min-width: 10px;
+margin:1px 0px 1px 3px;
+border: 1px solid @border;
+background: linear-gradient(160deg,rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 30%);
+}
