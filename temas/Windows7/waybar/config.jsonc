@@ -18,8 +18,12 @@
 		"on-click": "menus apps",
 	},
 	"custom/desktop": {
-		"format": " ",
+		"format": " {}",
+		"interval": 1,
+		"escape":true,
 		"on-click": "hyprctl dispatch workspace 10",
+		"tooltip":false,
+		"exec":"hyprctl activeworkspace | cut -d ' ' -f 3",
 	},	
 	"wlr/taskbar": {
 		"format": "{icon}{title:.17}",

@@ -1,6 +1,6 @@
 
 @define-color background rgba(0, 0, 64, 0.3);
-@define-color selected white;
+
 @define-color border rgba(255, 255, 255, 0.5);
 @define-color bborder rgba(0, 0, 0, 0.5);
 
@@ -21,7 +21,7 @@ border: 1px solid @border;
 window#waybar{
 border-top:1px solid @border;
 background:  @background;
-color: @selected;
+color: white;
 }
 #custom-menu{
 font-size: 20px;
@@ -32,13 +32,11 @@ padding: 8px;
 border-radius:20px;
 background: linear-gradient(180deg,rgba(201, 213, 221, 1) 0%, rgba(2, 58, 98, 1) 50%, rgba(2, 227, 253, 0) 100%);
 }
-#custom-menu:hover{
-text-shadow:-1px -1px 5px @border,    1px 1px 5px @border;
-}
 #tray > widget,#network,#pulseaudio,#language,#clock,#custom-notification{
 padding:0px 5px;
 }
-#taskbar button.active ,#taskbar button:hover,#taskbar button{
+#taskbar button{
+color:white;
 min-width: 130px;
 border: 1px solid @border;
 box-shadow: 0px 0px 0px 1px @bborder;
@@ -47,8 +45,26 @@ border-radius:2px;
 background: linear-gradient(170deg,rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 50%);
 }
 #custom-desktop{
-min-width: 10px;
+color:@border;
+font-size: 10px;
+min-width: 15px;
 margin:1px 0px 1px 3px;
 border: 1px solid @border;
 background: linear-gradient(160deg,rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 30%);
+}
+#taskbar button.active {
+text-shadow:-1px -1px 5px @border,    1px 1px 5px @border;
+background: linear-gradient(170deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%);
+}
+#custom-menu:hover{
+text-shadow:-1px -1px 5px @border,    1px 1px 5px @border;
+transition: all 0.2s linear;
+}
+#taskbar button:hover *,#tray > widget:hover,#network:hover,#pulseaudio:hover,#language:hover,#clock:hover,#custom-notification:hover{
+text-shadow:-1px -1px 5px @border,    1px 1px 5px @border;
+transition: all 0.2s linear;
+}
+#taskbar button:hover{
+border: 1px solid white;
+transition: all 0.2s linear;
 }
