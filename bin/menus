@@ -53,7 +53,7 @@ fi
 
 #se $1 igual a area
 if [ "$1" = "area" ]; then
-	cliphist list | wofi --dmenu | cliphist decode | wl-copy
+	cliphist list | wofi -d --sort=default| cliphist decode | wl-copy
 fi
 
 #se $1 igual a tela
