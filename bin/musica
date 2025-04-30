@@ -43,6 +43,7 @@ if [ "$1" = "select" ]; then
 			exit 0
 		fi
 		if [ -n "$musica" ]; then
+			killall vlc
 			cvlc -Z "$musica"
 			exit 0
 		fi
