@@ -2,7 +2,8 @@
 @define-color unfocused rgba(255,255,255,0.4);
 @define-color text white;
 @define-color border @unfocused;
-@define-color background rgba(0,0,0, 0.3);
+@define-color bluaccent rgba(200,200,255, 0.3);
+@define-color redaccent rgba(16,0,0, 0.3);
 *{
 font-family:Noto San JP,Symbols Nerd Font Mono;
 font-size:100%;
@@ -14,18 +15,13 @@ window.medidores#waybar *{
 border:none;
 background:transparent;
 }
-window.medidores#waybar .modules-center{
-border:1px solid @border;
+.modules-left,.modules-center,.modules-right,window.medidores#waybar .modules-center{
 border-radius:20px;
-background:@background;
-}
-.modules-left,.modules-center,.modules-right{
-border:1px solid @border;
-border-radius:20px;
-background:@background;
+border:1px solid @bluaccent;
+background: linear-gradient(180deg,@bluaccent 0%, @redaccent 30%);
 }
 window#waybar{
-background:transparent;
+background:  none;
 }
 #cpu,#memory,#disk,#bluetooth,#backlight,#battery,#tray,#network,#pulseaudio,#clock,#custom-notification,#custom-menu{
 color:@text;
@@ -35,9 +31,9 @@ margin:0px 3px;
 min-width:18px;
 }
 #custom-menu,tooltip{
-background:@background;
+background: linear-gradient(180deg,@bluaccent 0%, @redaccent 40%);
 margin:0px;
-box-shadow: 0px 0px 1px 1px @border;
+box-shadow: 0px 0px 1px 1px @bluaccent;
 border-radius:20px;
 min-width:20px;
 min-height:20px;
@@ -48,27 +44,31 @@ font-weight:bold;
 font-size:10px;
 }
 #workspaces button{
-margin:0px 3px;
 color:@unfocused;
-min-width:18px;
 border:1px solid transparent;
 background:none;
 transition: all 0.5s linear;
 min-width:20px;
 min-height:20px;
 }
-#workspaces button.active,#workspaces button:hover{
+#workspaces button.active{
 color:@text;
-background-image: radial-gradient(circle farthest-side, rgba(0,0,0, 0.5), transparent);
+text-shadow:-1px -1px 5px @bluaccent,    1px 1px 5px @bluaccent;
 border-radius:20px;
 transition: all 0.2s linear;
+background: linear-gradient(180deg,@bluaccent 0%, transparent 50%);
+border:0.5px solid @bluaccent;
+box-shadow: 0px 0px 1px 1px @redaccent;
 }
 #workspaces button.urgent {
 color:yellow;
 }
 #workspaces button:hover{
-background:transparent;
+color:@blueaccent;
 }
 #cpu,#memory,#disk,#backlight,#bluetooth,#battery{
 min-width:50px;
+}
+#custom-menu{
+background:none;
 }
