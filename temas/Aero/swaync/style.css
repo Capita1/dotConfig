@@ -1,8 +1,6 @@
-@define-color text-unfocused rgba(255,255,255,0.5);
-@define-color text white;
-@define-color border rgba(128,128,128,0.4);
-@define-color background rgba(0,0,0, 0.3);
-
+/*SWAYNC AERO*/
+@define-color twhite rgba(255,255,255, 0.3);
+@define-color tblack rgba(0,0,0, 0.3);
 *{
 font-family:Play;
 font-size:15px;
@@ -11,19 +9,19 @@ box-shadow: none;
 *{
 font-family:Symbols Nerd Font Mono,Play;
 font-size:15px;
-color:@text;
+color:white;
 border-radius:0px;
 }
 img {border-radius:20px;}
 .notification,.control-center{
-color:@text;
-border:1px solid @border;
+color:white;
+border:1px solid @twhite;
 border-radius:20px;
-background:@background;
+background: linear-gradient(180deg,@twhite 0%, @tblack 30%);
 padding:0px 5px;
 margin:5px;
 }
 .control-center{
-color:@text-unfocused;
-background:@background;
+color:@twhite;
+background: linear-gradient(180deg,@twhite 0%, @tblack 10%);
 }

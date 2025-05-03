@@ -1,4 +1,4 @@
-//WINDOWS
+//WINDOWS 10
 [{
 	"include": "~/.config/dotConfig/temas/default.json",
 	"output":["*"],
@@ -45,6 +45,7 @@
 	},
 	"clock": {
 		"format": "      {:%R\n %d/%m/%Y}",
+		"format-alt": "      {:%R\n %d/%m/%Y}",
 		"interval":30,
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
 		"calendar": {

@@ -18,30 +18,37 @@ else
 	sh install.sh
 fi
 
-echo -e "${YEL}\nAtualizando...\n${NC}"
-sudo pacman -Syu $flags base-devel  
-
-echo "${YEL}Links${NC}"	
-cp -r config/hypr/ ../
-ln -rsf config/* ../
-ln -rsf config/hypr/temas/Simples/* ~/.config/
-
-sudo ln -rsf bin/* /bin #as coisas de bin
-sudo rm ~/.bashrc ;  sudo rm ~/.profile #remove bashrc e profile
-sudo ln -rsf home/.* ~/ #as coisas de home
-sudo rm /etc/hosts ; sudo ln -rsf hosts /etc/ #hosts
 
 
-echo -e "${YEL}\nApps\n${NC}"
-#Interface
-sudo pacman -S $flags hyprland swaync waybar wofi wpaperd nwg-look polkit-kde-agent xdg-desktop-portal-gtk xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-hyprland gtk-engine-murrine
-#Apps
-sudo pacman -S $flags kitty pavucontrol blueman thunar thunar-media-tags-plugin thunar-shares-plugin thunar-volman ffmpegthumbnailer tumbler gvfs gparted grim slurp gvfs-smb smbclient
-#Texto
-sudo pacman -S $flags libreoffice-still neovide neovim mousepad zathura zathura-pdf-mupdf 
-#Midia
-sudo pacman -S $flags feh vlc mpv playerctl
-#CLI
-sudo pacman -S $flags neofetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard tealdeer unzip github-cli flatpak
-#Fontes
-sudo pacman -S $flags ttf-nerd-fonts-symbols-mono ttf-terminus-nerd adobe-source-code-pro-fonts
+echo -e "${YEL}\nConfigs\n${NC}"	
+#copia configs
+cp -rf config/* ../
+#links em bin
+sudo ln -rsf bin/* /bin 
+#links em home
+sudo rm ~/.bashrc ;  sudo rm ~/.profile 
+sudo ln -rsf home/.* ~/ 
+#links em hosts
+echo $(pwd)
+sudo rm /etc/hosts 
+sudo ln -rsf etc/hosts /etc/ 
+
+if [ "$1" = "-n" ]; then
+	echo "-n pra não baixar nada"
+else
+	echo -e "${YEL}\nAtualizando...\n${NC}"
+	sudo pacman -Syu $flags base-devel  
+	echo -e "${YEL}\nBaixando Apps...\n${NC}"
+	#Interface
+	sudo pacman -S $flags hyprland swaync waybar wofi wpaperd nwg-look polkit-kde-agent xdg-desktop-portal-gtk xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-hyprland gtk-engine-murrine
+	#Apps
+	sudo pacman -S $flags kitty pavucontrol blueman thunar thunar-media-tags-plugin thunar-shares-plugin thunar-volman ffmpegthumbnailer tumbler gvfs gparted grim slurp gvfs-smb smbclient
+	#Texto
+	sudo pacman -S $flags libreoffice-still neovide neovim mousepad zathura zathura-pdf-mupdf 
+	#Midia
+	sudo pacman -S $flags feh vlc mpv playerctl
+	#CLI
+	sudo pacman -S $flags neofetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard tealdeer unzip github-cli flatpak
+	#Fontes
+	sudo pacman -S $flags ttf-nerd-fonts-symbols-mono ttf-terminus-nerd adobe-source-code-pro-fonts
+fi
