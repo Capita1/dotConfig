@@ -52,3 +52,4 @@ else
 	#Fontes
 	sudo pacman -S $flags ttf-nerd-fonts-symbols-mono ttf-terminus-nerd adobe-source-code-pro-fonts
 fi
+hyprctl dispatch exec menus temas Simples
