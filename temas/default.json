@@ -1,5 +1,5 @@
 {
-"output":["HDMI-A-1"],
+"output":["*"],
 "group/hardware": {
 	"orientation": "inherit",
 	"drawer": {
@@ -233,6 +233,7 @@
 		"class<thunar>": "",
 		"class<librewolf>": "",
 		"class<thorium-browser>": "",
+		"class<firefox>": "",
 		"class<zen>": "",
 		"title<.*torrent.*>": "󱑤",
 		"class<scrcpy>": "",

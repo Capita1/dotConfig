@@ -10,10 +10,11 @@ echo -e "${YEL}Atualizando sistema${NC}"
 paru -Syu $flags
 
 echo -e "${YEL}Removendo pacotes orfãos${NC}"
-paru -Rns $flags $(paru -Qdtq) 
+paru -Rns $(paru -Qdtq) 
 
 echo -e "${YEL}Limpando cache${NC}"
-paru -Scc $flags
+paru -Scc
+sudo pacman -Scc
 
 homeCache="$(sudo du -sh ~/.cache/)"
 varCache="$(sudo du -sh /var/cache/)"
