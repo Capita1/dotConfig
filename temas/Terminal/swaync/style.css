@@ -1,0 +1,21 @@
+@define-color yellow #fdee00;
+@define-color unfocused #ee4f47;
+@define-color text #79a2ac;
+@define-color border #48c3c5;
+@define-color background rgba(36, 15, 22, 1);
+@define-color boxbackground rgba(18, 16, 29,1);
+
+*{
+font-family:"Symbols Nerd Font Mono","Play";
+font-size:15px;
+color:@text;
+border-radius:0px;
+}
+.notification{
+background:@boxbackground;
+border:1px solid @border;
+}
+.control-center{
+background:@background;
+border:1px solid @border;
+}

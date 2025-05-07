@@ -1,0 +1,41 @@
+@define-color yellow #fdee00;
+@define-color unfocused #ee4f47;
+@define-color text #79a2ac;
+@define-color border #48c3c5;
+@define-color background rgba(36, 15, 22, 1);
+window.cyberpunk#waybar,tooltip{
+background:@background;
+border-bottom:@border 0.5px solid;
+transition-property: background-color;
+transition-duration: .5s;
+}
+*{
+font-family:Symbols Nerd Font Mono,Terminess Nerd Font Mono;
+font-size:17px;
+transition:none;
+min-height: 0;
+min-width: 0;
+border-radius:0px;
+background:transparent;
+}
+#custom-menu,#cpu,#memory,#disk,#bluetooth,#battery,#taskbar,#window,#tray,#network,#backlight,#pulseaudio,#clock,#custom-notification{
+color:@text;
+min-width:15px;
+padding:0px 7px;
+}
+#cpu,#memory,#disk,#backlight,#bluetooth,#battery{
+min-width:50px;
+}
+#workspaces button{
+color:@unfocused;
+min-width:20px;
+}
+#workspaces button:hover{
+border:@border 0.5px solid;
+}
+#workspaces button.active{
+color:@border;
+}
+#workspaces button.urgent {
+color: @yellow;
+}

@@ -1,0 +1,38 @@
+/*WOFI TERMINAL*/
+@define-color text-unfocused #ee4f47;
+@define-color text #79a2ac;
+@define-color border #48c3c5;
+@define-color bluback rgba(18, 16, 29, 1);
+@define-color redback rgba(36, 15, 22, 1);
+*{
+font-family:Play;
+font-size:15px;
+box-shadow: none;
+}
+window{
+background:@redback;
+border:1px solid @border;
+}
+#entry,#entry:selected,#expander-box{
+padding:5px;
+margin:5px;
+color:@text;
+background:@bluback;
+border:1px solid @border;
+}
+img,#img{
+margin:0px 10px 0px 0px;
+height: 5px;
+max-width: 10%;
+max-height: 10%;
+}
+#entry{
+color:@text-unfocused;
+border:1px solid transparent;
+background:none;
+transition: all .5s linear;
+}
+#input{
+display: none;
+margin: -1000px 5px; 
+}

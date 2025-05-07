@@ -1,0 +1,15 @@
+//json
+[{
+	"name": "cyberpunk",
+	"include": "~/.config/dotConfig/temas/default.json",
+	"height": 33,
+	"layer": "top",
+	"position":"top",
+	"margin": 0,
+	"modules-left":["custom/menu","cpu","memory","disk"],
+	"modules-center":["hyprland/workspaces"],
+	"modules-right":["tray","custom/notification","network","pulseaudio","clock"],
+	"custom/menu": {
+		"format": "󰘨",
+	}
+}]
