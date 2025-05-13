@@ -1,0 +1,9 @@
+#HL
+stylesheet=css
+width=400
+term=kitty
+insensitive=true
+hide_scroll=true
+allow_images=true
+hide_search=true
+single_click=true

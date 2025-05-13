@@ -1,0 +1,73 @@
+/*WAYBAR HL*/
+@define-color selected #fdf76d;
+@define-color unselected rgba(253, 247, 109, 0.3);
+@define-color glow rgba(253, 247, 109, 0.7);
+@define-color back rgba(0,0,0, 0.3);
+*{
+font-family:Noto San JP,Symbols Nerd Font Mono;
+font-size:100%;
+min-height:0px;
+min-width:0px;
+transition:none;
+}
+window#waybar{
+background:  none;
+}
+#cpu,#memory,#disk,#bluetooth,#backlight,#battery,#tray,#network,#pulseaudio,#clock,#custom-notification,#custom-menu{
+color:@selected;
+border-radius:5px;
+background:@back;
+padding:6px;
+margin:0px 3px;
+min-width:18px;
+}
+#custom-menu,tooltip{
+color:@selected;
+border-radius:5px;
+background:@back;
+margin:0px;
+min-width:20px;
+min-height:20px;
+}
+#custom-menu:hover{
+font-weight:bolder;
+text-shadow:-1px -1px 5px @glow,    1px 1px 5px @glow;
+}
+#custom-music,#custom-previous,#custom-next,#custom-playing{
+color:@selected;
+border-radius:5px;
+background:@back;
+margin:0px 5px;
+padding:0px 5px;
+font-weight:bold;
+font-size:10px;
+}
+#workspaces button{
+color:@unselected;
+background:@back;
+transition: all 0.5s linear;
+min-width:20px;
+min-height:20px;
+border-radius:5px;
+margin:0px 5px;
+}
+#workspaces button.active{
+color:@selected;
+text-shadow:-1px -1px 5px @glow,    1px 1px 5px @glow;
+transition: all 0.2s linear;
+}
+#workspaces button.urgent {
+color:yellow;
+}
+#workspaces button:hover{
+text-shadow:-1px -1px 5px @glow,    1px 1px 5px @glow;
+}
+#cpu,#memory,#disk,#backlight,#bluetooth,#battery{
+color:@selected;
+border-radius:5px;
+background:@back;
+min-width:50px;
+}
+#custom-menu{
+font-size:17px;
+}

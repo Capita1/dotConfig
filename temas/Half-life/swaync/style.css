@@ -1,0 +1,27 @@
+/*SWAYNC HL*/
+@define-color selected #fdf76d;
+@define-color unselected rgba(253, 247, 109, 0.3);
+@define-color glow rgba(253, 247, 109, 0.7);
+@define-color back rgba(0,0,0, 0.3);
+*{
+font-family:Play;
+font-size:15px;
+box-shadow: none;
+}
+*{
+font-family:Symbols Nerd Font Mono,Play;
+font-size:15px;
+color:@selected;
+}
+img {border-radius:20px;}
+.notification,.control-center{
+color:@selected;
+border-radius:5px;
+background: @back;
+padding:0px 5px;
+margin:5px;
+}
+.control-center{
+color:@selected;
+background: @back;
+}

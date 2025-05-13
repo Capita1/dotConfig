@@ -1,0 +1,36 @@
+/*WOFI HL*/
+@define-color selected #fdf76d;
+@define-color unselected rgba(253, 247, 109, 0.3);
+@define-color glow rgba(253, 247, 109, 0.7);
+@define-color back rgba(0,0,0, 0.3);
+*{
+font-family:"Segoe";
+font-size:15px;
+box-shadow: none;
+}
+window{
+background: none;
+}
+#input,#entry,#entry:selected,#expander-box{
+color:@selected;
+margin:5px;
+text-shadow:-1px -1px 5px @glow,1px 1px 5px @glow;
+border-radius:5px;
+transition: all 0.2s linear;
+background: @back;
+}
+#entry{
+color:@unselected;
+background:rgba(0,0,0, 0.2);
+text-shadow:none;
+}
+img,#img{
+margin:0px 10px;
+height: 5px;
+max-width: 10%;
+max-height: 10%
+}
+#input{
+display: none;
+margin: -1000px 5px; 
+}
