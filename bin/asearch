@@ -6,6 +6,5 @@ then
 	exit 0
 else
 	albert
-	sleep 3
 	albert toggle 
 fi

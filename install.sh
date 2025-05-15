@@ -18,12 +18,13 @@ else
 	sh install.sh
 fi
 
-
-
 echo -e "${YEL}\nConfigs\n${NC}"
-apagar="$(ls -h config/)"
 #copia configs
-rm -rf ../$apagar
+apagar="$(ls -h config/)"
+sudo
+cd ../
+rm -rf $apagar
+cd dotConfig/
 cp -rf config/* ../
 #links em bin
 sudo ln -rsf bin/* /bin 
@@ -31,7 +32,6 @@ sudo ln -rsf bin/* /bin
 sudo rm ~/.bashrc ;  sudo rm ~/.profile 
 sudo ln -rsf home/.* ~/ 
 #links em hosts
-echo $(pwd)
 sudo rm /etc/hosts 
 sudo ln -rsf etc/hosts /etc/ 
 
@@ -54,4 +54,9 @@ else
 	#Fontes
 	sudo pacman -S $flags ttf-nerd-fonts-symbols-mono ttf-terminus-nerd adobe-source-code-pro-fonts
 fi
-hyprctl dispatch exec menus temas Simples
+if pgrep -x "Hyprland" > /dev/null ; then
+	hyprctl dispatch exec menus temas Simples
+	hyprctl reload
+else
+	echo "Hyprland não aberto"
+fi
