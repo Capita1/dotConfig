@@ -20,8 +20,10 @@ fi
 
 
 
-echo -e "${YEL}\nConfigs\n${NC}"	
+echo -e "${YEL}\nConfigs\n${NC}"
+apagar="$(ls -h config/)"
 #copia configs
+rm -rf ../$apagar
 cp -rf config/* ../
 #links em bin
 sudo ln -rsf bin/* /bin 

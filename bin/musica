@@ -1,6 +1,6 @@
 #!/bin/bash
 
-player='playerctl --player=firefox.instance_1_276749'
+player='playerctl --player=vlc'
 
 infos () {
 	if [ "$($player status)" = "Playing" ]; then
