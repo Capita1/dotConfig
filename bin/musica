@@ -65,11 +65,12 @@ if [ "$1" = "mais" ]; then
 	exit 0
 fi
 if [ "$1" = "cava" ]; then
-	if pgrep -x "kitty" > /dev/null ; then
-		killall kitty
+layer=$(hyprctl layers | grep kitty | cut -d ":" -f 5)
+if [ -z "$layer" ]; then
+		kitty +kitten panel -o font_size=1 -o background_opacity=0.0 --edge background cava
 		exit 0
 	else
-		kitty +kitten panel -o font_size=1 -o background_opacity=0.0 --edge background cava
+		kill $layer
 		exit 0
 	fi
 fi

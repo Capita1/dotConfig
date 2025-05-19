@@ -21,9 +21,8 @@ fi
 echo -e "${YEL}\nConfigs\n${NC}"
 #copia configs
 apagar="$(ls -h config/)"
-sudo
 cd ../
-rm -rf $apagar
+sudo rm -rf $apagar
 cd dotConfig/
 cp -rf config/* ../
 #links em bin
