@@ -16,7 +16,7 @@
 	},
 },
 {
-	"name": "medidores",
+	"name": "splash",
 	"include": "~/.config/dotConfig/temas/default.json",
 	"height": 33,
 	"exclusive": false,
@@ -25,7 +25,5 @@
 	"margin-left": 5,
 	"margin-bottom": 5,
 	"margin-right": 5,
-//	"modules-left":["battery","backlight"],
-	"modules-center":["cpu","memory","disk"],
-//	"modules-right":["bluetooth"]
+	"modules-center":["custom/splash"],
 }]

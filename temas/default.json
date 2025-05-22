@@ -63,6 +63,15 @@
 	"tooltip":false,
 },
 //FIM MUSICA
+"custom/splash": {
+	"format": "Casas e riquezas herdam-se dos pais, mas a esposa prudente vem do Senhor.-Provérbios 19",
+	"return-type": "json",
+	"hide-empty-text":true,
+	"exec":"musica",
+	"interval": 20,
+	"tooltip":false,
+	"escape":true,
+},
 "custom/notification": {
 	"tooltip": false,
 	"format": "{icon}",
