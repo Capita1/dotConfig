@@ -12,8 +12,8 @@
 	"modules-center":["hyprland/workspaces"],
 	"modules-right":["tray","custom/notification","network","pulseaudio","clock"],
 	"custom/menu": {
-		"format": "󰣇",
-	},
+		"format": "󰣇"
+	}
 },
 {
 	"name": "splash",
@@ -25,5 +25,5 @@
 	"margin-left": 5,
 	"margin-bottom": 5,
 	"margin-right": 5,
-	"modules-center":["custom/splash"],
+	"modules-center":["custom/splash"]
 }]
