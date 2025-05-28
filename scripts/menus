@@ -1,6 +1,6 @@
 #!/bin/bash
 config=/home/$(whoami)/.config/
-opcoes="apps\nbaixar\narea\ntela\naltab\nlogout\ntemas"
+opcoes="apps\nbaixar\narea\naltab\nlogout\ntemas\natualizar"
 temas="$config/dotConfig/temas"
 #se wofi estiver rodando
 if pgrep -x "wofi" > /dev/null
