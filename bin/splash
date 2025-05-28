@@ -1,0 +1,12 @@
+#!/bin/bash
+frases=("Casas e riquezas herdam-se dos pais,\nmas a esposa prudente vem do Senhor.\n-Provérbios 19:14" "O pecado parece liberdade até você tentar parar" "Antes da morte qualquer derrota é psicológica")
+indice=0
+text=${frases[$indice]} 
+printf "{ \"text\": \"%s\", \"tooltip\": \"%s\",}\n" \
+       "$text"
+((indice++))
+if [[ $indice -gt 2 ]]; then
+	sed -i "3s/.*/indice=0/" "$0"
+else
+	sed -i "3s/.*/indice=$indice/" "$0"
+fi

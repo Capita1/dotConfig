@@ -65,7 +65,7 @@
 //FIM MUSICA
 "custom/splash": {
 	"exec":"sh ~/splash",
-	"on-click": "sh ~/splash",
+	"on-click": "sh ~/.config/dotConfig/bin/splash ",
 	"format": "{}",
 	"return-type": "json",
 	"interval": 10,
