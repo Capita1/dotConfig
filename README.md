@@ -8,7 +8,7 @@
 
 ## 📹  Exemplo
 
-[output.webm](https://github.com/user-attachments/assets/353194da-e116-4753-82d2-ee2f98c38da0)
+[Demonstração](https://github.com/user-attachments/assets/353194da-e116-4753-82d2-ee2f98c38da0)
 
 ## 🤝 Colaboradores
 
