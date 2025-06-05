@@ -22,7 +22,7 @@ notify-send -e "$(echo -e "$ico $artista - $titulo\n󰕾 $volume%\t󰎅 $album\t
 #se $1 igual player
 if [ "$1" = "player" ]; then
 	pla=$(echo -e "player='playerctl --player=$(playerctl --list-all | wofi -d )'")
-	sed -i "3s/.*/$pla/" ~/.config/dotConfig/bin/musica
+	sed -i "3s/.*/$pla/" ~/.config/dotConfig/scripts/musica
 fi
 #se $1 igual select
 if [ "$1" = "select" ]; then

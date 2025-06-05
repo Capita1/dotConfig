@@ -1,7 +1,5 @@
 #!/bin/bash
-alias nvim="kitten @ set-background-opacity 0.7 && /bin/nvim"
-alias vim="nvim"
-alias vi="/bin/nvim"
+alias vim="kitten @ set-background-opacity 0.7 && nvim"
 
 #se logado no tty1
 if [[ "$(tty)" == "/dev/tty1" ]] ; then
