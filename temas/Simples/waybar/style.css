@@ -23,6 +23,7 @@ padding:10px;
 border:1px solid @border;
 border-radius:20px;
 background:@background;
+color:@text;
 }
 window#waybar{
 background:transparent;
@@ -75,7 +76,7 @@ color:yellow;
 }
 #workspaces button:hover{
 background:transparent;
-color:white;
+color:@text;
 }
 #cpu,#memory,#disk,#backlight,#bluetooth,#battery{
 min-width:50px;

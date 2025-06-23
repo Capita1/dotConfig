@@ -1,6 +1,6 @@
 #!/bin/bash
 wallpapers=/home/$(whoami)/Imagens/Wallpapers/
-monitor="[HDMI-A-1]"
+monitor="[any]"
 cd $wallpapers
 
 #se wofi estiver rodando
