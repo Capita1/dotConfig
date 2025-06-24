@@ -1,6 +1,6 @@
 #!/bin/bash
 frases=("Casas e riquezas herdam-se dos pais,\nmas a esposa prudente vem do Senhor.\n-Provérbios 19:14" "O pecado parece liberdade até você tentar parar" "Antes da morte qualquer derrota é psicológica")
-indice=0
+indice=2
 max="${#frases[@]}" 
 text=${frases[$indice]} 
 printf "{ \"text\": \"%s\", \"tooltip\": \"%s\",}\n" \
