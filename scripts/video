@@ -50,9 +50,6 @@ fi
 #Cut (without re-encoding)
 # ffmpeg -i input.mp4 -ss 00:00:12 -to 00:02:30 -c copy output.mp4
 
-# sudo modprobe v4l2loopback video_nr=2,3 card_label="scrcpy","saida"
-# ffmpeg -i /dev/video2 -f v4l2 -pix_fmt yuv420p -filter:v "hflip,crop=720:1600:0:0" /dev/video3
-
 #Rotate by 180°
 #ffmpeg -display_rotation 180 -i input.mp4 -codec copy output.mp4
 
