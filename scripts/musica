@@ -1,19 +1,19 @@
 #!/bin/bash
 
-player='playerctl --player=vlc'
+player_cmd="playerctl --player=vlc"
 
 infos () {
-	case "$($player status)" in
+	case "$($player_cmd status)" in
 		"Playing") ico="󰏤" ;;
 		"Paused") ico="󰐊" ;;
 		*) ico="" ;;
 	esac
-	foto=$($player metadata mpris:artUrl)
-	artista=$($player metadata --format "{{ artist }}")
-	titulo=$($player metadata --format "{{ title }}")
-	album=$($player metadata --format "{{ album }}")
-	volume=$($player metadata --format "{{ volume * 100 }}" | cut -d "." -f 1)
-	duracao=$($player metadata --format '{{duration(position)}}/{{duration(mpris:length)}}')  
+	foto=$($player_cmd metadata mpris:artUrl)
+	artista=$($player_cmd metadata --format "{{ artist }}")
+	titulo=$($player_cmd metadata --format "{{ title }}")
+	album=$($player_cmd metadata --format "{{ album }}")
+	volume=$($player_cmd metadata --format "{{ volume * 100 }}" | cut -d "." -f 1)
+	duracao=$($player_cmd metadata --format '{{duration(position)}}/{{duration(mpris:length)}}')  
 }
 notify () {
 notify-send -i $foto -e "$(echo -e "$ico $artista - $titulo\n󰕾 $volume%\t󰎅 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:musica -t 2000 -h string:transient:true 
@@ -21,8 +21,8 @@ notify-send -i $foto -e "$(echo -e "$ico $artista - $titulo\n󰕾 $volume%\t󰎅
 
 #se $1 igual player
 if [ "$1" = "player" ]; then
-	pla=$(echo -e "player='playerctl --player=$(playerctl --list-all | wofi -d )'")
-	sed -i "3s/.*/$pla/" ~/.config/dotConfig/scripts/musica
+	player=$(playerctl --list-all | wofi -d)
+	sed -i "s|^player_cmd=.*|player_cmd=\"playerctl --player=$player\"|" "$HOME/.config/dotConfig/scripts/musica"
 fi
 #se $1 igual select
 if [ "$1" = "select" ]; then
@@ -48,7 +48,7 @@ if [ "$1" = "select" ]; then
 		fi
 	fi
 elif [ -n "$1" ]; then #se $1 não está vazio
-	$player $1 $2
+	$player_cmd $1 $2
 fi
 infos
 #se $1 igual a tocando
