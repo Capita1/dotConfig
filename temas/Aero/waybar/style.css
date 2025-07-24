@@ -1,5 +1,6 @@
 /*WAYBAR AERO*/
-@define-color twhite rgba(255,255,255, 0.3);
+@define-color unfocused rgba(255,255,255, 0.3);
+@define-color twhite rgba(170,170,170, 0.3);
 @define-color tblack rgba(0,0,0, 0.3);
 *{
 font-family:Noto San JP,Symbols Nerd Font Mono;
@@ -43,7 +44,7 @@ font-size:10px;
 color:white;
 }
 #workspaces button{
-color:@twhite;
+color:@unfocused;
 border:1px solid transparent;
 background:none;
 transition: all 0.5s linear;

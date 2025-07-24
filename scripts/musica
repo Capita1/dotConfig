@@ -3,12 +3,12 @@
 player='playerctl --player=vlc'
 
 infos () {
-	if [ "$($player status)" = "Playing" ]; then
-		ico="󰏤"
-	fi
-	if [ "$($player status)" = "Paused" ]; then
-		ico="󰐊"
-	fi
+	case "$($player status)" in
+		"Playing") ico="󰏤" ;;
+		"Paused") ico="󰐊" ;;
+		*) ico="" ;;
+	esac
+	foto=$($player metadata mpris:artUrl)
 	artista=$($player metadata --format "{{ artist }}")
 	titulo=$($player metadata --format "{{ title }}")
 	album=$($player metadata --format "{{ album }}")
@@ -16,7 +16,7 @@ infos () {
 	duracao=$($player metadata --format '{{duration(position)}}/{{duration(mpris:length)}}')  
 }
 notify () {
-notify-send -e "$(echo -e "$ico $artista - $titulo\n󰕾 $volume%\t󰎅 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:anything -t 2000
+notify-send -i $foto -e "$(echo -e "$ico $artista - $titulo\n󰕾 $volume%\t󰎅 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:musica -t 2000 -h string:transient:true 
 }
 
 #se $1 igual player
@@ -27,7 +27,7 @@ fi
 #se $1 igual select
 if [ "$1" = "select" ]; then
 	if [ -z "$2" ]; then #se $2 estiver vazio
-		sh musica select /home/$(whoami)/Músicas
+		"$0" select "$HOME/Músicas"
 	else
 		killall wofi
 		cd "$2"
@@ -35,7 +35,7 @@ if [ "$1" = "select" ]; then
 		case "$sele" in		
 			1) musica="$(find . -type f | cut -d '/' -f 2,3,4,5 | wofi -d)";;
 			2) musica="$(ls -h | wofi -d)";;
-			3) ln -rsf */* .todas/ ; musica=".todas";;
+			3) mkdir .todas ; ln -rsf */* .todas/ ; musica=".todas";;
 			4) musica player;;
 		esac
 		if [ "$musica" = ".playlists/" ]; then

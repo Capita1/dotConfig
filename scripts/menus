@@ -2,12 +2,7 @@
 config=/home/$(whoami)/.config/
 opcoes="apps\nbaixar\narea\naltab\nlogout\ntemas\natualizar"
 temas="$config/dotConfig/temas"
-#se wofi estiver rodando
-if pgrep -x "wofi" > /dev/null
-then
-	killall wofi
-	exit 0
-fi
+killall wofi
 #se $1 estiver vazio
 if [ -z "$1" ]; then
 	escolha=$(echo -e $opcoes | wofi -d --width=200 --height=150)
