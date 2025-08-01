@@ -5,7 +5,7 @@
 @define-color background rgba(0,0,0, 0.3);
 
 *{
-font-family:Symbols Nerd Font Mono,Play;
+font-family:Symbols Nerd Font Mono,Noto San JP;
 font-size:15px;
 color:@text;
 border-radius:0px;

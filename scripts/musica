@@ -16,7 +16,7 @@ infos () {
 	duracao=$($player_cmd metadata --format '{{duration(position)}}/{{duration(mpris:length)}}')  
 }
 notify () {
-notify-send -i $foto -e "$(echo -e "$ico $artista - $titulo\n󰕾 $volume%\t󰎅 $album\t󱎫 $duracao")" -h string:x-canonical-private-synchronous:musica -t 2000 -h string:transient:true 
+notify-send -i $foto -e "$(echo -e "$ico $artista - $titulo\n󰕾 $volume% 󰎅 $album 󱎫 $duracao")" -h string:x-canonical-private-synchronous:musica -t 2000 -h string:transient:true 
 }
 
 #se $1 igual player

@@ -1,9 +1,14 @@
 #!/bin/bash
 alias vim="kitten @ set-background-opacity 0.7 && nvim"
-
+resolucao="-W 1440 -H 900 -r 60"
 #se logado no tty1
 if [[ "$(tty)" == "/dev/tty1" ]] ; then
-	exec Hyprland &>/dev/null
+	sessao=1
+	case "$sessao" in		
+		1) exec Hyprland &>/dev/null ;;
+		2) gamescope $resolucao -- steam -start steam://open/bigpicture ;;
+		3) gamescope $resolucao -- pcsx2 -bigpicture -fullscreen ;;
+	esac
 fi
 #se Hyprland estiver rodando
 if pgrep -x "Hyprland" > /dev/null ; then

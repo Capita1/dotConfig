@@ -244,6 +244,8 @@
 		"class<thorium-browser>": "",
 		"class<firefox>": "",
 		"class<zen>": "",
+		"class<org.telegram.desktop>": "",
+		"class<com.github.ztefn.haguichi>": "",
 		"title<.*torrent.*>": "󱑤",
 		"class<scrcpy>": "",
 		"class<com.obsproject.Studio>": "󰑋",
