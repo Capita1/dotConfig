@@ -1,4 +1,4 @@
-/*SIMPLES2*/
+/*SIMPLESWAY*/
 @define-color text-unfocused rgba(255,255,255,0.5);
 @define-color text white;
 @define-color border rgba(128,128,128,0.4);
@@ -14,15 +14,15 @@ image{
 border-radius:15px;
 margin:0px 10px 0px 0px;
 background:@background;
+border:@border 1px solid;
 }
 .notification,.control-center{
 color:@text;
 border:1px solid @border;
 border-radius:20px;
 background:@background;
-padding:0px 5px;
 margin:5px;
 }
-.app-icon{
+.app-icon, .right{
 opacity:0%;
 }
