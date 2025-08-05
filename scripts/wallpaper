@@ -3,13 +3,6 @@ wallpapers=/home/$(whoami)/Imagens/Wallpapers/
 monitor="[any]"
 cd $wallpapers
 
-#se wofi estiver rodando
-if pgrep -x "wofi" > /dev/null
-then
-	killall wofi
-	exit 0
-fi
-
 sele=$(echo -e "0: 󰋩 Escolher um Wallpaper \n1: 󰉏 Escolher uma pasta\n2: 󰋹 Todos" | wofi -d | cut -d ':' -f 1)
 case "$sele" in		
 	0) foto="$(find . -type f | cut -d '/' -f 2,3,4,5 | wofi -d)";;

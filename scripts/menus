@@ -2,7 +2,6 @@
 config=/home/$(whoami)/.config/
 opcoes="apps\nbaixar\narea\naltab\nlogout\ntemas\natualizar"
 temas="$config/dotConfig/temas"
-killall wofi
 #se $1 estiver vazio
 if [ -z "$1" ]; then
 	escolha=$(echo -e $opcoes | wofi -d --width=200 --height=150)
@@ -53,11 +52,12 @@ fi
 
 #se $1 igual a logout
 if [ "$1" = "logout" ]; then
-	choice=$(echo -e "0: Sair 󰍃\n1: Desligar 󰐥\n2: Reiniciar 󰜉" | wofi -d --width=200 --height=150 | cut -d ':' -f 1)
+	choice=$(echo -e "1: Desligar 󰐥\n2: Reiniciar 󰜉\n3: Sair 󰍃\n4: PS2 󰊖" | wofi -d --width=200 --height=150 | cut -d ':' -f 1)
 	case "$choice" in
-	  0) hyprctl dispatch exit ;;
 	  1) hyprctl dispatch exit & systemctl poweroff ;;
 	  2) hyprctl dispatch exit & systemctl reboot ;;
+	  3) hyprctl dispatch exit ;;
+	  4) hyprctl dispatch exit & sh .bashrc 2 ;;
 	esac
 fi
 #se $1 igual a temas

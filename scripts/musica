@@ -1,6 +1,6 @@
 #!/bin/bash
 
-player_cmd="playerctl --player=vlc"
+player_cmd="playerctl --player=firefox.instance_1_3576"
 
 infos () {
 	case "$($player_cmd status)" in
@@ -29,7 +29,6 @@ if [ "$1" = "select" ]; then
 	if [ -z "$2" ]; then #se $2 estiver vazio
 		"$0" select "$HOME/Músicas"
 	else
-		killall wofi
 		cd "$2"
 		sele=$(echo -e "1:  Tocar música \n2: 󱧺 Tocar pasta\n3: 󰴙 Tocar todas\n4: 󰥠 Mudar player" | wofi -d | cut -d ':' -f 1)
 		case "$sele" in		

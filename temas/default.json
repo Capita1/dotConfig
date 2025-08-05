@@ -174,7 +174,7 @@
 	"on-click": "kitty nmtui",
 	"format-wifi": "",
 	"format-ethernet":"",
-	"format-disconnected": "",
+	"format-disconnected": "",
 	"tooltip-format": "{ipaddr}",
 	"tooltip-format-wifi": "{essid} ({signalStrength}%)  | {ipaddr}",
 	"tooltip-format-ethernet": "{ifname} ether | {ipaddr}",

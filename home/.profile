@@ -1,2 +1,2 @@
 #!/bin/bash
-sh .bashrc 1
+sh .bashrc 
