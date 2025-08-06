@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Palavras-chave a procurar no título
+keywords=(\
+"on X" "Home / X" \
+"porn" "Porn" \
+"porno" "Porno" \
+"hentai" "Hentai" \
+)
+
+while true; do
+	clients=$(hyprctl clients -j)
+	# Loop por cada palavra-chave
+	for keyword in "${keywords[@]}"; do
+		echo "$clients" | jq -c '.[]' | while read -r client; do
+			title=$(echo "$client" | jq -r '.title')
+			address=$(echo "$client" | jq -r '.address')
+			if [[ "$title" == *"$keyword"* ]]; then
+				notify-send -i $foto -e "$(echo -e "Fechando \"$title\"\n($address)")" -h string:x-canonical-private-synchronous:block -t 2000 -h string:transient:true 
+				hyprctl dispatch closewindow address:"$address"
+			fi
+		done
+	done
+	sleep 5
+done
