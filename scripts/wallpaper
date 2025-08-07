@@ -3,11 +3,11 @@ wallpapers=/home/$(whoami)/Imagens/Wallpapers/
 monitor="[any]"
 cd $wallpapers
 
-sele=$(echo -e "0: 󰋩 Escolher um Wallpaper \n1: 󰉏 Escolher uma pasta\n2: 󰋹 Todos" | wofi -d | cut -d ':' -f 1)
+sele=$(echo -e "1: 󰋩 Escolher um Wallpaper \n2: 󰉏 Escolher uma pasta\n3: 󰋹 Todos" | wofi -d | cut -d ':' -f 1)
 case "$sele" in		
-	0) foto="$(find . -type f | cut -d '/' -f 2,3,4,5 | wofi -d)";;
-	1) foto="$(ls -h | wofi -d)";;
-	2) foto="todos"
+	1) foto="$(find . -type f | cut -d '/' -f 2,3,4,5 | wofi -d)";;
+	2) foto="$(ls -h | wofi -d)";;
+	3) foto="todos";;
 esac
 
 if [ -d "$foto" ];then #se $foto é diretorio
@@ -15,7 +15,7 @@ if [ -d "$foto" ];then #se $foto é diretorio
 else	#se não é diretório
 	escolha="$monitor\npath = \"$wallpapers$foto\"\nmode=\"stretch\""
 fi
-if [ "$sele" = "2" ]; then #se escolhi todos
+if [ "$sele" = "3" ]; then #se escolhi todos
 	escolha="$monitor\npath = \"$wallpapers\"\nduration=\"5m\"\nmode=\"stretch\""
 fi
 
