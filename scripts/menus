@@ -43,10 +43,10 @@ if [ "$1" = "area" ]; then
 fi
 #se $1 igual a altab
 if [ "$1" = "altab" ]; then
-	janela=$(hyprctl clients | sed '/class/!d' | cut -d ':' -f 2 | wofi -d --columns=2 --height=200 --width=400 --location=0 --prompt=Apps| cut -d ' ' -f 2)
+	janela=$(hyprctl clients -j | jq -c '.[]'| jq -r '.title' | wofi -d)
 	#se tem algo em $janela
-	if [ -n "$janela" ]; then
-		hyprctl dispatch focuswindow "class:$janela"
+	if [ -n "$title" ]; then
+		hyprctl dispatch focuswindow "title:$title"
 	fi
 fi
 
