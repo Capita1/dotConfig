@@ -1,8 +1,0 @@
-#!/bin/bash
-titulo=$(hyprctl clients -j | jq '.[]' | jq -r '.title'| wofi -d)
-id=$(hyprctl clients -j | jq -r --arg titulo "$titulo" '.[] | select(.title | contains($titulo)) | .address')
-if [ -n "$id" ]; then
-	hyprctl dispatch setfloating "address:$id"
-	out=$(hyprctl dispatch pin "address:$id")
-fi
-notify-send -e "$(echo -e " Título:'$titulo'\nID:$id\n$out")" -h string:x-canonical-private-synchronous:pin -t 2000 -h string:transient:true 
