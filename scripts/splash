@@ -1,9 +1,6 @@
 #!/bin/bash
-<<<<<<< HEAD
-indice=2
-=======
-indice=4
->>>>>>> 41f173468bb07a5a3a67f9c1ef15586cf63d8c55
+indice=5
+
 frases=( \
 "Casas e riquezas herdam-se dos pais,\nmas a esposa prudente vem do Senhor.\n-Provérbios 19:14" \
 "O pecado parece liberdade até você tentar parar" \
@@ -13,6 +10,7 @@ frases=( \
 "When freedom is outlawed, only outlaws will be free!" \
 "Seja caloroso ao demonstrar reconhecimento e pródigo nos elogios" \
 "tudo que você escolhe não mudar você aceita ter" \
+"The society that separates its scholars from its warriors will\nhave its thinking done by cowards and its fighting by fools -Thucydides" \
 )
 max="${#frases[@]}" 
 text=${frases[$indice]} 
