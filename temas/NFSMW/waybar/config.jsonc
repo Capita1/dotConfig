@@ -15,7 +15,7 @@
 	},
 	"custom/playing": {
 		"format": "{}",
-		"exec":"musica mais",
+		"exec":"sh ~/.config/dotConfig/scripts/musica mais",
 	},
 	"custom/trax": {
 		"format": "TRAX",

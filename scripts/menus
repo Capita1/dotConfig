@@ -1,7 +1,7 @@
 #!/bin/bash
 config=$HOME/.config/
 temas="$config/dotConfig/temas"
-opcoes="1: 󰵆 Apps\n2: 󰚰 Atualizar\n3: 󰍃 Sair\n4:  Temas\n5:  Baixar\n6:  Area de transferência\n7: 󰩉 Achar janela\n8: 󰐃 Fixar janela\n9:  Wallpapers"
+opcoes="1: 󰵆 Apps\n2: 󰚰 Atualizar\n3: 󰍃 Sair\n4:  Temas\n5:  Baixar\n6:  Area de transferência\n7: 󰩉 Achar janela\n8: 󰐃 Fixar janela\n9:  Wallpapers\n10:   Ler imagem"
 #se wofi estiver abrido só mata ele
 if [ -n "$(pgrep wofi)" ]; then
 	killall wofi
@@ -129,7 +129,6 @@ case "$1" in
 			2) foto="$(ls -h | wofi -d)";;
 			3) foto="todos";;
 		esac
-
 		if [ -d "$foto" ];then #se $foto é diretorio
 			escolha="$monitor\npath = \"$wallpapers$foto\"\nduration=\"5m\"\nmode=\"stretch\""
 		else	#se não é diretório
@@ -149,5 +148,11 @@ case "$1" in
 		else
 			exit 0
 		fi
+	;;
+	10)#ler
+		foto="OCR"
+		slurp | grim -g - /tmp/$foto.png
+		tesseract /tmp/$foto.png /tmp/$foto txt
+		cat /tmp/$foto.txt | wl-copy
 	;;
 esac
