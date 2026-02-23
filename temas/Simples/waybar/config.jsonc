@@ -1,6 +1,5 @@
 //json
 [{
-	"name": "simples",
 	"include": "~/.config/dotConfig/temas/default.json",
 	"height": 33,
 	"layer": "top",
@@ -13,7 +12,7 @@
 	}
 },
 {
-	"name": "splash",
+	"name":"splash",
 	"include": "~/.config/dotConfig/temas/default.json",
 	"height": 33,
 	"exclusive": false,

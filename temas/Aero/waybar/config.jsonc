@@ -1,6 +1,5 @@
 //json
 [{
-	"name": "simples",
 	"include": "~/.config/dotConfig/temas/default.json",
 	"height": 33,
 	"layer": "top",
@@ -16,7 +15,6 @@
 	},
 },
 {
-	"name": "medidores",
 	"include": "~/.config/dotConfig/temas/default.json",
 	"height": 33,
 	"exclusive": false,

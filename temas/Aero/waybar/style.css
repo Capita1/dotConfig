@@ -1,7 +1,7 @@
 /*WAYBAR AERO*/
 @define-color unfocused rgba(255,255,255, 0.3);
-@define-color twhite rgba(119,119,119, 0.3);
-@define-color tblack rgba(0,0,0, 0.3);
+@define-color twhite rgba(192,64,192, 0.3);
+@define-color tblack rgba(64,0,64, 0.3);
 *{
 font-family:Noto San JP,Symbols Nerd Font Mono;
 font-size:100%;
@@ -14,10 +14,10 @@ border:none;
 background:transparent;
 }
 .modules-left,.modules-center,.modules-right,window.medidores#waybar .modules-center{
-border-radius:20px;
-border:1px solid @twhite;
-background: linear-gradient(180deg,@twhite 0%, @tblack 30%);
-box-shadow: 0px 0px 1px 1px @tblack;
+	border-radius:20px;
+	border:2px solid @tblack;
+	background: linear-gradient(180deg,@twhite 30%, @tblack 60%,@twhite 100%),radial-gradient( ellipse 50% 45% at center, @tblack 50%, transparent 50%);    
+	background-clip: padding-box;
 }
 window#waybar{
 background:  none;
