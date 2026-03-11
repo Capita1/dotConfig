@@ -6,10 +6,12 @@ fi
 #se Hyprland estiver rodando
 if pgrep -x "Hyprland" > /dev/null ; then
 	user="$(whoami)"
+
+	alias neofetch="fastfetch"
+
 	export QT_IM_MODULE=fcitx
 	export XMODIFIERS=@im=fcitx
-	alias vim="kitten @ set-background-opacity 0.7 && nvim"
-
+	
 	[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"	
 	## synth-shell-prompt.sh
 	if [ -f /home/$user/.config/synth-shell/synth-shell-prompt.sh ] && [ -n "$( echo $- | grep i )" ]; then
