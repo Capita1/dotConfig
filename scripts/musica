@@ -1,5 +1,5 @@
 #!/bin/bash
-player="mpd.instance2823"
+player="mpd.instance2810"
 player_cmd="playerctl --player=$player"
 
 infos () {

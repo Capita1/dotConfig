@@ -1,5 +1,5 @@
 {
-"output":["*"],
+"output":["DP-1"],
 "group/hardware": {
 	"orientation": "inherit",
 	"drawer": {
@@ -14,7 +14,7 @@
 	"drawer": {
 		"transition-duration": 300,
 		"children-class": "not-memory",
-		"transition-left-to-right": false,
+		"transition-left-to-right": false
 	},
 	"modules": ["custom/playing","custom/music","custom/previous","custom/next"]
 },

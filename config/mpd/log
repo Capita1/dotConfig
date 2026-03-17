@@ -1,0 +1,1186 @@
+2026-03-16T10:31:50 event: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+2026-03-16T10:31:51 client: [127.0.0.1:60550] client connected
+2026-03-16T10:31:51 client: [127.0.0.1:60550] process command "binarylimit 262144"
+2026-03-16T10:31:51 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:51 client: [127.0.0.1:60550] process command "commands"
+2026-03-16T10:31:51 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:51 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:51 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:51 client: [127.0.0.1:60550] process command "playlistinfo"
+2026-03-16T10:31:51 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:51 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:51 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:52 client: [127.0.0.1:60550] process command "lsinfo"
+2026-03-16T10:31:52 exception: Stored playlists are disabled
+2026-03-16T10:31:52 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:52 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:52 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:52 client: [127.0.0.1:60550] process command "lsinfo \"0Playlists\""
+2026-03-16T10:31:52 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:52 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:52 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:52 client: [127.0.0.1:60550] process command "lsinfo \"Alternativa\""
+2026-03-16T10:31:52 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:52 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:52 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:52 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:52 client: process command "sticker list song \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:31:52 client: command returned 0
+2026-03-16T10:31:52 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:52 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:52 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:53 client: process command "clear"
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/MGMT - Kids.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/MGMT - Little Dark Age.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/VØJ, Narvent - Memory Reboot.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/Radiohead - Karma Police.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/Radiohead - Man Of War.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: process command "add \"Alternativa/TV On The Radio - DLZ.mp3\""
+2026-03-16T10:31:53 client: command returned 0
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command "play 0"
+2026-03-16T10:31:53 playlist: play 0:"Alternativa/Foster The People - Pumped Up Kicks.mp3"
+2026-03-16T10:31:53 decoder_thread: probing plugin mpg123
+2026-03-16T10:31:53 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:53 playlist: queue song 1:"Alternativa/Mareux - The Perfect Girl.mp3"
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:53 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:53 decoder: audio_format=48000:16:2, seekable=true
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:53 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:53 output: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+2026-03-16T10:31:53 output: opened "pulse audio" (pulse) audio_format=48000:16:2
+2026-03-16T10:31:53 output: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+2026-03-16T10:31:53 output: opened "Visualizer" (fifo) audio_format=44100:16:2
+2026-03-16T10:31:53 libsamplerate: setting samplerate conversion ratio to 0.92
+2026-03-16T10:31:53 output: converting in=48000:16:2 -> f=48000:16:2 -> out=44100:16:2
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command "playlistinfo"
+2026-03-16T10:31:53 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:53 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:53 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:53 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:53 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:53 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:31:53 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:53 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:53 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:54 client: process command "sticker list song \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:54 client: process command "clear"
+2026-03-16T10:31:54 playlist: stop
+2026-03-16T10:31:54 player: played "Alternativa/Foster The People - Pumped Up Kicks.mp3"
+2026-03-16T10:31:54 output: closed "pulse audio" (pulse)
+2026-03-16T10:31:54 output: closed "Visualizer" (fifo)
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/MGMT - Kids.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/MGMT - Little Dark Age.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/VØJ, Narvent - Memory Reboot.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/Radiohead - Karma Police.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/Radiohead - Man Of War.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: process command "add \"Alternativa/TV On The Radio - DLZ.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "play 1"
+2026-03-16T10:31:54 playlist: play 1:"Alternativa/Mareux - The Perfect Girl.mp3"
+2026-03-16T10:31:54 decoder_thread: probing plugin mpg123
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:54 decoder: audio_format=48000:16:2, seekable=true
+2026-03-16T10:31:54 playlist: queue song 2:"Alternativa/MGMT - Time to Pretend.mp3"
+2026-03-16T10:31:54 output: opened "pulse audio" (pulse) audio_format=48000:16:2
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:54 output: opened "Visualizer" (fifo) audio_format=44100:16:2
+2026-03-16T10:31:54 libsamplerate: setting samplerate conversion ratio to 0.92
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:54 output: converting in=48000:16:2 -> f=48000:16:2 -> out=44100:16:2
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "playlistinfo"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:54 client: process command "sticker list song \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:31:54 client: command returned 0
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:54 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:54 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:55 client: process command "clear"
+2026-03-16T10:31:55 playlist: stop
+2026-03-16T10:31:55 player: played "Alternativa/Mareux - The Perfect Girl.mp3"
+2026-03-16T10:31:55 output: closed "pulse audio" (pulse)
+2026-03-16T10:31:55 output: closed "Visualizer" (fifo)
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/MGMT - Kids.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/MGMT - Little Dark Age.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/VØJ, Narvent - Memory Reboot.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Radiohead - Karma Police.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Radiohead - Man Of War.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/TV On The Radio - DLZ.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "play 2"
+2026-03-16T10:31:55 playlist: play 2:"Alternativa/MGMT - Time to Pretend.mp3"
+2026-03-16T10:31:55 decoder_thread: probing plugin mpg123
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:55 playlist: queue song 3:"Alternativa/Midge Ure - The Man Who Sold the World.mp3"
+2026-03-16T10:31:55 decoder: audio_format=48000:16:2, seekable=true
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:55 output: opened "pulse audio" (pulse) audio_format=48000:16:2
+2026-03-16T10:31:55 output: opened "Visualizer" (fifo) audio_format=44100:16:2
+2026-03-16T10:31:55 libsamplerate: setting samplerate conversion ratio to 0.92
+2026-03-16T10:31:55 output: converting in=48000:16:2 -> f=48000:16:2 -> out=44100:16:2
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "playlistinfo"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:55 client: process command "sticker list song \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:55 client: process command "clear"
+2026-03-16T10:31:55 playlist: stop
+2026-03-16T10:31:55 player: played "Alternativa/MGMT - Time to Pretend.mp3"
+2026-03-16T10:31:55 output: closed "pulse audio" (pulse)
+2026-03-16T10:31:55 output: closed "Visualizer" (fifo)
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/MGMT - Kids.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/MGMT - Little Dark Age.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/VØJ, Narvent - Memory Reboot.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Radiohead - Karma Police.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/Radiohead - Man Of War.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: process command "add \"Alternativa/TV On The Radio - DLZ.mp3\""
+2026-03-16T10:31:55 client: command returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "play 3"
+2026-03-16T10:31:55 playlist: play 3:"Alternativa/Midge Ure - The Man Who Sold the World.mp3"
+2026-03-16T10:31:55 decoder_thread: probing plugin mpg123
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:55 playlist: queue song 4:"Alternativa/Radiohead - Creep.mp3"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:55 decoder: audio_format=48000:16:2, seekable=true
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:55 output: opened "pulse audio" (pulse) audio_format=48000:16:2
+2026-03-16T10:31:55 output: opened "Visualizer" (fifo) audio_format=44100:16:2
+2026-03-16T10:31:55 libsamplerate: setting samplerate conversion ratio to 0.92
+2026-03-16T10:31:55 output: converting in=48000:16:2 -> f=48000:16:2 -> out=44100:16:2
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "playlistinfo"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:55 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:55 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:56 client: process command "sticker list song \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:56 client: process command "clear"
+2026-03-16T10:31:56 playlist: stop
+2026-03-16T10:31:56 player: played "Alternativa/Midge Ure - The Man Who Sold the World.mp3"
+2026-03-16T10:31:56 output: closed "pulse audio" (pulse)
+2026-03-16T10:31:56 output: closed "Visualizer" (fifo)
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/MGMT - Kids.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/MGMT - Little Dark Age.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/VØJ, Narvent - Memory Reboot.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Radiohead - Karma Police.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Radiohead - Man Of War.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/TV On The Radio - DLZ.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "play 4"
+2026-03-16T10:31:56 playlist: play 4:"Alternativa/Radiohead - Creep.mp3"
+2026-03-16T10:31:56 decoder_thread: probing plugin mpg123
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:56 playlist: queue song 5:"Alternativa/Mr.Kitty - After Dark.mp3"
+2026-03-16T10:31:56 decoder: audio_format=48000:16:2, seekable=true
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 output: opened "pulse audio" (pulse) audio_format=48000:16:2
+2026-03-16T10:31:56 output: opened "Visualizer" (fifo) audio_format=44100:16:2
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 libsamplerate: setting samplerate conversion ratio to 0.92
+2026-03-16T10:31:56 output: converting in=48000:16:2 -> f=48000:16:2 -> out=44100:16:2
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "playlistinfo"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:56 client: process command "sticker list song \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:56 client: process command "clear"
+2026-03-16T10:31:56 playlist: stop
+2026-03-16T10:31:56 player: played "Alternativa/Radiohead - Creep.mp3"
+2026-03-16T10:31:56 output: closed "pulse audio" (pulse)
+2026-03-16T10:31:56 output: closed "Visualizer" (fifo)
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/MGMT - Kids.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/MGMT - Little Dark Age.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/VØJ, Narvent - Memory Reboot.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Radiohead - Karma Police.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/Radiohead - Man Of War.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: process command "add \"Alternativa/TV On The Radio - DLZ.mp3\""
+2026-03-16T10:31:56 client: command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "play 5"
+2026-03-16T10:31:56 playlist: play 5:"Alternativa/Mr.Kitty - After Dark.mp3"
+2026-03-16T10:31:56 decoder_thread: probing plugin mpg123
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:56 playlist: queue song 6:"Alternativa/Radiohead - No Surprises.mp3"
+2026-03-16T10:31:56 decoder: audio_format=48000:16:2, seekable=true
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 output: opened "pulse audio" (pulse) audio_format=48000:16:2
+2026-03-16T10:31:56 output: opened "Visualizer" (fifo) audio_format=44100:16:2
+2026-03-16T10:31:56 libsamplerate: setting samplerate conversion ratio to 0.92
+2026-03-16T10:31:56 output: converting in=48000:16:2 -> f=48000:16:2 -> out=44100:16:2
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "playlistinfo"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:56 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:56 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:57 client: process command "sticker list song \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:57 client: process command "clear"
+2026-03-16T10:31:57 playlist: stop
+2026-03-16T10:31:57 player: played "Alternativa/Mr.Kitty - After Dark.mp3"
+2026-03-16T10:31:57 output: closed "pulse audio" (pulse)
+2026-03-16T10:31:57 output: closed "Visualizer" (fifo)
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/MGMT - Kids.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/MGMT - Little Dark Age.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/VØJ, Narvent - Memory Reboot.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Radiohead - Karma Police.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Radiohead - Man Of War.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/TV On The Radio - DLZ.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "play 6"
+2026-03-16T10:31:57 playlist: play 6:"Alternativa/Radiohead - No Surprises.mp3"
+2026-03-16T10:31:57 decoder_thread: probing plugin mpg123
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:57 playlist: queue song 7:"Alternativa/Mr. Kitty - Shadow Dancer.mp3"
+2026-03-16T10:31:57 decoder: audio_format=48000:16:2, seekable=true
+2026-03-16T10:31:57 output: opened "pulse audio" (pulse) audio_format=48000:16:2
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:57 output: opened "Visualizer" (fifo) audio_format=44100:16:2
+2026-03-16T10:31:57 libsamplerate: setting samplerate conversion ratio to 0.92
+2026-03-16T10:31:57 output: converting in=48000:16:2 -> f=48000:16:2 -> out=44100:16:2
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "playlistinfo"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:57 client: process command "sticker list song \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:57 client: process command "clear"
+2026-03-16T10:31:57 playlist: stop
+2026-03-16T10:31:57 player: played "Alternativa/Radiohead - No Surprises.mp3"
+2026-03-16T10:31:57 output: closed "pulse audio" (pulse)
+2026-03-16T10:31:57 output: closed "Visualizer" (fifo)
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/MGMT - Kids.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/MGMT - Little Dark Age.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/VØJ, Narvent - Memory Reboot.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Radiohead - Karma Police.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/Radiohead - Man Of War.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: process command "add \"Alternativa/TV On The Radio - DLZ.mp3\""
+2026-03-16T10:31:57 client: command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "play 7"
+2026-03-16T10:31:57 playlist: play 7:"Alternativa/Mr. Kitty - Shadow Dancer.mp3"
+2026-03-16T10:31:57 decoder_thread: probing plugin mpg123
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:57 decoder: audio_format=48000:16:2, seekable=true
+2026-03-16T10:31:57 playlist: queue song 8:"Alternativa/Archive - Bullets.mp3"
+2026-03-16T10:31:57 output: opened "pulse audio" (pulse) audio_format=48000:16:2
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:57 output: opened "Visualizer" (fifo) audio_format=44100:16:2
+2026-03-16T10:31:57 libsamplerate: setting samplerate conversion ratio to 0.92
+2026-03-16T10:31:57 output: converting in=48000:16:2 -> f=48000:16:2 -> out=44100:16:2
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "playlistinfo"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:57 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:57 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:58 client: process command "sticker list song \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:58 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:58 client: process command "clear"
+2026-03-16T10:31:58 playlist: stop
+2026-03-16T10:31:58 player: played "Alternativa/Mr. Kitty - Shadow Dancer.mp3"
+2026-03-16T10:31:58 output: closed "pulse audio" (pulse)
+2026-03-16T10:31:58 output: closed "Visualizer" (fifo)
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/MGMT - Kids.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/MGMT - Little Dark Age.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/VØJ, Narvent - Memory Reboot.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/Radiohead - Karma Police.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/Radiohead - Man Of War.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: process command "add \"Alternativa/TV On The Radio - DLZ.mp3\""
+2026-03-16T10:31:58 client: command returned 0
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command "play 8"
+2026-03-16T10:31:58 playlist: play 8:"Alternativa/Archive - Bullets.mp3"
+2026-03-16T10:31:58 decoder_thread: probing plugin mpg123
+2026-03-16T10:31:58 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:58 playlist: queue song 9:"Alternativa/Hatsune Miku - o b l i v i o n.mp3"
+2026-03-16T10:31:58 decoder: audio_format=48000:16:2, seekable=true
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:58 output: opened "pulse audio" (pulse) audio_format=48000:16:2
+2026-03-16T10:31:58 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:58 output: opened "Visualizer" (fifo) audio_format=44100:16:2
+2026-03-16T10:31:58 libsamplerate: setting samplerate conversion ratio to 0.92
+2026-03-16T10:31:58 output: converting in=48000:16:2 -> f=48000:16:2 -> out=44100:16:2
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:58 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command "playlistinfo"
+2026-03-16T10:31:58 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:58 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:58 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:58 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:58 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:58 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:31:58 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:58 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:58 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:59 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:31:59 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:31:59 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:59 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:31:59 client: [127.0.0.1:60550] process command list
+2026-03-16T10:31:59 client: process command "sticker list song \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:31:59 client: command returned 0
+2026-03-16T10:31:59 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:31:59 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:31:59 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command list
+2026-03-16T10:32:00 client: process command "clear"
+2026-03-16T10:32:00 playlist: stop
+2026-03-16T10:32:00 player: played "Alternativa/Archive - Bullets.mp3"
+2026-03-16T10:32:00 output: closed "pulse audio" (pulse)
+2026-03-16T10:32:00 output: closed "Visualizer" (fifo)
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/MGMT - Kids.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/MGMT - Little Dark Age.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/VØJ, Narvent - Memory Reboot.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/Radiohead - Karma Police.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/Radiohead - Man Of War.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: process command "add \"Alternativa/TV On The Radio - DLZ.mp3\""
+2026-03-16T10:32:00 client: command returned 0
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command "play 9"
+2026-03-16T10:32:00 playlist: play 9:"Alternativa/Hatsune Miku - o b l i v i o n.mp3"
+2026-03-16T10:32:00 decoder_thread: probing plugin mpg123
+2026-03-16T10:32:00 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:00 decoder: audio_format=48000:16:2, seekable=true
+2026-03-16T10:32:00 playlist: queue song 10:"Alternativa/MGMT - Kids.mp3"
+2026-03-16T10:32:00 output: opened "pulse audio" (pulse) audio_format=48000:16:2
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:32:00 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:32:00 output: opened "Visualizer" (fifo) audio_format=44100:16:2
+2026-03-16T10:32:00 libsamplerate: setting samplerate conversion ratio to 0.92
+2026-03-16T10:32:00 output: converting in=48000:16:2 -> f=48000:16:2 -> out=44100:16:2
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:32:00 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:32:00 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command "playlistinfo"
+2026-03-16T10:32:00 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:32:00 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:32:00 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:32:00 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:32:00 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:32:00 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:00 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:32:00 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:32:01 client: [127.0.0.1:60550] process command list
+2026-03-16T10:32:01 client: process command "clear"
+2026-03-16T10:32:01 playlist: stop
+2026-03-16T10:32:01 player: played "Alternativa/Hatsune Miku - o b l i v i o n.mp3"
+2026-03-16T10:32:01 output: closed "pulse audio" (pulse)
+2026-03-16T10:32:01 output: closed "Visualizer" (fifo)
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/MGMT - Kids.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/MGMT - Little Dark Age.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/VØJ, Narvent - Memory Reboot.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/Radiohead - Karma Police.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/Radiohead - Man Of War.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: process command "add \"Alternativa/TV On The Radio - DLZ.mp3\""
+2026-03-16T10:32:01 client: command returned 0
+2026-03-16T10:32:01 client: [127.0.0.1:60550] process command list returned 0
+2026-03-16T10:32:01 client: [127.0.0.1:60550] process command "play 6"
+2026-03-16T10:32:01 playlist: play 6:"Alternativa/Radiohead - No Surprises.mp3"
+2026-03-16T10:32:01 decoder_thread: probing plugin mpg123
+2026-03-16T10:32:01 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:01 playlist: queue song 7:"Alternativa/Mr. Kitty - Shadow Dancer.mp3"
+2026-03-16T10:32:01 decoder: audio_format=48000:16:2, seekable=true
+2026-03-16T10:32:01 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:32:01 output: opened "pulse audio" (pulse) audio_format=48000:16:2
+2026-03-16T10:32:01 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:32:01 output: opened "Visualizer" (fifo) audio_format=44100:16:2
+2026-03-16T10:32:01 libsamplerate: setting samplerate conversion ratio to 0.92
+2026-03-16T10:32:01 output: converting in=48000:16:2 -> f=48000:16:2 -> out=44100:16:2
+2026-03-16T10:32:01 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:32:01 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:01 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:32:01 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:32:01 client: [127.0.0.1:60550] process command "playlistinfo"
+2026-03-16T10:32:01 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:01 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:32:01 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:01 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:32:01 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:01 client: [127.0.0.1:60550] process command "getvol"
+2026-03-16T10:32:01 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:01 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:32:01 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:32:02 client: [127.0.0.1:60550] process command "status"
+2026-03-16T10:32:02 client: [127.0.0.1:60550] command returned 0
+2026-03-16T10:32:02 client: [127.0.0.1:60550] process command "idle"
+2026-03-16T10:32:02 client: [127.0.0.1:60550] command returned 1
+2026-03-16T10:32:03 client: [127.0.0.1:60550] disconnected
+2026-03-16T10:32:05 player: played "Alternativa/Radiohead - No Surprises.mp3"
+2026-03-16T10:32:05 output: closed "pulse audio" (pulse)
+2026-03-16T10:32:05 output: closed "Visualizer" (fifo)
+2026-03-16T10:32:40 event: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+2026-03-16T10:32:42 client: [127.0.0.1:40378] client connected
+2026-03-16T10:32:42 client: [127.0.0.1:40378] process command "binarylimit 262144"
+2026-03-16T10:32:42 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:42 client: [127.0.0.1:40378] process command "commands"
+2026-03-16T10:32:42 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:42 client: [127.0.0.1:40378] process command "status"
+2026-03-16T10:32:42 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:42 client: [127.0.0.1:40378] process command "playlistinfo"
+2026-03-16T10:32:42 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:42 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:42 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:42 client: [127.0.0.1:40378] process command "lsinfo"
+2026-03-16T10:32:42 exception: Stored playlists are disabled
+2026-03-16T10:32:42 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:42 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:42 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:42 client: [127.0.0.1:40378] process command "lsinfo \"0Playlists\""
+2026-03-16T10:32:42 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:42 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:42 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "lsinfo \"Alternativa\""
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command list
+2026-03-16T10:32:43 client: process command "sticker list song \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command list returned 0
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command list
+2026-03-16T10:32:43 client: process command "clear"
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/Foster The People - Pumped Up Kicks.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/Mareux - The Perfect Girl.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/MGMT - Time to Pretend.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/Midge Ure - The Man Who Sold the World.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/Radiohead - Creep.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/Mr.Kitty - After Dark.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/Radiohead - No Surprises.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/Mr. Kitty - Shadow Dancer.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/Archive - Bullets.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/Hatsune Miku - o b l i v i o n.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/MGMT - Kids.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/MGMT - Little Dark Age.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/VØJ, Narvent - Memory Reboot.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/Radiohead - Karma Police.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/Radiohead - Man Of War.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: process command "add \"Alternativa/TV On The Radio - DLZ.mp3\""
+2026-03-16T10:32:43 client: command returned 0
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command list returned 0
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "play 0"
+2026-03-16T10:32:43 playlist: play 0:"Alternativa/Foster The People - Pumped Up Kicks.mp3"
+2026-03-16T10:32:43 decoder_thread: probing plugin mpg123
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:43 playlist: queue song 1:"Alternativa/Mareux - The Perfect Girl.mp3"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:43 decoder: audio_format=48000:16:2, seekable=true
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:43 output: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+2026-03-16T10:32:43 output: opened "pulse audio" (pulse) audio_format=48000:16:2
+2026-03-16T10:32:43 output: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+2026-03-16T10:32:43 output: opened "Visualizer" (fifo) audio_format=44100:16:2
+2026-03-16T10:32:43 libsamplerate: setting samplerate conversion ratio to 0.92
+2026-03-16T10:32:43 output: converting in=48000:16:2 -> f=48000:16:2 -> out=44100:16:2
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "playlistinfo"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "status"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "status"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "status"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "getvol"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:43 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:43 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:44 client: [127.0.0.1:40378] process command "status"
+2026-03-16T10:32:44 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:44 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:44 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:45 client: [127.0.0.1:40378] process command "status"
+2026-03-16T10:32:45 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:45 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:45 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:46 client: [127.0.0.1:40378] process command "status"
+2026-03-16T10:32:46 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:46 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:46 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:47 client: [127.0.0.1:40378] process command "status"
+2026-03-16T10:32:47 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:47 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:47 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:48 client: [127.0.0.1:40378] process command "status"
+2026-03-16T10:32:48 client: [127.0.0.1:40378] command returned 0
+2026-03-16T10:32:48 client: [127.0.0.1:40378] process command "idle"
+2026-03-16T10:32:48 client: [127.0.0.1:40378] command returned 1
+2026-03-16T10:32:48 signal_handlers: got SIGHUP, reopening log files and flushing caches
+2026-03-16T10:32:48 log: Cycling log files
+2026-03-16T10:32:48 log: Done cycling log files
+2026-03-16T10:32:48 signal_handlers: got SIGHUP, reopening log files and flushing caches
+2026-03-16T10:32:48 log: Cycling log files
+2026-03-16T10:32:48 log: Done cycling log files
+2026-03-16T10:32:48 player: played "Alternativa/Foster The People - Pumped Up Kicks.mp3"
+2026-03-16T10:32:48 output: closed "pulse audio" (pulse)
+2026-03-16T10:32:48 output: closed "Visualizer" (fifo)
+2026-03-16T10:52:23 exception: Stored playlists are disabled
+2026-03-16T10:55:08 player: played "Trilha sonora/Metal Gear Rising Revengeance -  A Stranger I Remain.mp3"
+2026-03-16T10:55:15 exception: Number too large: 105
+2026-03-16T10:55:15 exception: Number too large: 105
+2026-03-16T10:55:15 exception: Number too large: 105
+2026-03-16T10:55:16 exception: Number too large: 105
+2026-03-16T10:55:16 exception: Number too large: 105
+2026-03-16T10:55:16 exception: Number too large: 105
+2026-03-16T10:55:50 player: played "Trilha sonora/Evan Call, Evan Call, Evan Call - Time Flows Ever Onward (Short Ver.).mp3"
+2026-03-16T11:00:09 player: played "Trilha sonora/Cyberpunk 2077 - Johnny Silverhand Theme.mp3"
+2026-03-16T11:04:26 player: played "Trilha sonora/Kavinsky - Nightcall.mp3"
+2026-03-16T11:13:31 player: played "Trilha sonora/Heaven Pierce Her - Clastle Vein.mp3"
+2026-03-16T11:18:39 player: played "Trilha sonora/Clannad - Shining in the Sky.mp3"
+2026-03-16T11:23:57 exception: Number too large: 105
+2026-03-16T11:23:58 exception: Number too large: 105
+2026-03-16T11:23:58 exception: Number too large: 105
+2026-03-16T11:23:58 exception: Number too large: 105
+2026-03-16T11:23:58 exception: Number too large: 105
+2026-03-16T11:32:30 player: played "Trilha sonora/Re-Logic - The Journey Begins.mp3"
+2026-03-16T11:36:26 exception: Number too large: 105
+2026-03-16T11:43:15 player: played "Trilha sonora/Heaven Pierce Her - War Without Reason.mp3"
+2026-03-16T11:46:50 player: played "Trilha sonora/Berserk - Gats.mp3"
+2026-03-16T11:47:00 player: played "Trilha sonora/Puss in boots 2 - Death’s Whistle.mp3"
+2026-03-16T11:50:06 player: played "Trilha sonora/Persona 4 - It's Going Down Now.mp3"
+2026-03-16T11:52:06 player: played "Trilha sonora/One Piece - Overtaken.mp3"
+2026-03-16T11:54:38 player: played "Trilha sonora/FAIRY TAIL - メインテーマ (Main Theme).mp3"
+2026-03-16T11:56:59 exception: Number too large: 105
+2026-03-16T11:56:59 exception: Number too large: 105
+2026-03-16T11:56:59 exception: Number too large: 105
+2026-03-16T11:57:00 exception: Number too large: 105
+2026-03-16T11:58:12 player: played "Trilha sonora/Teenage Mutant Ninja Turtles  - Teenage Mutant Ninja Turtles Theme Song .mp3"
+2026-03-16T12:00:36 player: played "Trilha sonora/Death Note - Low of Solipsism.mp3"
+2026-03-16T12:05:19 player: played "Trilha sonora/Persona 5 - Beneath the Mask.mp3"
+2026-03-16T12:08:54 player: played "Trilha sonora/Cyberpunk 2077 - Chippin’  (Refused).mp3"
+2026-03-16T12:12:44 player: played "Trilha sonora/Dawid Podsiadło - Let You Down.mp3"
+2026-03-16T12:15:43 player: played "Trilha sonora/Jamie Lidell - Compass (Red Dead on Arrival version).mp3"
+2026-03-16T12:17:08 player: played "Trilha sonora/Nichijou  - Koigokoro wa Dangan mo Yawarakakusuru.mp3"
+2026-03-16T12:19:41 exception: Number too large: 105
+2026-03-16T12:19:42 exception: Number too large: 105
+2026-03-16T12:19:42 exception: Number too large: 105
+2026-03-16T12:19:55 exception: Number too large: 105
+2026-03-16T12:19:55 exception: Number too large: 105
+2026-03-16T12:19:55 exception: Number too large: 105
+2026-03-16T12:19:55 exception: Number too large: 105
+2026-03-16T12:19:55 exception: Number too large: 105
+2026-03-16T12:20:04 exception: Number too large: 105
+2026-03-16T12:20:04 exception: Number too large: 105
+2026-03-16T12:20:04 exception: Number too large: 105
+2026-03-16T12:20:14 exception: Number too large: 105
+2026-03-16T12:20:15 exception: Number too large: 105
+2026-03-16T12:20:16 exception: Number too large: 105
+2026-03-16T13:23:44 player: played "Trilha sonora/KONOSUBA 3 - あの日のままのぼくら (KONOSUBA 3 Ending).mp3"
+2026-03-16T13:25:14 player: played "Trilha sonora/Christopher Larkin - Cogwork Core.mp3"
+2026-03-16T13:26:52 player: played "Trilha sonora/Elden Ring - Theme.mp3"
+2026-03-16T13:29:48 player: played "Trilha sonora/Far Cry 5 - Keep Your Rifle by Your Side (Choir Version).mp3"
+2026-03-16T13:33:43 player: played "Trilha sonora/Persona 5 - Last Surprise.mp3"
+2026-03-16T13:37:07 player: played "Trilha sonora/Portal 2 - The Part Where He Kills You.mp3"
+2026-03-16T13:37:49 player: played "Trilha sonora/Cuphead - Don't Deal With The Devil.mp3"
+2026-03-16T13:41:21 player: played "Trilha sonora/Daniel Olsén - Inside.mp3"
+2026-03-16T13:41:30 exception: Number too large: 105
+2026-03-16T13:41:30 exception: Number too large: 105
+2026-03-16T13:41:30 exception: Number too large: 105
+2026-03-16T13:41:30 exception: Number too large: 105
+2026-03-16T13:41:30 exception: Number too large: 105
+2026-03-16T13:48:29 player: played "Trilha sonora/Heaven Pierce Her - ORDER.mp3"
+2026-03-16T13:53:17 player: played "Trilha sonora/Michael Wyckoff - Bone Theme.mp3"
+2026-03-16T13:56:46 player: played "Trilha sonora/Rezodrone - KILL THE MESSENGER.mp3"
+2026-03-16T14:05:21 player: played "Trilha sonora/JoJo's Bizarre Adventure - Vento d'oro.mp3"
+2026-03-16T16:31:20 exception: Number too large: 105
+2026-03-16T16:31:20 exception: Number too large: 105
+2026-03-16T16:31:20 exception: Number too large: 105
+2026-03-16T21:50:58 player: played "Trilha sonora/Heaven Pierce Her - Versus.mp3"
+2026-03-17T10:31:22 exception: Stored playlists are disabled
+2026-03-17T10:31:35 exception: Number too large: 105
+2026-03-17T10:31:57 exception: Number too large: 105
+2026-03-17T10:31:57 exception: Number too large: 105
+2026-03-17T10:31:59 exception: Number too large: 105
+2026-03-17T10:32:03 exception: Number too large: 105
+2026-03-17T10:32:03 exception: Number too large: 105
+2026-03-17T10:32:04 exception: Number too large: 105
+2026-03-17T10:32:04 exception: Number too large: 105
+2026-03-17T10:33:48 player: played "Trilha sonora/Christopher Larkin - Skarrsinger Karmelita.mp3"
+2026-03-17T10:33:51 exception: Number too large: 105
+2026-03-17T10:33:51 exception: Number too large: 105
+2026-03-17T10:33:51 exception: Number too large: 105
+2026-03-17T10:33:51 exception: Number too large: 105
+2026-03-17T10:33:51 exception: Number too large: 105
+2026-03-17T10:33:51 exception: Number too large: 105
+2026-03-17T10:33:51 exception: Number too large: 105
+2026-03-17T10:33:51 exception: Number too large: 105
+2026-03-17T10:33:51 exception: Number too large: 105
+2026-03-17T10:33:51 exception: Number too large: 105
+2026-03-17T10:33:51 exception: Number too large: 105
+2026-03-17T10:39:57 player: played "Trilha sonora/Daniel Olsén - Sayonara Wild Heart.mp3"
+2026-03-17T10:41:35 player: played "Trilha sonora/Yakuza 0 - Friday Night.mp3"
+2026-03-17T10:46:15 player: played "Trilha sonora/Heaven Pierce Her - Dune Eternal.mp3"
+2026-03-17T10:50:29 player: played "Trilha sonora/Cyberpunk 2077 - Been Good To Know Ya.mp3"
+2026-03-17T10:55:00 player: played "Trilha sonora/Daniel Olsén - Begin Again.mp3"
+2026-03-17T10:56:40 player: played "Trilha sonora/ Kan. R. Gao, Laura Shigihara - For River (Johnny's Version).mp3"
+2026-03-17T11:00:13 exception: Number too large: 105
+2026-03-17T11:00:29 exception: Number too large: 105
+2026-03-17T11:00:30 exception: Number too large: 105
+2026-03-17T11:00:44 exception: Number too large: 105
+2026-03-17T11:00:47 exception: Number too large: 105
+2026-03-17T11:08:28 player: played "Trilha sonora/The Alchemist & Oh No - We Were Set Up.mp3"
+2026-03-17T11:09:11 player: played "Trilha sonora/Cuphead - Don't Deal With The Devil.mp3"
+2026-03-17T11:13:28 player: played "Trilha sonora/Rezodrone - Resist and Disorder.mp3"
+2026-03-17T11:13:36 exception: Number too large: 105
+2026-03-17T11:13:36 exception: Number too large: 105
+2026-03-17T11:13:36 exception: Number too large: 105
+2026-03-17T11:13:36 exception: Number too large: 105
+2026-03-17T11:16:41 player: played "Trilha sonora/Jamie Lidell - Compass (Red Dead on Arrival version).mp3"
+2026-03-17T12:27:59 player: played "Trilha sonora/Persona 5 - Beneath the Mask.mp3"
+2026-03-17T12:36:37 exception: Stored playlists are disabled
+2026-03-17T13:51:06 player: played "Trilha sonora/Amit Trivedi - Dosti.mp3"
+2026-03-17T13:51:12 player: played "Trilha sonora/Amit Trivedi - Dosti.mp3"
+2026-03-17T13:51:13 exception: Number too large: -1
+2026-03-17T13:54:40 player: played "Internacional/Calvin Harris - Feel So Close.mp3"
+2026-03-17T13:55:48 exception: No such directory
+2026-03-17T13:56:12 exception: No such directory
+2026-03-17T13:56:26 exception: Access to local files via TCP is not allowed
+2026-03-17T14:03:03 exception: No such directory
+2026-03-17T14:03:07 exception: No such directory
+2026-03-17T14:03:20 exception: No such directory
+2026-03-17T14:04:02 exception: No such directory
+2026-03-17T14:04:24 exception: No such directory
+2026-03-17T14:05:37 exception: No such directory
+2026-03-17T14:08:25 exception: No such directory
+2026-03-17T14:08:35 exception: No such directory
+2026-03-17T14:10:19 exception: Access to local files via TCP is not allowed
+2026-03-17T14:10:40 exception: Access to local files via TCP is not allowed
+2026-03-17T14:10:53 exception: Access to local files via TCP is not allowed
+2026-03-17T14:11:04 client: [[::1]:59368] malformed command "/home/gabriel/Músicas/Eletronica/Gigi D’Agostino - L'amour toujours.mp3\""
+2026-03-17T14:11:16 client: [[::1]:54418] malformed command "/home/gabriel/Músicas/Eletronica/Gigi D’Agostino - L'amour toujours.mp3\""
+2026-03-17T14:11:19 exception: Access to local files via TCP is not allowed
+2026-03-17T14:14:01 exception: No such directory
+2026-03-17T14:14:01 exception: No such directory
+2026-03-17T14:14:01 exception: No such directory
+2026-03-17T14:14:01 exception: No such directory
+2026-03-17T14:14:01 exception: No such directory
+2026-03-17T14:16:20 exception: No such directory
+2026-03-17T14:16:20 exception: No such directory
+2026-03-17T14:16:20 exception: No such directory
+2026-03-17T14:16:20 exception: No such directory
+2026-03-17T14:16:20 exception: No such directory
+2026-03-17T14:16:52 exception: No such directory
+2026-03-17T14:16:52 exception: No such directory
+2026-03-17T14:16:52 exception: No such directory
+2026-03-17T14:16:52 exception: No such directory
+2026-03-17T14:16:52 exception: No such directory
+2026-03-17T14:17:07 exception: No such directory
+2026-03-17T14:17:07 exception: No such directory
+2026-03-17T14:17:07 exception: No such directory
+2026-03-17T14:17:07 exception: No such directory
+2026-03-17T14:17:07 exception: No such directory
+2026-03-17T14:17:21 exception: No such directory
+2026-03-17T14:17:22 exception: No such directory
+2026-03-17T14:17:22 exception: No such directory
+2026-03-17T14:17:22 exception: No such directory
+2026-03-17T14:17:22 exception: No such directory
+2026-03-17T14:17:51 exception: Access to local files via TCP is not allowed
+2026-03-17T14:18:00 exception: Access to local files via TCP is not allowed
+2026-03-17T14:18:56 exception: Access to local files via TCP is not allowed
+2026-03-17T14:19:05 exception: No such directory
+2026-03-17T14:19:05 exception: No such directory
+2026-03-17T14:19:05 exception: No such directory
+2026-03-17T14:19:05 exception: No such directory
+2026-03-17T14:19:06 exception: No such directory
+2026-03-17T14:19:54 exception: No such directory
+2026-03-17T14:19:54 exception: No such directory
+2026-03-17T14:19:54 exception: No such directory
+2026-03-17T14:19:54 exception: No such directory
+2026-03-17T14:19:54 exception: No such directory
+2026-03-17T14:21:24 mixer: Failed to set mixer for "pulse audio": disconnected
+2026-03-17T14:21:24 exception: Failed to set mixer for "pulse audio"; disconnected
+2026-03-17T14:21:26 player: played "Eletronica/Yeah Yeah Yeahs - Heads Will Roll (A-Trak club mix).mp3"
+2026-03-17T14:27:34 exception: Number too large: 105
+2026-03-17T14:27:34 exception: Number too large: 105
+2026-03-17T14:27:54 exception: Number too large: 105
+2026-03-17T14:27:54 exception: Number too large: 105
+2026-03-17T14:27:54 exception: Number too large: 105
+2026-03-17T14:27:54 exception: Number too large: 105
+2026-03-17T14:27:54 exception: Number too large: 105
+2026-03-17T14:27:55 exception: Number too large: 105
+2026-03-17T14:27:55 exception: Number too large: 105
+2026-03-17T14:27:55 exception: Number too large: 105
+2026-03-17T14:27:55 exception: Number too large: 105
+2026-03-17T14:32:20 exception: Number too large: 105
+2026-03-17T14:32:35 player: played "Eletronica/Gigi D’Agostino - L'amour toujours.mp3"
+2026-03-17T14:35:05 exception: Number too large: 105
+2026-03-17T14:35:06 exception: Number too large: 105
+2026-03-17T14:35:06 exception: Number too large: 105
+2026-03-17T14:35:07 exception: Number too large: 105
+2026-03-17T14:35:12 player: played "Eletronica/Gigi D’Agostino - L'amour toujours.mp3"
+2026-03-17T14:35:21 exception: No such directory

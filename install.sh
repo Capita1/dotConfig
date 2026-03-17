@@ -45,11 +45,11 @@ else
 	#Apps
 	sudo pacman -S $flags kitty pavucontrol blueman thunar thunar-media-tags-plugin thunar-shares-plugin thunar-volman ffmpegthumbnailer tumbler gvfs gparted grim slurp gvfs-smb smbclient
 	#Texto
-	sudo pacman -S $flags libreoffice-still neovide neovim mousepad zathura zathura-pdf-mupdf 
+	sudo pacman -S $flags neovim mousepad zathura zathura-pdf-mupdf 
 	#Midia
 	sudo pacman -S $flags feh mpd mpd-mpris rmpc mpv playerctl
 	#CLI
-	sudo pacman -S $flags neofetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard tealdeer unzip github-cli flatpak
+	sudo pacman -S $flags fastfetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard unzip github-cli flatpak
 	#Fontes
 	sudo pacman -S $flags ttf-nerd-fonts-symbols-mono ttf-terminus-nerd adobe-source-code-pro-fonts
 fi
