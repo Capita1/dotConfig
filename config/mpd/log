@@ -13439,3 +13439,6 @@ load_mid > melody track ends with note on (channel 6, 40644 > 0 note 74)
 2026-04-13T16:16:06 exception: Number too large: 110
 2026-04-13T16:18:31 player: played "Eletronica/Tiësto - The Business.mp3"
 2026-04-13T18:53:27 player: played "Trilha sonora/Casey Edwards & Victor Borba - Vacant Surrender.mp3"
+2026-04-14T08:05:28 exception: Stored playlists are disabled
+2026-04-14T08:09:23 player: played "TIA& Lê Thiện Hiếu - Ai Đưa Em Về (Cukak Remix).mp3"
+2026-04-14T08:09:42 player: played "Gerry Rafferty - Baker Street.mp3"

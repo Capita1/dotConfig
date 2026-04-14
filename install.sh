@@ -42,6 +42,8 @@ else
 	echo -e "${YEL}\nBaixando Apps...\n${NC}"
 	#Interface
 	sudo pacman -S $flags hyprland swaync waybar wofi wpaperd nwg-look polkit-kde-agent xdg-desktop-portal-gtk xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-hyprland hyprsunset hyprlock
+	#Audio
+	sudo pacman -S $flags gst-plugin-pipewire lib32-libpipewire libpipewire pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse wireplumber
 	#Apps
 	sudo pacman -S $flags kitty pavucontrol blueman thunar thunar-media-tags-plugin thunar-shares-plugin thunar-volman ffmpegthumbnailer tumbler gvfs gparted grim slurp gvfs-smb smbclient
 	#Texto
