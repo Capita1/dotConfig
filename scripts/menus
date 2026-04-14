@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 config=$HOME/.config/
 temas="$config/dotConfig/temas"
 opcoes="1: 󰵆 Apps\n2: 󰚰 Atualizar\n3: 󰍃 Sair\n4:  Temas\n5:  Baixar\n6:  Area de transferência\n7: 󰩉 Achar janela\n8: 󰐃 Fixar janela\n9:  Wallpapers\n10:   Ler imagem"
