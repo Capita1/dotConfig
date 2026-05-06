@@ -4,10 +4,14 @@ export EDITOR=nvim
 export VISUAL=nvim
 #se logado no tty1
 if [[ "$(tty)" == "/dev/tty1" ]] ; then
+	if [ -f "/tmp/sai" ]; then
+		exec /usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland
+	else
 		exec start-hyprland &>/dev/null
+	fi
 fi
 #se Hyprland estiver rodando
-if pgrep -x "Hyprland" > /dev/null ; then
+if pgrep -x "Hyprland" > /dev/null || pgrep -x "plasmashell" > /dev/null ; then
 	user="$(whoami)"
 	export TERM=xterm-kitty   
 	export QT_IM_MODULE=fcitx

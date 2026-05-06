@@ -1,5 +1,5 @@
 #!/bin/bash
-indice=0
+indice=15
 
 frases=( \
 "Casas e riquezas herdam-se dos pais,\nmas a esposa prudente vem do Senhor.\n-Provérbios 19:14" \
@@ -21,6 +21,7 @@ frases=( \
 "The society that separates its scholars from its warriors will\nhave its thinking done by cowards and its fighting by fools -Thucydides" \
 "Na muita sabedoria, há muito enfado; e o que aumenta em ciência aumenta em trabalho\n-Eclesiaste 1:18" \
 "Pois Deus amou tanto o mundo, que entregou o seu filho único,\npara que todo o que nele crê não pereça, mas tenha vida eterna.\n-João 3:16" \
+"Quem tem um porquê enfrenta qualquer como\n-Friedrich Nietzsche" \
 )
 max="${#frases[@]}" 
 text=${frases[$indice]} 

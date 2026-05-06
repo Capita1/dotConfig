@@ -1,5 +1,4 @@
 #wofi config
-prompt=I really want to stay at your house
 stylesheet=css
 width=400
 height=350
@@ -7,5 +6,4 @@ term=kitty
 insensitive=true
 hide_scroll=true
 allow_images=true
-hide_search=true
 single_click=true

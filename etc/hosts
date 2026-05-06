@@ -6,30 +6,6 @@
 ff02::1    ip6-allnodes
 ff02::2    ip6-allrouters
 
-# V Redes sociais V 
-127.0.0.1	twitter.com
-127.0.0.1	www.twitter.com
-127.0.0.1	x.com
-127.0.0.1	www.x.com
-::1	twitter.com
-::1	www.twitter.com
-::1	x.com
-::1	www.x.com
-127.0.0.1	facebook.com
-127.0.0.1	www.facebook.com
-127.0.0.1	login.facebook.com
-127.0.0.1	www.login.facebook.com
-127.0.0.1	static.ak.fbcdn.net
-127.0.0.1	static.ak.connect.facebook.com
-127.0.0.1	www.connect.facebook.net
-127.0.0.1	connect.facebook.net
-127.0.0.1	www.fbcdn.net
-127.0.0.1	fbcdn.net
-127.0.0.1	fbcdn.com
-127.0.0.1	www.fbcdn.com
-127.0.0.1	www.instagram.com
-127.0.0.1	instagram.com
-#^ Redes sociais ^ 
 
 127.0.0.1	yt.moatads.com
 127.0.0.1	us.intellitxt.com
@@ -92249,20 +92225,6 @@ ff02::2    ip6-allrouters
 127.0.0.1	www.unionleisurewear.com
 127.0.0.1	www.vntanktransport.com
 127.0.0.1	www.vydoxtrial.com
-127.0.0.1	#------------------------------------[UPDATE]--------------------------------------
-127.0.0.1	#Title:TheBlockListProject-YoutubeList
-127.0.0.1	#Expires:1day
-127.0.0.1	#Homepage:https://blocklist.site
-127.0.0.1	#Help:https://github.com/blocklistproject/lists/wiki/
-127.0.0.1	#License:https://unlicense.org
-127.0.0.1	#Totalnumberofnetworkfilters:24280
-127.0.0.1	#------------------------------------[SUPPORT]-------------------------------------
-127.0.0.1	#Youcansupportby:
-127.0.0.1	#-reportingfalsepositives
-127.0.0.1	#-makingadonation:https://paypal.me/blocklistproject
-127.0.0.1	#-------------------------------------[INFO]---------------------------------------
-127.0.0.1	#Youtubelist-Takethislistwithagrainofsalt.Googleisalwayschangingtheiradservingdomains.
-127.0.0.1	#------------------------------------[FILTERS]-------------------------------------
 127.0.0.1	r1---sls.googlevideo.com
 127.0.0.1	r1---sn--0opoxu-2cjy.googlevideo.com
 127.0.0.1	r1---sn--0ub03g5pox-3c2l.googlevideo.com
@@ -254517,7 +254479,6 @@ ff02::2    ip6-allrouters
 127.0.0.1	eromaxx-light.eu
 127.0.0.1	eromaxx.net
 127.0.0.1	eromaxxx.dk
-127.0.0.1	erome.com
 127.0.0.1	eromeet.com
 127.0.0.1	eromeet.de
 127.0.0.1	eromeeting.de
@@ -354378,6 +354339,28 @@ ff02::2    ip6-allrouters
 127.0.0.1	jared7732.tumblr.com
 127.0.0.1	jaredandmichelle.tumblr.com
 127.0.0.1	jareddr121.tumblr.com
+127.0.0.1	twitter.com
+127.0.0.1	www.twitter.com
+127.0.0.1	x.com
+127.0.0.1	www.x.com
+::1	twitter.com
+::1	www.twitter.com
+::1	x.com
+::1	www.x.com
+127.0.0.1	www.instagram.com
+127.0.0.1	instagram.com
+127.0.0.1	facebook.com
+127.0.0.1	www.facebook.com
+127.0.0.1	login.facebook.com
+127.0.0.1	www.login.facebook.com
+127.0.0.1	static.ak.fbcdn.net
+127.0.0.1	static.ak.connect.facebook.com
+127.0.0.1	www.connect.facebook.net
+127.0.0.1	connect.facebook.net
+127.0.0.1	www.fbcdn.net
+127.0.0.1	fbcdn.net
+127.0.0.1	fbcdn.com
+127.0.0.1	www.fbcdn.com
 127.0.0.1	jaredpadaleckisass.com
 127.0.0.1	jaredsgirls.tumblr.com
 127.0.0.1	jaredsolo.tumblr.com
@@ -615046,6 +615029,7 @@ ff02::2    ip6-allrouters
 127.0.0.1	www.amateurest.com
 127.0.0.1	www.dump.xxx
 127.0.0.1	www.erome.com
+127.0.0.1	erome.com
 127.0.0.1	deeplush.com
 127.0.0.1	landing.trueamateurs.com
 127.0.0.1	dirtyship.com

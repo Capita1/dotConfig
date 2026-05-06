@@ -1,21 +1,19 @@
-@define-color yellow #fdee00;
-@define-color unfocused #ee4f47;
-@define-color text #79a2ac;
-@define-color border #48c3c5;
-@define-color background rgba(36, 15, 22, 1);
-@define-color boxbackground rgba(18, 16, 29,1);
+@define-color text #FFA757;
+@define-color unfocused rgba(255, 167, 87, 0.5);
+@define-color border #FFA757;
 
 *{
-font-family:"Symbols Nerd Font Mono","Play";
+font-family:"Terminess Nerd Font Mono";
 font-size:15px;
+font-weight:bold;
 color:@text;
 border-radius:0px;
 }
 .notification{
-background:@boxbackground;
+background:black;
 border:1px solid @border;
 }
 .control-center{
-background:@background;
+background:black;
 border:1px solid @border;
 }

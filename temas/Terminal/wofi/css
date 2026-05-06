@@ -1,23 +1,27 @@
 /*WOFI TERMINAL*/
-@define-color text-unfocused #ee4f47;
-@define-color text #79a2ac;
-@define-color border #48c3c5;
-@define-color bluback rgba(18, 16, 29, 1);
-@define-color redback rgba(36, 15, 22, 1);
+@define-color unfocused rgba(255, 167, 87,0.5);
+@define-color text #FFA757;
+@define-color border #FFA757;
 *{
-font-family:Play;
+font-family:Terminess Nerd Font Mono;
+font-weight:bold;
 font-size:15px;
 box-shadow: none;
+background:transparent;
 }
 window{
-background:@redback;
+background:black;
 border:1px solid @border;
 }
 #entry,#entry:selected,#expander-box{
+color:@unfocused;
 padding:5px;
 margin:5px;
+}
+#entry:selected #text{
 color:@text;
-background:@bluback;
+}
+#entry:selected{
 border:1px solid @border;
 }
 img,#img{
@@ -26,13 +30,8 @@ height: 5px;
 max-width: 10%;
 max-height: 10%;
 }
-#entry{
-color:@text-unfocused;
-border:1px solid transparent;
-background:none;
-transition: all .5s linear;
-}
 #input{
-display: none;
-margin: -1000px 5px; 
+margin:1px;
+border:none;
+border-radius:0px;
 }

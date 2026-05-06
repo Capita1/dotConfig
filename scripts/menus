@@ -55,7 +55,7 @@ case "$1" in
 		case "$choice" in
 		  1) hyprctl dispatch exit & systemctl poweroff ;;
 		  2) hyprctl dispatch exit & systemctl reboot ;;
-		  3) hyprctl dispatch exit ;;
+		  3) touch /tmp/sai ; hyprctl dispatch exit ;;
 		esac
 	;;
 	4)#temas
