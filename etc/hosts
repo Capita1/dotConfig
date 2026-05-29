@@ -6,7 +6,6 @@
 ff02::1    ip6-allnodes
 ff02::2    ip6-allrouters
 
-
 127.0.0.1	yt.moatads.com
 127.0.0.1	us.intellitxt.com
 127.0.0.1	evolveplatform.net
@@ -354339,16 +354338,6 @@ ff02::2    ip6-allrouters
 127.0.0.1	jared7732.tumblr.com
 127.0.0.1	jaredandmichelle.tumblr.com
 127.0.0.1	jareddr121.tumblr.com
-127.0.0.1	twitter.com
-127.0.0.1	www.twitter.com
-127.0.0.1	x.com
-127.0.0.1	www.x.com
-::1	twitter.com
-::1	www.twitter.com
-::1	x.com
-::1	www.x.com
-127.0.0.1	www.instagram.com
-127.0.0.1	instagram.com
 127.0.0.1	facebook.com
 127.0.0.1	www.facebook.com
 127.0.0.1	login.facebook.com
@@ -479248,6 +479237,7 @@ ff02::2    ip6-allrouters
 127.0.0.1	redgaytube.net
 127.0.0.1	redgayvideos.com
 127.0.0.1	redgifs.com
+127.0.0.1	www.redgifs.com
 127.0.0.1	redgonzo.com
 127.0.0.1	redgrins-hard.tumblr.com
 127.0.0.1	redgrins.tumblr.com
@@ -615258,7 +615248,6 @@ ff02::2    ip6-allrouters
 127.0.0.1	iloopit.net
 127.0.0.1	www.gifporntube.com
 127.0.0.1	gifsauce.com
-127.0.0.1	www.redgifs.com
 127.0.0.1	porngifs2u.com
 127.0.0.1	www.erofus.com
 127.0.0.1	myhentaigallery.com
@@ -616704,6 +616693,16 @@ ff02::2    ip6-allrouters
 127.0.0.1	spankingpornfree.com
 127.0.0.1	spankingx.com
 127.0.0.1	spank-tube.info
+127.0.0.1	twitter.com
+127.0.0.1	www.twitter.com
+127.0.0.1	x.com
+127.0.0.1	www.x.com
+::1	twitter.com
+::1	www.twitter.com
+::1	x.com
+::1	www.x.com
+127.0.0.1	www.instagram.com
+127.0.0.1	instagram.com
 127.0.0.1	springporno.com
 127.0.0.1	stasyq.com
 127.0.0.1	steamygamer.com

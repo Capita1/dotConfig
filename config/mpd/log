@@ -20090,3 +20090,584 @@ Note: Hit end of (available) data during resync.
 2026-05-06T12:19:46 exception: Number too large: 105
 2026-05-06T12:19:46 exception: Number too large: 105
 2026-05-06T12:19:48 exception: Number too large: 105
+2026-05-06T12:23:22 exception: Number too large: 105
+2026-05-06T12:23:23 exception: Number too large: 105
+2026-05-06T12:23:23 exception: Number too large: 105
+2026-05-06T12:23:23 exception: Number too large: 105
+2026-05-06T12:28:48 exception: Number too large: 105
+2026-05-06T12:28:55 exception: Number too large: 105
+2026-05-06T15:19:38 player: played "Eletronica/Gigi D’Agostino - L'amour toujours.mp3"
+2026-05-06T15:27:39 player: played "Trilha sonora/Jamie Lidell - Compass (Red Dead on Arrival version).mp3"
+2026-05-06T15:31:10 player: played "Hip Hop e Rap/Ye - Heartless.mp3"
+2026-05-06T15:34:21 player: played "Toque/Ulisses Rocha - Rindo da saudade.mp3"
+2026-05-06T15:38:11 player: played "Eletronica/TIA& Lê Thiện Hiếu - Ai Đưa Em Về (Cukak Remix).mp3"
+2026-05-06T15:41:50 player: played "Eletronica/Alice DeeJay - Better Off Alone.mp3"
+2026-05-06T15:44:07 player: played "Sertaneja/José Mendes - Rodeio de Vacaria.mp3"
+2026-05-06T15:47:34 player: played "Internacional/Calvin Harris - Feel So Close.mp3"
+2026-05-06T15:50:56 player: played "Country/Juice Newton - Queen of Hearts.mp3"
+2026-05-06T15:54:52 player: played "Toque/Force of Nature - just forget.mp3"
+2026-05-06T15:57:49 player: played "MPB/Milton Nascimento - Tudo que você podia ser.mp3"
+2026-05-06T16:02:51 player: played "Country/Buck Owens and The Buckaroos - Made in Japan.mp3"
+2026-05-06T16:05:01 player: played "Trilha sonora/Graeme Cornies, Jamie Christopherson - I'm My Own Master Now.mp3"
+2026-05-06T16:12:37 player: played "Eletronica/Robert Miles - Children (Dream version).mp3"
+2026-05-06T16:15:58 player: played "Eletronica/Erika - I Don't Know.mp3"
+2026-05-06T16:19:17 player: played "Trilha sonora/Konobakuen - JUMP IN.mp3"
+2026-05-06T16:23:01 player: played "MPB/Projota - Ela Só Quer Paz.mp3"
+2026-05-06T16:25:28 player: played "Trilha sonora/Ilmari Hakkola - Building Contraptions.mp3"
+2026-05-06T16:28:22 exception: Number too large: 105
+2026-05-06T16:28:22 exception: Number too large: 105
+2026-05-06T16:28:22 exception: Number too large: 105
+2026-05-06T16:28:22 exception: Number too large: 105
+2026-05-06T16:31:05 player: played "Sertaneja/Luiz Gonzaga - Xote dos cabeludos.mp3"
+2026-05-06T16:32:35 player: played "Internacional/wifiskeleton & i wanna be a jack-o-lantern - Nope your too late i already died.mp3"
+2026-05-06T16:38:59 player: played "Eletronica/Yeah Yeah Yeahs - Heads Will Roll (A-Trak club mix).mp3"
+2026-05-06T16:41:35 player: played "Country/The Statler Brothers - Bed of Roses.mp3"
+2026-05-06T16:44:47 player: played "Trilha sonora/David Ferguson - The Housebuilding Song.mp3"
+2026-05-06T16:49:00 player: played "Eletronica/Akcent - That's My Name.mp3"
+2026-05-06T16:51:55 player: played "Sertaneja/José Mendes - Roubei a Fazendeira.mp3"
+2026-05-06T16:56:25 player: played "Rock/Tom Petty - Runnin’ Down a Dream.mp3"
+2026-05-06T16:56:36 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-06T16:56:39 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-06T16:59:51 player: played "Rock/Duran Duran - Invisible.mp3"
+2026-05-06T17:06:00 player: played "Eletronica/Daft Punk - Get Lucky (feat. Pharrel Williams And Nile Rodgers).mp3"
+2026-05-06T17:10:50 player: played "Rock/Red Hot Chili Peppers - Otherside.mp3"
+2026-05-06T17:19:23 player: played "Trilha sonora/Casey Edwards & Victor Borba - Vacant Surrender.mp3"
+2026-05-06T17:23:37 player: played "Sertaneja/Berenice Azambuja - É Disso que o Velho Gosta.mp3"
+2026-05-06T17:28:21 player: played "Internacional/Rupert Holmes - Escape (The Piña Colada Song).mp3"
+2026-05-06T18:46:06 player: played "Toque/Force of Nature - just forget.mp3"
+2026-05-06T18:54:20 player: played "Trilha sonora/Persona 4 - It's Going Down Now.mp3"
+2026-05-06T18:58:35 player: played "Eletronica/Porter Robinson - Shelter.mp3"
+2026-05-06T19:02:29 player: played "MPB/Los Hermanos - Anna Júlia.mp3"
+2026-05-06T19:05:25 player: played "Internacional/Glen Campbell - Southern Nights.mp3"
+2026-05-06T19:08:22 player: played "Sertanejo universitário/Henrique e Juliano - Pra Que Juízo (DVD Ao vivo em(MP3_160K).mp3"
+2026-05-06T19:12:11 player: played "Internacional/Johnny Cash - Sixteen Tons.mp3"
+2026-05-06T19:16:40 player: played "Sertaneja/Di Paullo e Paulino - Amor de Primavera.mp3"
+2026-05-06T19:19:36 player: played "Sertaneja/Tião Carreiro e Pardinho - Rei do gado.mp3"
+2026-05-06T20:12:57 player: played "Trilha sonora/Devil May Cry 5 - Devil Trigger.mp3"
+2026-05-07T13:36:47 exception: Stored playlists are disabled
+2026-05-07T14:22:43 player: played "Trilha sonora/KONOSUBA 3 - あの日のままのぼくら (KONOSUBA 3 Ending).mp3"
+2026-05-07T18:47:04 player: played "Trilha sonora/ROUND TABLE featuring Nino - Let Me Be With You.mp3"
+2026-05-07T18:52:57 exception: Stored playlists are disabled
+2026-05-07T18:53:02 player: played "Trilha sonora/ROUND TABLE featuring Nino - Groovin' Magic.mp3"
+2026-05-07T18:53:11 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-07T18:53:11 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-07T18:57:28 player: played "Rock/Bon Jovi - Livin' on a Prayer.mp3"
+2026-05-07T19:00:01 player: played "MPB/Tim Maia - Não Quero Dinheiro (Só Quero Amar).mp3"
+2026-05-07T19:03:49 player: played "Sertaneja/Tião Carreiro e Pardinho - Eu, a Viola e Ela.mp3"
+2026-05-07T20:45:25 player: played "Sertaneja/Tião Carreiro & Pardinho - Minha Prece.mp3"
+2026-05-07T20:45:25 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-07T20:45:25 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-07T20:45:27 exception: Number too large: 110
+2026-05-07T20:45:28 exception: Number too large: 110
+2026-05-07T20:45:28 exception: Number too large: 110
+2026-05-07T21:28:40 exception: Number too large: 110
+2026-05-07T22:04:57 player: played "Internacional/Meiko Nakahara - Fantasy.mp3"
+2026-05-08T09:26:43 exception: Stored playlists are disabled
+2026-05-08T09:26:49 exception: Number too large: 110
+2026-05-08T09:30:07 player: played "Trilha sonora/Konobakuen - JUMP IN.mp3"
+2026-05-08T10:09:45 mpg123: mpg123_read() failed: A generic mpg123 error.
+2026-05-08T10:10:31 player: played "Sertaneja/Tião Carreiro & Pardinho - Filhinho de Papai.mp3"
+2026-05-08T10:14:43 player: played "Rock/Evanescence - Bring Me To Life.mp3"
+2026-05-08T10:16:52 player: played "Internacional/Mitski - Washing Machine Heart .mp3"
+2026-05-08T10:18:23 player: played "Trilha sonora/Daniel Olsén - Sayonara Wild Heart.mp3"
+2026-05-08T10:21:26 player: played "Sertaneja/José Mendes - Para Pedro!.mp3"
+2026-05-08T10:24:20 player: played "Eletronica/paranoia - KENTENSHI.mp3"
+2026-05-08T10:24:44 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T10:24:44 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T10:32:56 player: played "Hip Hop e Rap/Travis Scott - HIGHEST IN THE ROOM.mp3"
+2026-05-08T10:36:15 player: played "Eletronica/YourLocalSchizo - Vielleicht Vielleicht - Agartha Remix.mp3"
+2026-05-08T10:38:59 player: played "Phonk/DVRST - Close Eyes.mp3"
+2026-05-08T10:41:25 player: played "MPB/Charlie Brown Jr. - Dias De Luta, Dias De Glória.mp3"
+2026-05-08T10:45:38 player: played "Trilha sonora/Heaven Pierce Her - Versus.mp3"
+2026-05-08T10:50:20 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T10:50:56 player: played "Trilha sonora/Christopher Larkin - City of Tears.mp3"
+2026-05-08T10:50:57 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T10:57:40 player: played "Rock/Gerry Rafferty - Baker Street.mp3"
+2026-05-08T11:00:58 player: played "Trilha sonora/Little Barrie - Better Call Saul Theme (Extended).mp3"
+2026-05-08T11:04:05 player: played "Toque/Ulisses Rocha - Rindo da saudade.mp3"
+2026-05-08T11:08:08 player: played "Internacional/The Jolly Rogers - The Flying Dutchman.mp3"
+2026-05-08T11:12:18 exception: Number too large: 110
+2026-05-08T11:12:18 exception: Number too large: 110
+2026-05-08T11:14:38 player: played "Rock/Rammstein - Sonne (Slowed).mp3"
+2026-05-08T11:15:42 exception: Number too large: 110
+2026-05-08T11:18:31 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T11:18:31 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T11:22:44 player: played "Sertaneja/Tião Carreiro e Pardinho - Rei do gado.mp3"
+2026-05-08T11:25:37 player: played "Phonk/NUEKI - SO TIRED.mp3"
+2026-05-08T11:29:02 mpg123: mpg123_read() failed: A generic mpg123 error.
+2026-05-08T11:29:42 player: played "Sertaneja/Tião Carreiro & Pardinho - A Beleza do Ponteio.mp3"
+2026-05-08T11:39:33 player: played "Trilha sonora/Christopher Larkin - Daughter of Hallownest.mp3"
+2026-05-08T11:45:27 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T11:46:13 player: played "Eletronica/Hyper - Spoiler.mp3"
+2026-05-08T11:46:13 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T11:50:10 player: played "Trilha sonora/Majestic Violin feat. Landon Bassier - Aria Math - String Cover.mp3"
+2026-05-08T11:53:34 player: played "Rock/Disturbed - Decadence.mp3"
+2026-05-08T11:59:50 player: played "Clássica/Pachelbel - Canon In D.mp3"
+2026-05-08T12:02:48 player: played "Trilha sonora/Fullmetal Alchemist - Lapis Philosophorum.mp3"
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM cards.pcm.side
+ALSA lib confmisc.c:1377:(snd_func_refer) [error.core] Unable to find definition 'cards.0.pcm.hdmi.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:5207:(_snd_config_evaluate) [error.core] function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5730:(snd_config_expand) [error.core] Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM hdmi
+ALSA lib confmisc.c:1377:(snd_func_refer) [error.core] Unable to find definition 'cards.0.pcm.hdmi.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:5207:(_snd_config_evaluate) [error.core] function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5730:(snd_config_expand) [error.core] Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM hdmi
+ALSA lib confmisc.c:1377:(snd_func_refer) [error.core] Unable to find definition 'cards.0.pcm.modem.0:CARD=0'
+ALSA lib conf.c:5207:(_snd_config_evaluate) [error.core] function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5730:(snd_config_expand) [error.core] Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM cards.pcm.phoneline:CARD=0,DEV=0
+ALSA lib confmisc.c:1377:(snd_func_refer) [error.core] Unable to find definition 'cards.0.pcm.modem.0:CARD=0'
+ALSA lib conf.c:5207:(_snd_config_evaluate) [error.core] function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5730:(snd_config_expand) [error.core] Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM cards.pcm.phoneline:CARD=0,DEV=0
+ALSA lib confmisc.c:1377:(snd_func_refer) [error.core] Unable to find definition 'cards.0.pcm.modem.0:CARD=0'
+ALSA lib conf.c:5207:(_snd_config_evaluate) [error.core] function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5730:(snd_config_expand) [error.core] Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM phoneline
+ALSA lib confmisc.c:1377:(snd_func_refer) [error.core] Unable to find definition 'cards.0.pcm.modem.0:CARD=0'
+ALSA lib conf.c:5207:(_snd_config_evaluate) [error.core] function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5730:(snd_config_expand) [error.core] Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM phoneline
+ALSA lib pcm_oss.c:404:(_snd_pcm_oss_open) [error.] Cannot open device /dev/dsp
+ALSA lib pcm_oss.c:404:(_snd_pcm_oss_open) [error.] Cannot open device /dev/dsp
+ALSA lib pcm_a52.c:1036:(_snd_pcm_a52_open) [error.] a52 is only for playback
+ALSA lib confmisc.c:160:(snd_config_get_card) [error.core] Invalid field card
+ALSA lib pcm_usb_stream.c:481:(_snd_pcm_usb_stream_open) [error.] Invalid card 'card'
+ALSA lib confmisc.c:160:(snd_config_get_card) [error.core] Invalid field card
+ALSA lib pcm_usb_stream.c:481:(_snd_pcm_usb_stream_open) [error.] Invalid card 'card'
+fluidsynth: warning: SDL3 not initialized, SDL3 audio driver won't be usable. Have you called SDL_Init(SDL_INIT_AUDIO) ?
+fluidsynth: error: fluid_sfloader_load(): Failed to open '/usr/share/sounds/sf2/FluidR3_GM.sf2': File does not exist.
+fluidsynth: error: Unable to open file '/usr/share/sounds/sf2/FluidR3_GM.sf2'
+fluidsynth: error: fluid_sfloader_load(): Failed to open '/usr/share/sounds/sf2/FluidR3_GM.sf2': File does not exist.
+fluidsynth: error: Exception thrown in fluid_dls_font constructor
+fluidsynth: error: exc: Unable to open file '/usr/share/sounds/sf2/FluidR3_GM.sf2'
+fluidsynth: error: Failed to load SoundFont "/usr/share/sounds/sf2/FluidR3_GM.sf2"
+2026-05-08T12:03:41 fluidsynth: fluid_synth_sfload() failed
+2026-05-08T12:03:41 ffmpeg/libmodplug: Format libmodplug detected only with low score of 24, misdetection possible!
+load_pat > can not open /usr/local/share/timidity/timidity.cfg, use environment variable MMPAT_PATH_TO_CFG for the directory
+load_mid > drum track ends with note on (42468 > 42287 note 38)
+load_mid > melody track ends with note on (channel 1, 40638 > 5766 note 74)
+load_mid > melody track ends with note on (channel 7, 34548 > 33606 note 31)
+load_mid > drum track ends with note on (42468 > 42287 note 42)
+load_mid > melody track ends with note on (channel 2, 42468 > 42180 note 34)
+load_mid > melody track ends with note on (channel 6, 40644 > 0 note 74)
+2026-05-08T12:08:14 player: played "Eletronica/AWOLNATION - Sail.mp3"
+2026-05-08T12:11:52 ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+2026-05-08T12:12:31 player: played "Trilha sonora/Rezodrone - Resist and Disorder.mp3"
+2026-05-08T12:12:31 ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+2026-05-08T12:12:32 ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+2026-05-08T12:12:32 ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+2026-05-08T12:12:32 ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+2026-05-08T12:12:32 ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+2026-05-08T12:12:32 ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+2026-05-08T12:14:46 player: played "Trilha sonora/Metal Gear Rising Revengeance - The Stains of Time.mp3"
+2026-05-08T12:18:09 player: played "Internacional/The Heavy - Put It on the Line.mp3"
+2026-05-08T12:21:41 player: played "Trilha sonora/Jamie Lidell - Compass (Red Dead on Arrival version).mp3"
+2026-05-08T12:26:22 player: played "Trilha sonora/Vangelis - Conquest of paradise.mp3"
+2026-05-08T12:27:47 player: played "Trilha sonora/Nichijou  - Koigokoro wa Dangan mo Yawarakakusuru.mp3"
+2026-05-08T13:00:40 player: played "Trilha sonora/David Ferguson - The Housebuilding Song.mp3"
+2026-05-08T13:03:46 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T13:04:27 player: played "Internacional/Rupert Holmes - Escape (The Piña Colada Song).mp3"
+2026-05-08T13:04:27 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T13:07:23 player: played "Trilha sonora/Daniel Olsén - Mine.mp3"
+2026-05-08T13:17:53 player: played "Trilha sonora/Evan Call, Evan Call, Evan Call - Time Flows Ever Onward (Short Ver.).mp3"
+2026-05-08T13:22:05 player: played "Trilha sonora/Mike Morasky - Ending Triumph (Extended Remix).mp3"
+2026-05-08T13:25:56 player: played "Eletronica/GANGSTER LIFE - I Got Summer On My Mind (Still Dre Remix).mp3"
+2026-05-08T13:29:08 player: played "Eletronica/Crystal Castles - Kerosene.mp3"
+2026-05-08T13:32:28 player: played "Sertaneja/Tião Carreiro e Pardinho - Caçador do Ivinhema.mp3"
+2026-05-08T13:36:28 player: played "Trilha sonora/Hans Zimmer - No Time For Caution.mp3"
+2026-05-08T13:38:54 player: played "Trilha sonora/Metal Gear Rising Revengeance -  A Stranger I Remain.mp3"
+2026-05-08T13:41:27 player: played "Clássica/Johann Sebastian Bach - Bach, Prelude in C minor, BWV 934.mp3"
+2026-05-08T13:48:06 player: played "Eletronica/Veorra & The Tech Thieves - Ghost Town.mp3"
+2026-05-08T13:55:15 player: played "Rock/Avenged Sevenfold - Blinded in Chains.mp3"
+2026-05-08T14:02:16 player: played "Clássica/Ludwig Van Beethoven - Symphony No. 5, Op. 67.mp3"
+2026-05-08T14:08:53 player: played "Internacional/The Heavy - Short Change Hero.mp3"
+2026-05-08T14:11:24 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T14:12:04 player: played "Internacional/Simon & Garfunkel - Scarborough Fair.mp3"
+2026-05-08T14:12:05 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T14:14:25 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-08T14:14:25 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-08T14:18:04 player: played "Trilha sonora/Persona 5 - Take Over.mp3"
+2026-05-08T14:25:00 player: played "Eletronica/Axel Thesleff - Bad Karma.mp3"
+2026-05-08T14:27:58 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T14:27:58 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T16:10:29 player: played "Alternativa/MGMT - Kids.mp3"
+2026-05-08T16:10:35 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-08T16:10:35 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-08T16:10:39 exception: Number too large: 110
+2026-05-08T16:10:39 exception: Number too large: 110
+2026-05-08T16:10:39 exception: Number too large: 110
+2026-05-08T16:10:39 exception: Number too large: 110
+2026-05-08T16:14:21 player: played "Sertaneja/Teixeirinha - Querência Amada .mp3"
+2026-05-08T16:17:52 player: played "Sertaneja/Teixerinha - Velho casarão.mp3"
+2026-05-08T16:21:12 player: played "Sertaneja/Tião Carreiro e Pardinho - Caçador do Ivinhema.mp3"
+2026-05-08T16:24:09 player: played "Sertaneja/Tião Carreiro e Pardinho - Rei do gado.mp3"
+2026-05-08T16:27:30 player: played "Sertaneja/Trio Parada Dura - Castelo de Amor.mp3"
+2026-05-08T16:31:09 player: played "Sertaneja/Berenice Azambuja - É Disso que o Velho Gosta.mp3"
+2026-05-08T19:00:23 exception: Stored playlists are disabled
+2026-05-08T19:00:27 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-08T19:00:27 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-08T19:00:31 exception: Number too large: 110
+2026-05-08T19:00:51 exception: Number too large: 110
+2026-05-08T19:06:01 player: played "Trilha sonora/Kana Hanazawa - Renai Circulation.mp3"
+2026-05-08T19:08:38 player: played "Trilha sonora/Rick and Morty - Evil Morty Theme Song (Trap Remix).mp3"
+2026-05-08T19:10:42 exception: Number too large: 110
+2026-05-08T19:10:44 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-05-08T19:13:35 player: played "Trilha sonora/Puella Magi Madoka Magica - Sis Puella Magica!.mp3"
+2026-05-08T19:18:42 player: played "Eletronica/HOME - Resonance.mp3"
+2026-05-08T19:23:08 player: played "Trilha sonora/Fullmetal Alchemist - Lapis Philosophorum.mp3"
+2026-05-08T23:05:28 player: played "Eletronica/Sarah Blasko - All I Want (BENY Remix).mp3"
+2026-05-09T08:07:12 exception: Stored playlists are disabled
+2026-05-09T08:18:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Unknown cover type: 0x1.
+2026-05-09T08:18:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Unknown cover type: 0x1.
+2026-05-09T08:20:42 player: played "Sertaneja/Tião Carreiro e Pardinho - Homem até debaixo d'água.mp3"
+2026-05-09T08:20:54 exception: No such directory
+2026-05-09T08:20:59 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-09T08:20:59 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-09T08:21:02 exception: Number too large: 110
+2026-05-09T08:24:26 player: played "Internacional/Calvin Harris - Feel So Close.mp3"
+2026-05-09T08:33:39 exception: Number too large: 110
+2026-05-09T08:33:40 exception: Number too large: 110
+2026-05-09T08:33:41 exception: Number too large: 110
+2026-05-09T08:46:55 player: played "Eletronica/Erika - I Don't Know.mp3"
+2026-05-09T08:56:27 exception: Number too large: 110
+2026-05-09T09:38:33 player: played "Country/The Statler Brothers - Bed of Roses.mp3"
+2026-05-09T09:38:35 exception: Number too large: 110
+2026-05-09T09:38:35 exception: Number too large: 110
+2026-05-09T09:38:35 exception: Number too large: 110
+2026-05-09T09:38:35 exception: Number too large: 110
+2026-05-09T09:38:35 exception: Number too large: 110
+2026-05-09T09:38:35 exception: Number too large: 110
+2026-05-09T09:38:36 exception: Number too large: 110
+2026-05-09T09:38:36 exception: Number too large: 110
+2026-05-09T09:38:36 exception: Number too large: 110
+2026-05-09T09:38:36 exception: Number too large: 110
+2026-05-09T09:41:49 exception: Number too large: 110
+2026-05-09T09:41:49 exception: Number too large: 110
+2026-05-09T09:41:49 exception: Number too large: 110
+2026-05-09T09:41:49 exception: Number too large: 110
+2026-05-09T13:37:10 exception: No such directory
+2026-05-09T13:37:11 player: played "Sertaneja/Luiz Gonzaga - Xote dos cabeludos.mp3"
+2026-05-09T13:37:17 exception: No such directory
+2026-05-09T17:00:08 player: played "Trilha sonora/Konobakuen - JUMP IN.mp3"
+2026-05-09T22:01:48 player: played "Toque/Microsoft - Windows XP Installation Music.mp3"
+2026-05-10T09:39:51 exception: Not playing
+2026-05-10T09:40:00 exception: Stored playlists are disabled
+2026-05-10T10:19:26 exception: No such directory
+2026-05-10T10:19:30 exception: Number too large: 110
+2026-05-10T10:19:30 exception: Number too large: 110
+2026-05-10T22:35:02 player: played "Hip Hop e Rap/Ye - Heartless.mp3"
+2026-05-11T10:37:33 exception: No such directory
+2026-05-11T10:37:36 exception: Number too large: 110
+2026-05-11T22:16:34 player: played "Trilha sonora/Jamie Lidell - Compass (Red Dead on Arrival version).mp3"
+2026-05-13T11:37:04 exception: Stored playlists are disabled
+2026-05-14T09:51:34 exception: No such directory
+2026-05-14T09:51:39 exception: Number too large: 110
+2026-05-14T09:55:34 player: played "Toque/Force of Nature - just forget.mp3"
+2026-05-14T10:00:07 player: played "Internacional/JMSN - Love Me.mp3"
+2026-05-14T10:03:12 player: played "MPB/Projota - Ela Só Quer Paz.mp3"
+2026-05-14T10:11:30 player: played "Toque/Ulisses Rocha - Rindo da saudade.mp3"
+2026-05-14T10:13:09 player: played "Trilha sonora/Ilmari Hakkola - Building Contraptions.mp3"
+2026-05-14T10:20:00 player: played "Hip Hop e Rap/Ye - Heartless.mp3"
+2026-05-14T10:24:06 player: played "Eletronica/TIA& Lê Thiện Hiếu - Ai Đưa Em Về (Cukak Remix).mp3"
+2026-05-14T10:27:28 player: played "Eletronica/Erika - I Don't Know.mp3"
+2026-05-14T10:30:22 player: played "Sertaneja/José Mendes - Roubei a Fazendeira.mp3"
+2026-05-14T10:32:51 player: played "Country/The Statler Brothers - Bed of Roses.mp3"
+2026-05-14T10:35:46 player: played "Eletronica/Boom - How Do You Do (Nightcore).mp3"
+2026-05-14T10:39:53 player: played "Internacional/Tom Petty - Love Is a Long Road.mp3"
+2026-05-14T10:52:08 player: played "Trilha sonora/Majestic Violin feat. Landon Bassier - Aria Math - String Cover.mp3"
+2026-05-14T11:07:31 exception: Stored playlists are disabled
+2026-05-14T12:56:51 player: played "Eletronica/Gigi D’Agostino - L'amour toujours.mp3"
+2026-05-14T13:58:02 exception: Number too large: 110
+2026-05-14T13:58:02 exception: Number too large: 110
+2026-05-14T14:02:15 player: played "Eletronica/Akcent - That's My Name.mp3"
+2026-05-14T14:04:32 player: played "Sertaneja/José Mendes - Rodeio de Vacaria.mp3"
+2026-05-14T14:07:59 player: played "Internacional/Calvin Harris - Feel So Close.mp3"
+2026-05-14T14:11:15 player: played "Country/Asleep at the Wheel - The Letter That Johnny Walker Read.mp3"
+2026-05-14T14:11:32 exception: Number too large: 110
+2026-05-14T14:11:32 exception: Number too large: 110
+2026-05-14T14:11:32 exception: Number too large: 110
+2026-05-14T14:11:32 exception: Number too large: 110
+2026-05-14T14:11:33 exception: Number too large: 110
+2026-05-14T14:16:00 player: played "Country/Lynyrd Skynyrd - Sweet Home Alabama.mp3"
+2026-05-14T14:18:57 player: played "MPB/Milton Nascimento - Tudo que você podia ser.mp3"
+2026-05-14T14:22:11 player: played "Rock/The Hollies - Long Cool Woman in a Black Dress.mp3"
+2026-05-14T14:25:57 player: played "Sertaneja/Teixeirinha - Querência Amada .mp3"
+2026-05-14T14:30:12 player: played "Trilha sonora/Ashtar Command - Deadman’s Gun.mp3"
+2026-05-14T14:31:40 exception: Number too large: 110
+2026-05-14T14:31:41 exception: Number too large: 110
+2026-05-14T14:31:41 exception: Number too large: 110
+2026-05-14T14:34:38 player: played "Trilha sonora/Jamie Lidell - Compass (Red Dead on Arrival version).mp3"
+2026-05-14T14:38:17 player: played "Eletronica/Alice DeeJay - Better Off Alone.mp3"
+2026-05-14T14:41:39 player: played "Country/Whitey Shafer - All My Ex’s Live in Texas.mp3"
+2026-05-14T22:43:14 player: played "Country/Juice Newton - Queen of Hearts.mp3"
+2026-05-15T11:01:40 exception: Stored playlists are disabled
+2026-05-15T11:02:09 exception: No such directory
+2026-05-15T11:18:58 player: played "Trilha sonora/Konobakuen - JUMP IN.mp3"
+2026-05-15T12:12:01 player: played "Eletronica/Cascada - Everytime We Touch.mp3"
+2026-05-15T12:16:41 player: played "Trilha sonora/José González - Far Away.mp3"
+2026-05-15T12:16:51 exception: Number too large: 110
+2026-05-15T12:16:51 exception: Number too large: 110
+2026-05-15T12:16:51 exception: Number too large: 110
+2026-05-15T12:24:26 player: played "Eletronica/Robert Miles - Children (Dream version).mp3"
+2026-05-15T12:27:37 player: played "Trilha sonora/David Ferguson - The Housebuilding Song.mp3"
+2026-05-15T12:28:09 exception: Number too large: 110
+2026-05-15T12:28:10 exception: Number too large: 110
+2026-05-15T12:28:10 exception: Number too large: 110
+2026-05-15T12:28:10 exception: Number too large: 110
+2026-05-15T12:28:10 exception: Number too large: 110
+2026-05-15T12:29:01 exception: Number too large: 110
+2026-05-15T12:29:02 exception: Number too large: 110
+2026-05-15T12:29:02 exception: Number too large: 110
+2026-05-15T12:29:02 exception: Number too large: 110
+2026-05-15T12:29:02 exception: Number too large: 110
+2026-05-15T12:29:02 exception: Number too large: 110
+2026-05-15T12:29:07 player: played "Internacional/wifiskeleton & i wanna be a jack-o-lantern - Nope your too late i already died.mp3"
+2026-05-15T12:36:40 player: played "Sertaneja/Teixerinha - Gaúcho de Passo Fundo.mp3"
+2026-05-15T12:39:09 player: played "Country/The Statler Brothers - Bed of Roses.mp3"
+2026-05-15T12:42:05 player: played "Internacional/Glen Campbell - Southern Nights.mp3"
+2026-05-15T12:45:51 player: played "Eletronica/Alice DeeJay - Better Off Alone.mp3"
+2026-05-15T12:49:58 player: played "Internacional/Tom Petty - Love Is a Long Road.mp3"
+2026-05-15T12:53:55 player: played "Country/Buck Owens and The Buckaroos - Made in Japan.mp3"
+2026-05-15T12:56:35 player: played "Rock/Creedence Clearwater Revival - Have You Ever Seen the Rain.mp3"
+2026-05-15T13:01:27 player: played "Rock/Tom Petty - Runnin’ Down a Dream.mp3"
+2026-05-15T13:04:58 player: played "Hip Hop e Rap/Ye - Heartless.mp3"
+2026-05-15T13:07:52 player: played "Sertaneja/José Mendes - Roubei a Fazendeira.mp3"
+2026-05-15T13:11:19 player: played "Internacional/Calvin Harris - Feel So Close.mp3"
+2026-05-15T13:14:46 player: played "Trilha sonora/Majestic Violin feat. Landon Bassier - Aria Math - String Cover.mp3"
+2026-05-15T13:18:36 player: played "Eletronica/TIA& Lê Thiện Hiếu - Ai Đưa Em Về (Cukak Remix).mp3"
+2026-05-15T13:20:23 player: played "Trilha sonora/Christopher Larkin - Skarrsinger Karmelita.mp3"
+2026-05-15T14:48:34 exception: Number too large: 110
+2026-05-15T14:48:34 exception: Number too large: 110
+2026-05-15T14:48:34 exception: Number too large: 110
+2026-05-15T14:48:34 exception: Number too large: 110
+2026-05-15T14:48:34 exception: Number too large: 110
+2026-05-15T14:49:25 player: played "MPB/Milton Nascimento - Tudo que você podia ser.mp3"
+2026-05-15T22:57:45 player: played "Toque/Nujabes - aruarian dance.mp3"
+2026-05-17T10:16:06 exception: No such directory
+2026-05-17T10:20:09 exception: Number too large: 110
+2026-05-17T10:20:10 exception: Number too large: 110
+2026-05-17T10:20:10 exception: Number too large: 110
+2026-05-17T10:20:10 exception: Number too large: 110
+2026-05-17T10:20:10 exception: Number too large: 110
+2026-05-17T10:20:10 exception: Number too large: 110
+2026-05-17T10:20:10 exception: Number too large: 110
+2026-05-17T10:20:10 exception: Number too large: 110
+2026-05-17T10:20:10 exception: Number too large: 110
+2026-05-17T10:20:10 exception: Number too large: 110
+2026-05-17T10:24:16 player: played "Toque/Nujabes - aruarian dance.mp3"
+2026-05-17T10:27:47 player: played "Hip Hop e Rap/Ye - Heartless.mp3"
+2026-05-17T14:09:59 player: played "Country/Juice Newton - Queen of Hearts.mp3"
+2026-05-17T21:29:53 player: played "Rock/Gerry Rafferty - Baker Street.mp3"
+2026-05-18T09:10:18 exception: No such directory
+2026-05-18T09:10:29 exception: Number too large: 110
+2026-05-18T09:10:29 exception: Number too large: 110
+2026-05-18T09:10:30 exception: Number too large: 110
+2026-05-18T09:10:30 exception: Number too large: 110
+2026-05-18T09:10:30 exception: Number too large: 110
+2026-05-18T09:12:06 player: played "Trilha sonora/Ilmari Hakkola - Building Contraptions.mp3"
+2026-05-18T09:17:28 player: played "Country/Buck Owens and The Buckaroos - Made in Japan.mp3"
+2026-05-18T16:49:46 exception: Number too large: 110
+2026-05-18T16:49:46 exception: Number too large: 110
+2026-05-18T16:49:46 exception: Number too large: 110
+2026-05-18T21:10:22 player: played "MPB/Projota - Ela Só Quer Paz.mp3"
+2026-05-20T11:04:01 exception: No such directory
+2026-05-20T11:26:19 exception: Number too large: 110
+2026-05-20T11:26:19 exception: Number too large: 110
+2026-05-20T11:26:19 exception: Number too large: 110
+2026-05-20T11:26:19 exception: Number too large: 110
+2026-05-20T11:28:26 player: played "Trilha sonora/Graeme Cornies, Jamie Christopherson - I'm My Own Master Now.mp3"
+2026-05-20T11:33:48 player: played "Sertaneja/José Mendes - Roubei a Fazendeira.mp3"
+2026-05-20T11:38:07 player: played "Trilha sonora/David Ferguson - The Housebuilding Song.mp3"
+2026-05-20T15:14:20 exception: Stored playlists are disabled
+2026-05-20T15:14:43 exception: Number too large: 110
+2026-05-20T15:14:43 exception: Number too large: 110
+2026-05-20T15:14:44 exception: Number too large: 110
+2026-05-20T16:26:27 exception: Number too large: 110
+2026-05-20T19:51:11 exception: Stored playlists are disabled
+2026-05-20T21:24:20 player: played "Eletronica/Cascada - Everytime We Touch.mp3"
+2026-05-21T10:19:28 exception: Stored playlists are disabled
+2026-05-21T10:48:44 player: played "Internacional/wifiskeleton & i wanna be a jack-o-lantern - Nope your too late i already died.mp3"
+2026-05-21T10:48:58 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-21T10:48:58 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-21T11:12:06 player: played "Trilha sonora/ROUND TABLE featuring Nino - Groovin' Magic.mp3"
+2026-05-21T11:12:09 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-21T11:12:09 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-21T11:12:11 exception: Number too large: 110
+2026-05-21T11:15:52 player: played "Sertaneja/Tião Carreiro e Pardinho - Neguinho Parafuso.mp3"
+2026-05-21T11:19:23 player: played "Sertaneja/Teixerinha - Velho casarão.mp3"
+2026-05-21T11:22:38 mpg123: mpg123_read() failed: A generic mpg123 error.
+2026-05-21T11:23:22 player: played "Sertaneja/Tião Carreiro & Pardinho - Boiadeiro de Palavra.mp3"
+2026-05-21T11:27:49 player: played "Sertaneja/José Mendes - Churrasco.mp3"
+2026-05-21T11:30:32 player: played "Sertaneja/Luiz Gonzaga - A Morte do Vaqueiro.mp3"
+2026-05-21T11:34:23 player: played "Sertaneja/Tonico & Tinoco - Tristeza do Jeca.mp3"
+2026-05-21T13:14:26 player: played "Sertaneja/Zé Carreiro e Carreirinho - Peito Sadio.mp3"
+2026-05-21T19:58:49 exception: Stored playlists are disabled
+2026-05-21T20:03:10 player: played "Trilha sonora/Mio Honda - Step! (ステップ！) .mp3"
+2026-05-21T20:04:16 exception: Number too large: 110
+2026-05-21T20:04:16 exception: Number too large: 110
+2026-05-21T22:15:54 player: played "Trilha sonora/Devil May Cry 5 - Devil Trigger.mp3"
+2026-05-22T13:41:22 exception: Stored playlists are disabled
+2026-05-22T13:44:54 player: played "Eletronica/Pháo - 2 Phút Hon (KAIZ Remix).mp3"
+2026-05-22T13:47:49 player: played "Eletronica/Synapson, Holly - Hide Away (feat. Holly).mp3"
+2026-05-22T13:52:21 player: played "Eletronica/Home - We're Finally Landing.mp3"
+2026-05-22T13:55:21 player: played "Eletronica/Black Coast - TRNDSTTR (Lucian Remix) (feat M. Magie).mp3"
+2026-05-22T13:58:48 player: played "Eletronica/Alessia Cara - Here (Lucian Remix).mp3"
+2026-05-23T01:04:14 player: played "Eletronica/Project 46 - Reasons (feat. Andrew Allen).mp3"
+2026-05-25T13:22:03 exception: Stored playlists are disabled
+2026-05-25T13:22:10 player: played "Sertaneja/Milionário e José Rico - Sonho de um caminhoneiro.mp3"
+2026-05-25T13:22:18 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-25T13:22:18 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-25T18:51:25 player: played "Rock/Lynyrd Skynyrd - Free Bird.mp3"
+2026-05-25T18:55:47 player: played "Rock/bôa - Duvet.mp3"
+2026-05-25T19:08:46 player: played "Rock/Blue Oyster Cult - (Don't Fear) The Reaper.mp3"
+2026-05-25T19:15:17 player: played "Rock/Pixies - Where Is My Mind.mp3"
+2026-05-25T19:28:49 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-25T19:28:49 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-25T19:32:56 player: played "Rock/Styles Of Beyond - Nine Thou (Supertars Remix).mp3"
+2026-05-25T19:37:24 player: played "Rock/Tame Impala - Borderline.mp3"
+2026-05-25T19:40:44 player: played "Rock/Miraidempa 未来電波基地 - Sayonara Cross Teck Slowed.mp3"
+2026-05-25T19:44:20 player: played "Rock/Bullet for My Valentine - Hand of Blood.mp3"
+2026-05-25T22:10:47 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-25T22:10:47 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-25T22:11:04 exception: Number too large: 110
+2026-05-25T22:11:04 exception: Number too large: 110
+2026-05-25T22:11:04 exception: Number too large: 110
+2026-05-25T22:11:04 exception: Number too large: 110
+2026-05-25T22:12:07 exception: Number too large: 110
+2026-05-25T22:12:07 exception: Number too large: 110
+2026-05-25T22:12:07 exception: Number too large: 110
+2026-05-25T22:12:10 exception: Number too large: 110
+2026-05-25T22:12:10 exception: Number too large: 110
+2026-05-25T22:12:53 exception: Number too large: 110
+2026-05-25T22:18:15 player: played "Rock/Rammstein - Deutschland.mp3"
+2026-05-25T22:22:43 player: played "Rock/Evanescence - Bring Me To Life.mp3"
+2026-05-25T22:36:11 player: played "Rock/Avenged Sevenfold - Blinded in Chains.mp3"
+2026-05-26T09:47:38 exception: No such directory
+2026-05-26T09:47:46 exception: Number too large: 110
+2026-05-26T10:20:02 player: played "Internacional/wifiskeleton & i wanna be a jack-o-lantern - Nope your too late i already died.mp3"
+2026-05-26T10:20:32 exception: Number too large: 110
+2026-05-26T10:20:32 exception: Number too large: 110
+2026-05-26T10:20:32 exception: Number too large: 110
+2026-05-26T10:21:18 exception: Number too large: 110
+2026-05-26T10:21:18 exception: Number too large: 110
+2026-05-26T10:21:18 exception: Number too large: 110
+2026-05-26T10:24:04 player: played "Rock/Saxon - Princess of the Night.mp3"
+2026-05-26T10:28:12 player: played "Internacional/Tom Petty - Love Is a Long Road.mp3"
+2026-05-26T10:30:30 player: played "Sertaneja/José Mendes - Rodeio de Vacaria.mp3"
+2026-05-26T10:30:32 exception: Number too large: 110
+2026-05-26T10:30:32 exception: Number too large: 110
+2026-05-26T10:33:48 player: played "Trilha sonora/Konobakuen - JUMP IN.mp3"
+2026-05-26T10:36:53 player: played "MPB/Projota - Ela Só Quer Paz.mp3"
+2026-05-26T10:37:51 exception: Number too large: 110
+2026-05-26T10:41:18 player: played "Internacional/Calvin Harris - Feel So Close.mp3"
+2026-05-26T10:44:11 player: played "Sertaneja/Luiz Gonzaga - Xote dos cabeludos.mp3"
+2026-05-26T10:46:55 player: played "Country/Buck Owens and The Buckaroos - Made in Japan.mp3"
+2026-05-26T10:54:55 exception: Number too large: 110
+2026-05-26T10:55:01 player: played "Eletronica/Robert Miles - Children (Dream version).mp3"
+2026-05-26T17:16:04 exception: Number too large: 110
+2026-05-26T17:16:04 exception: Number too large: 110
+2026-05-26T17:16:04 exception: Number too large: 110
+2026-05-26T17:16:06 exception: Number too large: 110
+2026-05-26T17:16:07 exception: Number too large: 110
+2026-05-26T17:16:07 exception: Number too large: 110
+2026-05-26T17:16:12 exception: Number too large: 110
+2026-05-26T17:16:13 exception: Number too large: 110
+2026-05-26T17:16:13 exception: Number too large: 110
+2026-05-26T19:21:56 player: played "Eletronica/Alice DeeJay - Better Off Alone.mp3"
+2026-05-26T19:26:18 player: played "Hip Hop e Rap/Eminem - Mockingbird.mp3"
+2026-05-26T19:36:59 player: played "Internacional/Glen Campbell - Southern Nights.mp3"
+2026-05-26T19:40:12 player: played "Trilha sonora/David Ferguson - The Housebuilding Song.mp3"
+2026-05-26T19:47:29 player: played "Eletronica/TIA& Lê Thiện Hiếu - Ai Đưa Em Về (Cukak Remix).mp3"
+2026-05-26T19:51:19 player: played "Hip Hop e Rap/Ye - Heartless.mp3"
+2026-05-26T20:38:03 player: played "Country/Asleep at the Wheel - The Letter That Johnny Walker Read.mp3"
+2026-05-26T20:41:58 player: played "Toque/Force of Nature - just forget.mp3"
+2026-05-26T21:45:09 player: played "Eletronica/Gigi D’Agostino - L'amour toujours.mp3"
+2026-05-26T22:40:38 player: played "Rock/Creedence Clearwater Revival - Have You Ever Seen the Rain.mp3"
+2026-05-26T22:43:44 player: played "Toque/Ulisses Rocha - Rindo da saudade.mp3"
+2026-05-27T11:25:17 exception: No such directory
+2026-05-27T11:29:16 player: played "Toque/Force of Nature - just forget.mp3"
+2026-05-27T11:30:45 exception: Number too large: 110
+2026-05-27T11:30:45 exception: Number too large: 110
+2026-05-27T11:32:34 player: played "Trilha sonora/Konobakuen - JUMP IN.mp3"
+2026-05-27T11:40:23 player: played "Eletronica/Robert Miles - Children (Dream version).mp3"
+2026-05-27T11:43:50 player: played "Trilha sonora/Majestic Violin feat. Landon Bassier - Aria Math - String Cover.mp3"
+2026-05-27T11:46:08 player: played "Sertaneja/José Mendes - Rodeio de Vacaria.mp3"
+2026-05-27T11:47:38 player: played "Internacional/wifiskeleton & i wanna be a jack-o-lantern - Nope your too late i already died.mp3"
+2026-05-27T11:50:59 player: played "Eletronica/Erika - I Don't Know.mp3"
+2026-05-27T11:55:06 player: played "Internacional/Tom Petty - Love Is a Long Road.mp3"
+2026-05-27T11:58:45 player: played "Eletronica/Alice DeeJay - Better Off Alone.mp3"
+2026-05-27T12:01:50 player: played "MPB/Projota - Ela Só Quer Paz.mp3"
+2026-05-27T12:05:24 player: played "Hip Hop e Rap/Ye - Heartless.mp3"
+2026-05-27T12:07:12 player: played "Phonk/UdieNnx, Mc Denny - ACIDO III (Super Slowed).mp3"
+2026-05-27T12:10:26 player: played "Rock/The Hollies - Long Cool Woman in a Black Dress.mp3"
+2026-05-27T12:56:54 player: played "Toque/Ulisses Rocha - Rindo da saudade.mp3"
+2026-05-27T12:59:23 player: played "Country/The Statler Brothers - Bed of Roses.mp3"
+2026-05-27T13:03:08 player: played "Sertaneja/Teixeirinha - Querência Amada .mp3"
+2026-05-27T13:07:53 player: played "Country/Lynyrd Skynyrd - Sweet Home Alabama.mp3"
+2026-05-27T13:11:15 player: played "Country/Whitey Shafer - All My Ex’s Live in Texas.mp3"
+2026-05-27T13:13:02 player: played "Trilha sonora/Christopher Larkin - Skarrsinger Karmelita.mp3"
+2026-05-27T13:15:12 player: played "Trilha sonora/Graeme Cornies, Jamie Christopherson - I'm My Own Master Now.mp3"
+2026-05-27T13:19:04 player: played "Country/Buck Owens and The Buckaroos - Made in Japan.mp3"
+2026-05-27T13:23:37 player: played "Internacional/JMSN - Love Me.mp3"
+2026-05-27T13:35:30 player: played "Eletronica/TIA& Lê Thiện Hiếu - Ai Đưa Em Về (Cukak Remix).mp3"
+2026-05-27T13:59:09 player: played "Rock/Creedence Clearwater Revival - Have You Ever Seen the Rain.mp3"
+2026-05-27T15:46:19 player: played "Internacional/Glen Campbell - Southern Nights.mp3"
+2026-05-27T15:49:31 player: played "Trilha sonora/David Ferguson - The Housebuilding Song.mp3"
+2026-05-27T15:52:46 player: played "Country/Asleep at the Wheel - The Letter That Johnny Walker Read.mp3"
+2026-05-27T15:55:43 player: played "MPB/Milton Nascimento - Tudo que você podia ser.mp3"
+2026-05-27T15:59:56 player: played "Hip Hop e Rap/Eminem - Mockingbird.mp3"
+2026-05-27T16:00:22 exception: Number too large: 110
+2026-05-27T16:00:22 exception: Number too large: 110
+2026-05-27T16:00:24 exception: Number too large: 110
+2026-05-27T16:00:24 exception: Number too large: 110
+2026-05-27T16:00:24 exception: Number too large: 110
+2026-05-27T16:00:24 exception: Number too large: 110
+2026-05-27T16:00:24 exception: Number too large: 110
+2026-05-27T16:00:24 exception: Number too large: 110
+2026-05-27T16:00:24 exception: Number too large: 110
+2026-05-27T16:00:24 exception: Number too large: 110
+2026-05-27T16:00:24 exception: Number too large: 110
+2026-05-27T16:00:25 exception: Number too large: 110
+2026-05-27T16:00:25 exception: Number too large: 110
+2026-05-27T16:00:25 exception: Number too large: 110
+2026-05-27T16:00:25 exception: Number too large: 110
+2026-05-27T16:00:25 exception: Number too large: 110
+2026-05-27T16:00:25 exception: Number too large: 110
+2026-05-27T16:00:25 exception: Number too large: 110
+2026-05-27T16:00:25 exception: Number too large: 110
+2026-05-27T16:00:25 exception: Number too large: 110
+2026-05-27T16:00:26 exception: Number too large: 110
+2026-05-27T16:00:26 exception: Number too large: 110
+2026-05-27T16:00:26 exception: Number too large: 110
+2026-05-27T16:00:26 exception: Number too large: 110
+2026-05-27T16:00:26 exception: Number too large: 110
+2026-05-27T16:03:23 player: played "Internacional/Calvin Harris - Feel So Close.mp3"
+2026-05-27T23:10:25 player: played "Sertaneja/Luiz Gonzaga - Xote dos cabeludos.mp3"
+2026-05-28T11:31:41 exception: Stored playlists are disabled
+2026-05-28T11:33:29 player: played "Internacional/wifiskeleton & i wanna be a jack-o-lantern - Nope your too late i already died.mp3"
+2026-05-28T11:33:38 player: played "Internacional/wifiskeleton & i wanna be a jack-o-lantern - Nope your too late i already died.mp3"
+2026-05-28T11:33:45 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-28T11:33:45 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-28T16:27:30 exception: Number too large: 110
+2026-05-28T16:27:30 exception: Number too large: 110
+2026-05-28T16:27:30 exception: Number too large: 110
+2026-05-28T16:27:31 exception: Number too large: 110
+2026-05-28T16:31:25 player: played "Trilha sonora/Yoann Laulan - Clocktower.mp3"
+2026-05-28T16:32:01 exception: No such directory
+2026-05-28T16:32:03 mixer: Failed to set mixer for "MPD": disconnected
+2026-05-28T16:32:03 exception: Failed to set mixer for "MPD"; disconnected
+2026-05-28T16:32:05 exception: Number too large: 110
+2026-05-28T16:32:06 exception: Number too large: 110
+2026-05-28T16:32:06 exception: Number too large: 110
+2026-05-28T16:35:34 player: played "Hip Hop e Rap/Ye - Heartless.mp3"
+2026-05-28T16:37:13 player: played "Trilha sonora/Ilmari Hakkola - Building Contraptions.mp3"
+2026-05-28T16:41:55 player: played "Eletronica/Gigi D’Agostino - L'amour toujours.mp3"
+2026-05-28T16:45:12 player: played "Eletronica/Cascada - Everytime We Touch.mp3"
+2026-05-28T16:48:31 player: played "Trilha sonora/Konobakuen - JUMP IN.mp3"
+2026-05-28T16:54:55 player: played "Eletronica/Yeah Yeah Yeahs - Heads Will Roll (A-Trak club mix).mp3"
+2026-05-28T16:58:00 player: played "MPB/Projota - Ela Só Quer Paz.mp3"
+2026-05-28T18:22:33 player: played "Toque/Nujabes - aruarian dance.mp3"
