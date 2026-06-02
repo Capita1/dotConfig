@@ -10,16 +10,20 @@
 0.0.0.0	twitchcdn.net
 #Twitter
 0.0.0.0	twitter.com
+0.0.0.0	www.twitter.com
 0.0.0.0	x.com
 ::0	twitter.com
 ::0	x.com
 #Youtube
+0.0.0.0	youtube.com
 0.0.0.0	www.youtube.com
 0.0.0.0	googlevideo.com
 #Instagram
 0.0.0.0	instagram.com
+0.0.0.0	www.instagram.com
 #Facebook
 0.0.0.0	facebook.com
+0.0.0.0	www.facebook.com
 0.0.0.0	login.facebook.com
 0.0.0.0	static.ak.fbcdn.net
 0.0.0.0	static.ak.connect.facebook.com
