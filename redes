@@ -14,7 +14,8 @@
 ::0	twitter.com
 ::0	x.com
 #Youtube
-0.0.0.0	youtube.com
+0.0.0.0	www.youtube.com
+0.0.0.0	googlevideo.com
 #Instagram
 0.0.0.0	instagram.com
 #Facebook
