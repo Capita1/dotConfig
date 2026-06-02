@@ -20685,3 +20685,5 @@ load_mid > melody track ends with note on (channel 6, 40644 > 0 note 74)
 2026-06-01T14:12:02 exception: Stored playlists are disabled
 2026-06-01T14:12:07 mixer: Failed to set mixer for "MPD": disconnected
 2026-06-01T14:12:07 exception: Failed to set mixer for "MPD"; disconnected
+2026-06-01T18:27:30 player: played "Hip Hop e Rap/YE - HH.mp3"
+2026-06-01T23:05:16 player: played "Hip Hop e Rap/GRITS - Ooh Ahh (My Life Be Like) (feat. tobyMac).mp3"

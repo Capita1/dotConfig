@@ -1,0 +1,27 @@
+#Reddit
+0.0.0.0	reddit.com
+0.0.0.0	redditstatic.com
+0.0.0.0	redditmedia.com
+0.0.0.0	redd.it
+#Twitch
+0.0.0.0	twitch.tv
+0.0.0.0	ttvnw.net
+0.0.0.0	jtvnw.net
+0.0.0.0	twitchcdn.net
+#Twitter
+0.0.0.0	twitter.com
+0.0.0.0	x.com
+::0	twitter.com
+::0	x.com
+#Youtube
+0.0.0.0	youtube.com
+#Instagram
+0.0.0.0	instagram.com
+#Facebook
+0.0.0.0	facebook.com
+0.0.0.0	login.facebook.com
+0.0.0.0	static.ak.fbcdn.net
+0.0.0.0	static.ak.connect.facebook.com
+0.0.0.0	connect.facebook.net
+0.0.0.0	fbcdn.net
+0.0.0.0	fbcdn.com
