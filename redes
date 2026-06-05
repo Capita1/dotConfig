@@ -30,3 +30,7 @@
 0.0.0.0	connect.facebook.net
 0.0.0.0	fbcdn.net
 0.0.0.0	fbcdn.com
+#Discord
+0.0.0.0 discord.com
+0.0.0.0 status.discord.com
+0.0.0.0 cdn.discordapp.com

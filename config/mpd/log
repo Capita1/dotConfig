@@ -20687,3 +20687,66 @@ load_mid > melody track ends with note on (channel 6, 40644 > 0 note 74)
 2026-06-01T14:12:07 exception: Failed to set mixer for "MPD"; disconnected
 2026-06-01T18:27:30 player: played "Hip Hop e Rap/YE - HH.mp3"
 2026-06-01T23:05:16 player: played "Hip Hop e Rap/GRITS - Ooh Ahh (My Life Be Like) (feat. tobyMac).mp3"
+2026-06-02T17:01:11 exception: Stored playlists are disabled
+2026-06-02T19:54:43 player: played "Trilha sonora/ROUND TABLE featuring Nino - Groovin' Magic.mp3"
+2026-06-03T19:36:32 exception: Stored playlists are disabled
+2026-06-03T22:06:18 player: played "Trilha sonora/ROUND TABLE featuring Nino - Groovin' Magic.mp3"
+2026-06-04T19:50:07 exception: Stored playlists are disabled
+2026-06-04T19:50:20 player: played "Trilha sonora/Half Life 2 - Triage At Dawn.mp3"
+2026-06-04T19:50:24 mixer: Failed to set mixer for "MPD": disconnected
+2026-06-04T19:50:24 exception: Failed to set mixer for "MPD"; disconnected
+2026-06-04T19:55:38 player: played "Phonk/Hensonn - Sahara.mp3"
+2026-06-04T19:56:03 player: played "Phonk/g3ox_em - GigaChad Theme.mp3"
+2026-06-04T19:56:54 player: played "Eletronica/LLow - The End.mp3"
+2026-06-04T19:56:58 playlist: Failed to load "Eletronica/Gigi D'Agostino - L'Amour Toujours.mp3".
+2026-06-04T19:56:58 playlist: Failed to load "Eletronica/YourLocalSchizo - Vielleicht Vielleicht - Slowed | Agartha Remix.mp3".
+2026-06-04T19:57:00 mixer: Failed to set mixer for "MPD": disconnected
+2026-06-04T19:57:00 exception: Failed to set mixer for "MPD"; disconnected
+2026-06-04T20:00:27 player: played "Trilha sonora/Metal Gear Rising Revengeance - It Has To Be This Way.mp3"
+2026-06-04T20:10:53 player: played "Trilha sonora/KEYGEN CHURCH - Tenebre Rosso Sangue (ULTRAKILL P-2 Theme #1).mp3"
+2026-06-04T20:15:32 player: played "Rock/Nivana - Smells Like Teen Spirit.mp3"
+2026-06-04T20:21:04 player: played "Internacional/Modern Talking - Cheri Cheri Lady .mp3"
+2026-06-04T20:25:04 player: played "Rock/Linkin Park - Lost.mp3"
+2026-06-04T20:32:01 player: played "Eletronica/Alok - All I Want (feat. Liu & Stonefox).mp3"
+2026-06-04T20:34:07 mixer: Failed to set mixer for "MPD": disconnected
+2026-06-04T20:34:07 exception: Failed to set mixer for "MPD"; disconnected
+2026-06-04T20:37:43 player: played "Eletronica/SAINt JHN - Roses (Imanbek Remix).mp3"
+2026-06-04T20:39:40 player: played "Eletronica/paranoia - KENTENSHI.mp3"
+2026-06-04T20:46:39 player: played "Trilha sonora/Cyberpunk 2077 - Chippin’  (Refused).mp3"
+2026-06-04T20:57:55 player: played "Eletronica/plenka - Call Me (Slowed).mp3"
+2026-06-04T21:01:03 player: played "Eletronica/Tevvez - Legend Ψ.mp3"
+2026-06-04T21:08:43 player: played "Eletronica/Kasino - Can't Get Over You .mp3"
+2026-06-04T21:12:35 player: played "Rock/Pixies - Where Is My Mind.mp3"
+2026-06-04T21:15:44 player: played "Hip Hop e Rap/SoulChef - Write This Down (feat. Nieve).mp3"
+2026-06-04T21:18:58 player: played "Eletronica/Guru Josh Project - Infinity.m4a"
+2026-06-04T21:21:57 player: played "Rock/Skillet - Monster.mp3"
+2026-06-04T21:28:49 player: played "Trilha sonora/Mick Gordon - The Only Thing They Fear Is You.mp3"
+2026-06-04T21:33:08 player: played "Trilha sonora/Cyberpunk 2077 - Johnny Silverhand Theme.mp3"
+2026-06-04T21:36:04 player: played "Hip Hop e Rap/Travis Scott - HIGHEST IN THE ROOM.mp3"
+2026-06-04T21:43:06 player: played "Toque/Piano Fantasia - Song for Denise (Maxi Version).mp3"
+2026-06-04T21:45:52 player: played "Phonk/INTERWORLD - RAPTURE.mp3"
+2026-06-04T21:51:14 player: played "Rock/Rammstein - Deutschland.mp3"
+2026-06-04T21:54:38 player: played "Rock/Disturbed - Decadence.mp3"
+2026-06-04T22:01:08 player: played "Toque/La Caution - Thé à la menthe(CSGO bhop song).mp3"
+2026-06-04T22:04:42 player: played "Trilha sonora/Rezodrone - REAKTION.mp3"
+2026-06-04T22:06:50 player: played "Internacional/Johnny Cash - I Won't Back Down.mp3"
+2026-06-04T22:12:56 player: played "Trilha sonora/Mick Gordon - Meathook.mp3"
+2026-06-04T22:15:39 player: played "Eletronica/HVME - GOOSEBUMPS.mp3"
+2026-06-04T22:18:06 player: played "Eletronica/Alok - On & On (feat. Dynoro).mp3"
+2026-06-04T22:21:23 player: played "Hip Hop e Rap/Roddy Ricch -  The Box.mp3"
+2026-06-04T22:23:27 player: played "Eletronica/АДЛИН - Dead Inside.mp3"
+2026-06-04T22:26:19 player: played "Phonk/Hensonn - Sahara.mp3"
+2026-06-04T22:35:55 player: played "Rock/Avenged Sevenfold - Blinded in Chains.mp3"
+2026-06-04T22:39:30 player: played "Rock/Bullet for My Valentine - Hand of Blood.mp3"
+2026-06-04T22:43:57 player: played "Rock/Aerosmith - Dream On.mp3"
+2026-06-04T22:48:23 player: played "Hip Hop e Rap/PSC - Do Ya Thang.mp3"
+2026-06-04T22:52:08 player: played "Eletronica/Twenty One Pilots - Stressed Out Remix (Tomsize Remix).mp3"
+2026-06-04T22:55:37 player: played "Eletronica/Carpenter Brut - Turbo Killer.mp3"
+2026-06-04T23:00:27 player: played "Alternativa/Foster The People - Pumped Up Kicks.mp3"
+2026-06-04T23:03:58 player: played "Trilha sonora/Valve - Vortal Combat.mp3"
+2026-06-04T23:06:27 player: played "Trilha sonora/Metal Gear Rising Revengeance - The Only Thing I Know For Real.mp3"
+2026-06-04T23:09:44 player: played "Internacional/The Heavy - Put It on the Line.mp3"
+2026-06-04T23:15:20 player: played "Eletronica/Young Squage - Transformer (Steerner Remix).mp3"
+2026-06-04T23:18:02 player: played "Eletronica/Tiësto - The Business.mp3"
+2026-06-04T23:22:39 player: played "Trilha sonora/Casey Edwards & Victor Borba - Fire Inside.mp3"
+2026-06-04T23:23:35 player: played "Phonk/Glichery & NUEKI - TIRED OF PROBLEMS.mp3"
