@@ -63,12 +63,12 @@
 },
 //FIM MUSICA
 "custom/splash": {
-	"exec":"sh ~/.config/dotConfig/scripts/splash ",
-	"on-click": "sh ~/.config/dotConfig/scripts/splash ",
+	"exec":"sh ~/.config/dotConfig/scripts/splash",
+	"on-click": "sh ~/.config/dotConfig/scripts/splash",
 	"format": "{}",
 	"return-type": "json",
 	"interval": 10,
-//	"tooltip":false,
+	"tooltip":true,
 	"escape":true
 },
 "custom/notification": {
