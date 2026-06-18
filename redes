@@ -15,9 +15,9 @@
 ::0	twitter.com
 ::0	x.com
 #Youtube
-0.0.0.0	youtube.com
-0.0.0.0	www.youtube.com
-0.0.0.0	googlevideo.com
+#0.0.0.0	youtube.com
+#0.0.0.0	www.youtube.com
+#0.0.0.0	googlevideo.com
 #Instagram
 0.0.0.0	instagram.com
 0.0.0.0	www.instagram.com
@@ -31,6 +31,6 @@
 0.0.0.0	fbcdn.net
 0.0.0.0	fbcdn.com
 #Discord
-0.0.0.0 discord.com
-0.0.0.0 status.discord.com
-0.0.0.0 cdn.discordapp.com
+#0.0.0.0 discord.com
+#0.0.0.0 status.discord.com
+#0.0.0.0 cdn.discordapp.com

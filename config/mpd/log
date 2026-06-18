@@ -23885,3 +23885,40 @@ Note: Hit end of (available) data during resync.
 2026-06-17T12:22:44 exception: Number too large: 110
 2026-06-17T12:22:44 exception: Number too large: 110
 2026-06-17T12:22:45 exception: Number too large: 110
+2026-06-17T12:51:41 player: played "Sertaneja/José Mendes - O Roubo da Gaita Velha.mp3"
+2026-06-17T12:51:55 mixer: Failed to set mixer for "MPD": disconnected
+2026-06-17T12:51:55 exception: Failed to set mixer for "MPD"; disconnected
+2026-06-17T12:55:17 player: played "Country/Juice Newton - Queen of Hearts.mp3"
+2026-06-17T15:43:20 player: played "Rock/Nirvana - The Man Who Sold The World.mp3"
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 3861602.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+2026-06-17T15:51:12 player: played "Trilha sonora/The Living Tombstone - Five Nights at Freddy's.mp3"
+2026-06-17T15:55:19 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-06-17T15:56:04 player: played "Trilha sonora/Heaven Pierce Her - Into the Fire.mp3"
+2026-06-17T15:56:04 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-06-17T16:00:17 player: played "Internacional/M.I.A. - Bad Girls.mp3"
+2026-06-17T16:03:31 player: played "Eletronica/TheFatRat - Time lapse.mp3"
+2026-06-17T16:07:11 player: played "Eletronica/Bhaskar - Fuego (feat. Alok).mp3"
+2026-06-17T16:10:42 player: played "Clássica/Johannes Brahms - Hungarian Dance no. 5.mp3"
+2026-06-17T16:13:05 player: played "Internacional/Chordettes - Mr. Sandman.mp3"
+2026-06-17T16:20:16 player: played "Toque/La Caution - Thé à la menthe(CSGO bhop song).mp3"
+2026-06-17T16:32:19 player: played "Eletronica/Tame Impala - Let It Happen.mp3"
+2026-06-17T16:35:48 player: played "Sertaneja/Tião Carreiro e Pardinho - Rancho do vale.mp3"
+2026-06-17T16:36:40 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-06-17T16:36:40 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-06-17T16:40:12 player: played "Eletronica/Stromae - Alors on danse.mp3"
+2026-06-17T16:41:42 player: played "Trilha sonora/C418 - Wet Hands.mp3"
+2026-06-17T16:42:27 mixer: Failed to set mixer for "MPD": disconnected
+2026-06-17T16:42:27 exception: Failed to set mixer for "MPD"; disconnected
+2026-06-17T16:47:33 ffmpeg/wmav2: Could not update timestamps for skipped samples.
+2026-06-17T16:51:25 player: played "Rock/Tame Impala - Loser.mp3"
+2026-06-17T16:54:44 player: played "Sertaneja/Liu & Léu - Boiadeiro Errante.mp3"
+2026-06-17T17:02:53 player: played "Toque/Mac DeMarco - Chamber of Reflection.mp3"
+2026-06-17T17:42:32 mixer: Failed to set mixer for "MPD": disconnected
+2026-06-17T17:42:32 exception: Failed to set mixer for "MPD"; disconnected
+2026-06-17T17:45:05 player: played "Trilha sonora/Christopher Larkin - Cogwork Dancers.mp3"
+2026-06-17T17:49:01 player: played "Internacional/Doja Cat - Say So.mp3"
+2026-06-17T17:50:11 mixer: Failed to set mixer for "MPD": disconnected
+2026-06-17T17:50:11 exception: Failed to set mixer for "MPD"; disconnected
+2026-06-17T18:33:05 player: played "Trilha sonora/Pokémon HeartGold & SoulSilver - National Park.mp3"

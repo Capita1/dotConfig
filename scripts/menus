@@ -55,7 +55,7 @@ case "$1" in
 		case "$choice" in
 		  1) hyprctl dispatch exit & systemctl poweroff ;;
 		  2) hyprctl dispatch exit & systemctl reboot ;;
-		  3) touch /tmp/sai ; hyprctl dispatch exit ;;
+		  3) echo $(echo -e "1: TTY \n2: KDE \n3: NIX" | wofi -d --width=200 --height=150 | cut -d ':' -f 1) > /tmp/sai ; hyprctl dispatch exit ;;
 		esac
 	;;
 	4)#temas

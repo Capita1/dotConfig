@@ -4,11 +4,21 @@ export EDITOR=nvim
 export VISUAL=nvim
 #se logado no tty1
 if [[ "$(tty)" == "/dev/tty1" ]] ; then
-	if [ -f "/tmp/sai" ]; then
-		exec /usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland
-	else
-		exec start-hyprland &>/dev/null
-	fi
+	sai=$(cat /tmp/sai)
+	case "$sai" in
+		1)#TTY
+			echo "$(tty)"	
+		;;
+		2)#KDE
+			exec /usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland
+		;;
+		3)#NIX
+			cd ~/Projetos/Nix/ ; exec gamescope --backend wayland --fullscreen -r 60  -W 1440 -H 900 -- sh nix
+		;;
+		*)
+			exec start-hyprland &>/dev/null
+		;;
+	esac
 fi
 #se Hyprland estiver rodando
 if pgrep -x "Hyprland" > /dev/null || pgrep -x "plasmashell" > /dev/null ; then
