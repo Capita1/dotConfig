@@ -51,7 +51,7 @@ else
 	#Midia
 	sudo pacman -S $flags feh mpd mpd-mpris rmpc mpv playerctl
 	#CLI
-	sudo pacman -S $flags fastfetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard unzip github-cli flatpak
+	sudo pacman -S $flags fastfetch btop awk less libnotify yt-dlp ffmpeg cliphist wl-clipboard unzip github-cli flatpak tesseract-data-eng
 	#Fontes
 	sudo pacman -S $flags ttf-nerd-fonts-symbols-mono ttf-terminus-nerd adobe-source-code-pro-fonts
 fi

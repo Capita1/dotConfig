@@ -1,5 +1,5 @@
 #!/bin/bash
-indice=18
+indice=5
 
 frases=( \
 "Casas e riquezas herdam-se dos pais,\nmas a esposa prudente vem do Senhor.\n-Provérbios 19:14" \

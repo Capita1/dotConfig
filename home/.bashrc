@@ -12,15 +12,12 @@ if [[ "$(tty)" == "/dev/tty1" ]] ; then
 		2)#KDE
 			exec /usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland
 		;;
-		3)#NIX
-			cd ~/Projetos/Nix/ ; exec gamescope --backend wayland --fullscreen -r 60  -W 1440 -H 900 -- sh nix
-		;;
 		*)
 			exec start-hyprland &>/dev/null
 		;;
 	esac
 fi
-#se Hyprland estiver rodando
+#se interface estiver rodando
 if pgrep -x "Hyprland" > /dev/null || pgrep -x "plasmashell" > /dev/null ; then
 	user="$(whoami)"
 	export TERM=xterm-kitty   
