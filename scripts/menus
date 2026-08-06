@@ -73,7 +73,7 @@ case "$1" in
 		if [ -n "$2" ]; then
 			cd $temas/$2
 			ln -rsf * $config
-			cp hypr/style.conf $config/hypr/
+			cp hypr/style.lua $config/hypr/
 			killall waybar ; killall wpaperd ; killall swaync
 			waybar & wpaperd -d & swaync
 		fi
@@ -154,16 +154,5 @@ case "$1" in
 		slurp | grim -g - /tmp/$foto.png
 		tesseract /tmp/$foto.png /tmp/$foto txt
 		cat /tmp/$foto.txt | wl-copy
-	;;
-	11)#liga desliga crt
-		file="$HOME/.config/hypr/display.conf"
-		pattern="monitor = HDMI-A-1,640x480@60,0x0,1,"
-		if grep -q "$pattern" "$file"; then
-			notify-send  -e "CRT desligado" "OFF" -h string:x-canonical-private-synchronous:musica -t 2000 -h string:transient:true 
-			sed -i 's/640x480@60/disabled/g' "$file"
-		else
-			notify-send  -e "CRT ligado" "ON" -h string:x-canonical-private-synchronous:musica -t 2000 -h string:transient:true 
-			sed -i 's/disabled/640x480@60/g' "$file"
-		fi
 	;;
 esac
