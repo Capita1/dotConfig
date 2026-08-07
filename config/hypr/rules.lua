@@ -1,34 +1,23 @@
--- gen by confToLua.py
--- Source: rules.conf
--- Some values might need MANUAL check. PLEASE DO BACKUP BEFORE TESTING, PLEASEEEE.
 
+--BLUR
+hl.layer_rule({match={namespace="wofi"},blur=true,ignore_alpha= 0,})
+hl.layer_rule({match={namespace="waybar"},blur=true,ignore_alpha= 0,})
+hl.layer_rule({match={namespace="swaync-control-center"},blur=true,ignore_alpha= 0,})
+hl.layer_rule({match={namespace="swaync-notification-window"},blur=true,ignore_alpha= 0,})
+--WORKSPACE
+hl.workspace_rule({ workspace = "special:audio", on_created_empty = "pavucontrol" })
+hl.workspace_rule({ workspace = "special:musica", on_created_empty = "kitty rmpc " })
+hl.workspace_rule({ workspace = "5", on_created_empty = "obsidian" })
 
--- Windowrules
 hl.window_rule({
-	name  = "rule-001",
-	match = { class = "Audacious" },
-	rounding = 0,
+    name  = "fix-xwayland-drags",
+    match = {
+        class      = "^$",
+        title      = "^$",
+        xwayland   = true,
+        float      = true,
+        fullscreen = false,
+        pin        = false,
+    },
+    no_focus = true,
 })
-
--- raw lines, pending review
--- [failes migration] workspace = special:audio, on-created-empty:pavucontrol
--- [failes migration] workspace = special:musica, on-created-empty:kitty rmpc
--- [failes migration] workspace = 5, on-created-empty:obsidian
--- [failes migration] workspace = 1,monitor:DP-1
--- [failes migration] workspace = 2,monitor:DP-1
--- [failes migration] workspace = 3,monitor:DP-1
--- [failes migration] workspace = 4,monitor:DP-1
--- [failes migration] workspace = 5,monitor:DP-1
--- [failes migration] workspace = 6,monitor:HDMI-A-1,border_size 0,gapsin:0,gapsout:0,rounding 0
--- [failes migration] workspace = 7,monitor:HDMI-A-1
--- [failes migration] workspace = 8,monitor:HDMI-A-1
--- [failes migration] workspace = 9,monitor:HDMI-A-1
--- [failes migration] workspace = 10,monitor:HDMI-A-1
--- [failes migration] layerrule = blur on,  match:namespace swaync-control-center
--- [failes migration] layerrule = ignore_alpha 0, match:namespace swaync-control-center
--- [failes migration] layerrule = blur on,  match:namespace swaync-notification-window
--- [failes migration] layerrule = ignore_alpha 0, match:namespace swaync-notification-window
--- [failes migration] layerrule = blur on, match:namespace waybar
--- [failes migration] layerrule = ignore_alpha 0, match:namespace waybar
--- [failes migration] layerrule = blur on, match:namespace wofi
--- [failes migration] layerrule = ignore_alpha 0, match:namespace wofi

@@ -1,9 +1,3 @@
--- gen by confToLua.py
--- Source: hyprlock.conf
--- Some values might need MANUAL check. PLEASE DO BACKUP BEFORE TESTING, PLEASEEEE.
-
-
--- General Config
 hl.config({
 	general = {
 		disable_loading_bar = "fase",

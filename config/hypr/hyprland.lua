@@ -1,36 +1,42 @@
--- gen by confToLua.py
--- Source: hyprland.conf
--- Some values might need MANUAL check. PLEASE DO BACKUP BEFORE TESTING, PLEASEEEE.
-
-
--- Variables
-menu = "/bin/menus"
-terminal = "kitty"
-explorer = "Thunar"
-browser = "zen-browser"
-
+--IMPORT
+require("rules")
+require("style")
+require("binds")
+require("display")
+--ON START
 hl.on("hyprland.start", function()
 	hl.exec_cmd("/usr/lib/polkit-kde-authentication-agent-1 & waybar & wpaperd -d & swaync & wl-paste --type text --watch cliphist store & wl-paste --type image --watch cliphist store")
-	hl.exec_cmd("sleep 20 ; mpd-mpris & sleep 20 ; player=$(playerctl --list-all | grep mpd) ; sed -i "s|^player=.*|player=\"$player\"|" "$HOME/.config/dotConfig/scripts/musica"")
 	hl.exec_cmd("hyprctl setcursor Manopla 24 & hyprsunset")
+	hl.exec_cmd("sleep 20 ; mpd-mpris")
 	hl.exec_cmd("mpc repeat on && mpc random on && mpc consume on")
 	hl.exec_cmd("cp /home/gabriel/Imagens/Wallpapers/ARCH7.jpg /tmp/fundo.png ; hyprlock")
 	hl.exec_cmd("export QT_STYLE_OVERRIDE=kvantum")
 end)
-
--- General Config
+--CURSOR
+hl.env("XCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_SIZE", "24")
+--CONFIG
 hl.config({
-	misc = {
-		enable_anr_dialog = false,
+	input = {
+		touchpad = {
+			natural_scroll = false,
+		},
+		kb_layout = "br",
+		kb_variant = "",
+		kb_model = "",
+		kb_options = "",
+		kb_rules = "",
+		numlock_by_default = true,
+		follow_mouse = 1,
+		sensitivity = 1,
+		accel_profile = "flat",
 	},
 	xwayland = {
 		force_zero_scaling = true,
 	},
+	misc = {
+		enable_anr_dialog = false,
+		force_default_wallpaper = 0,
+		disable_hyprland_logo = true,
+	},
 })
-
--- Requires
-require("lua.rules")
-require("lua.style")
-require("lua.binds")
-require("lua.input")
-require("lua.display")

@@ -1,71 +1,98 @@
--- gen by confToLua.py
--- Source: binds.conf
--- Some values might need MANUAL check. PLEASE DO BACKUP BEFORE TESTING, PLEASEEEE.
+local mainMod = "SUPER"
+local menu = "/bin/menus"
+local terminal = "kitty"
+local explorer = "Thunar"
+local browser = "zen-browser"
 
-
--- Variables
-mainMod = "SUPER_L"
-
--- Keybindings
-hl.bind("SUPER_L + Shift_L + F", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/video filtro"))
-hl.bind("Alt_L + T", hl.dsp.exec_cmd("$menu 8"))
-hl.bind("Ctrl + Alt_L + Space", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica play-pause ;  sh ~/.config/dotConfig/scripts/musica notificacao"))
-hl.bind("Ctrl + Alt_L + E", hl.dsp.exec_cmd("hyprctl dispatch togglespecialworkspace musica"))
-hl.bind("Ctrl + Shift_L + E", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica player"))
-hl.bind("Ctrl + Alt_L + A", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica previous"))
-hl.bind("Ctrl + Alt_L + D", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica next"))
-hl.bind("Ctrl + Alt_L + W", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica volume 0.1+ ;  sh ~/.config/dotConfig/scripts/musica notificacao"))
-hl.bind("Ctrl + Alt_L + S", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica volume 0.1- ;  sh ~/.config/dotConfig/scripts/musica notificacao"))
-hl.bind("SUPER_L + W", hl.dsp.exec_cmd("$menu 9 $wallpaper"))
-hl.bind("SUPER_L + X", hl.dsp.exec_cmd("$menu"))
-hl.bind("Alt_L + F", hl.dsp.exec_cmd("$menu 7"))
-hl.bind("SUPER_L + SUPER_L", hl.dsp.exec_cmd("$menu 1"))
-hl.bind("SUPER_L + T", hl.dsp.exec_cmd("$menu 4"))
-hl.bind("SUPER_L + V", hl.dsp.exec_cmd("$menu 6"))
-hl.bind("SUPER_L + N", hl.dsp.exec_cmd("swaync-client -t -sw"))
-hl.bind("Ctrl + Alt_L + Delete", hl.dsp.exec_cmd("$menu 3"))
-hl.bind("SUPER_L + SHIFT + S", hl.dsp.exec_cmd("slurp | grim -g - ~/Imagens/$(date +'ArchLinux_%Y-%m-%d_%H:%M:%S.png')"))
-hl.bind("SUPER_L + SHIFT + R", hl.dsp.exec_cmd("$menu 10"))
-hl.bind("Ctrl + Alt_L + L", hl.dsp.exec_cmd("grim "/tmp/fundo.png" ; hyprlock"))
-hl.bind("SUPER_L + Return", hl.dsp.exec_cmd("$terminal"))
-hl.bind("SUPER_L + E", hl.dsp.exec_cmd("$explorer"))
-hl.bind("SUPER_L + B", hl.dsp.exec_cmd("$browser"))
-hl.bind("SUPER_L + SHIFT + M", hl.dsp.exec_cmd("$menu 11"))
-hl.bind("SUPER_L + C", hl.dsp.window.close())
-hl.bind("SUPER_L + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
-hl.bind("SUPER_L + mouse:274", hl.dsp.window.float({ action = "toggle" }))
-hl.bind("SUPER_L + mouse:272", hl.dsp.window.move({ direction = "" }), { mouse = true })
-hl.bind("SUPER_L + mouse:273", hl.dsp.window.resize(), { mouse = true })
-hl.bind("SUPER_L + Z", hl.dsp.window.pseudo({ action = "toggle" }))
-hl.bind("SUPER_L + Space", hl.dsp.focus({ workspace = "special:terminal" }))
-hl.bind("SUPER_L + SHIFT + Space", hl.dsp.window.move({ workspace = "special:terminal", follow = true }))
-hl.bind("SUPER_L + A", hl.dsp.focus({ workspace = "special:audio" }))
-hl.bind("SUPER_L + SHIFT + A", hl.dsp.window.move({ workspace = "special:audio", follow = true }))
-hl.bind("SUPER_L + K", hl.dsp.focus({ direction = "u" }))
-hl.bind("SUPER_L + J", hl.dsp.focus({ direction = "d" }))
-hl.bind("SUPER_L + H", hl.dsp.focus({ direction = "l" }))
-hl.bind("SUPER_L + L", hl.dsp.focus({ direction = "r" }))
-hl.bind("SUPER_L + SHIFT + K", hl.dsp.window.move({ direction = "u" }))
-hl.bind("SUPER_L + SHIFT + J", hl.dsp.window.move({ direction = "d" }))
-hl.bind("SUPER_L + SHIFT + H", hl.dsp.window.move({ direction = "l" }))
-hl.bind("SUPER_L + SHIFT + L", hl.dsp.window.move({ direction = "r" }))
-hl.bind("SUPER_L + 1", hl.dsp.focus({ workspace = "1" }))
-hl.bind("SUPER_L + 2", hl.dsp.focus({ workspace = "2" }))
-hl.bind("SUPER_L + 3", hl.dsp.focus({ workspace = "3" }))
-hl.bind("SUPER_L + 4", hl.dsp.focus({ workspace = "4" }))
-hl.bind("SUPER_L + 5", hl.dsp.focus({ workspace = "5" }))
-hl.bind("SUPER_L + 6", hl.dsp.focus({ workspace = "6" }))
-hl.bind("SUPER_L + 7", hl.dsp.focus({ workspace = "7" }))
-hl.bind("SUPER_L + 8", hl.dsp.focus({ workspace = "8" }))
-hl.bind("SUPER_L + 9", hl.dsp.focus({ workspace = "9" }))
-hl.bind("SUPER_L + 0", hl.dsp.focus({ workspace = "10" }))
-hl.bind("SUPER_L + SHIFT + 1", hl.dsp.window.move({ workspace = "1", follow = true }))
-hl.bind("SUPER_L + SHIFT + 2", hl.dsp.window.move({ workspace = "2", follow = true }))
-hl.bind("SUPER_L + SHIFT + 3", hl.dsp.window.move({ workspace = "3", follow = true }))
-hl.bind("SUPER_L + SHIFT + 4", hl.dsp.window.move({ workspace = "4", follow = true }))
-hl.bind("SUPER_L + SHIFT + 5", hl.dsp.window.move({ workspace = "5", follow = true }))
-hl.bind("SUPER_L + SHIFT + 6", hl.dsp.window.move({ workspace = "6", follow = true }))
-hl.bind("SUPER_L + SHIFT + 7", hl.dsp.window.move({ workspace = "7", follow = true }))
-hl.bind("SUPER_L + SHIFT + 8", hl.dsp.window.move({ workspace = "8", follow = true }))
-hl.bind("SUPER_L + SHIFT + 9", hl.dsp.window.move({ workspace = "9", follow = true }))
-hl.bind("SUPER_L + SHIFT + 0", hl.dsp.window.move({ workspace = "10", follow = true }))
+----------
+--MUSIC--
+----------
+hl.bind("CTRL + ALT + Space", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica play-pause ;  sh ~/.config/dotConfig/scripts/musica notificacao"))
+hl.bind("CTRL + SHIFT + E", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica player"))
+hl.bind("CTRL + ALT + E", hl.dsp.workspace.toggle_special("musica"))
+hl.bind("CTRL + ALT + A", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica previous"))
+hl.bind("CTRL + ALT + D", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica next"))
+hl.bind("CTRL + ALT + W", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica volume 0.1+ ;  sh ~/.config/dotConfig/scripts/musica notificacao"))
+hl.bind("CTRL + ALT + S", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica volume 0.1- ;  sh ~/.config/dotConfig/scripts/musica notificacao"))
+---------
+--MENUS--
+---------
+hl.bind("SUPER + SUPER_L", hl.dsp.exec_cmd("pkill wofi || wofi -S drun"), { release = true })
+--all
+hl.bind(mainMod .. " + X", hl.dsp.exec_cmd(menu))
+--logout
+hl.bind("CTRL + ALT + Delete", hl.dsp.exec_cmd(menu .." 3"))
+--themes
+hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(menu .." 4"))
+--clipboard
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(menu .." 6"))
+--focus
+hl.bind("ALT + F", hl.dsp.exec_cmd(menu .." 7"))
+--pin
+hl.bind("ALT + T", hl.dsp.exec_cmd(menu .." 8"))
+--wallpaper
+hl.bind("SUPER + W", hl.dsp.exec_cmd(menu .." 9 $wallpaper"))
+--ocr
+hl.bind("SUPER + SHIFT + R", hl.dsp.exec_cmd(menu .." 10"))
+hl.bind( mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("$menu 11"))
+-----------
+--UTILITY--
+-----------
+--notification
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t -sw"))
+--screenshot
+hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("slurp | grim -g - ~/Imagens/$(date +'ArchLinux_%Y-%m-%d_%H:%M:%S.png')"))
+--filter
+hl.bind(mainMod .." + SHIFT + F", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/video filtro"))
+--------
+--APPS--
+--------
+hl.bind( mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
+hl.bind( mainMod .. " + E", hl.dsp.exec_cmd(explorer))
+hl.bind( mainMod .. " + B", hl.dsp.exec_cmd(browser))
+-----------
+--SPECIAL--
+-----------
+hl.bind( mainMod .. " + Space", hl.dsp.workspace.toggle_special("terminal"))
+hl.bind( mainMod .. " + SHIFT + Space", hl.dsp.window.move({ workspace = "special:terminal", follow = true }))
+hl.bind( mainMod .. " + A", hl.dsp.workspace.toggle_special("audio"))
+---------
+--BASIC--
+---------
+hl.bind( mainMod .. " + mouse:272",hl.dsp.window.drag(),{mouse = true})
+hl.bind( mainMod .. " + mouse:274", hl.dsp.window.float({ action = "toggle" }))
+hl.bind( mainMod .. " + mouse:273",hl.dsp.window.resize(),{mouse = true})
+hl.bind( mainMod .. " + C", hl.dsp.window.close())
+hl.bind( mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
+hl.bind( mainMod .. " + Z", hl.dsp.window.pseudo({ action = "toggle" }))
+--------------
+--WORKSPACES--
+--------------
+hl.bind( mainMod .. " + K", hl.dsp.focus({ direction = "u" }))
+hl.bind( mainMod .. " + J", hl.dsp.focus({ direction = "d" }))
+hl.bind( mainMod .. " + H", hl.dsp.focus({ direction = "l" }))
+hl.bind( mainMod .. " + L", hl.dsp.focus({ direction = "r" }))
+hl.bind( mainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "u" }))
+hl.bind( mainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "d" }))
+hl.bind( mainMod .. " + SHIFT + H", hl.dsp.window.move({ direction = "l" }))
+hl.bind( mainMod .. " + SHIFT + L", hl.dsp.window.move({ direction = "r" }))
+hl.bind( mainMod .. " + 1", hl.dsp.focus({ workspace = "1" }))
+hl.bind( mainMod .. " + 2", hl.dsp.focus({ workspace = "2" }))
+hl.bind( mainMod .. " + 3", hl.dsp.focus({ workspace = "3" }))
+hl.bind( mainMod .. " + 4", hl.dsp.focus({ workspace = "4" }))
+hl.bind( mainMod .. " + 5", hl.dsp.focus({ workspace = "5" }))
+hl.bind( mainMod .. " + 6", hl.dsp.focus({ workspace = "6" }))
+hl.bind( mainMod .. " + 7", hl.dsp.focus({ workspace = "7" }))
+hl.bind( mainMod .. " + 8", hl.dsp.focus({ workspace = "8" }))
+hl.bind( mainMod .. " + 9", hl.dsp.focus({ workspace = "9" }))
+hl.bind( mainMod .. " + 0", hl.dsp.focus({ workspace = "10" }))
+hl.bind( mainMod .. " + SHIFT + 1", hl.dsp.window.move({ workspace = "1", follow = true }))
+hl.bind( mainMod .. " + SHIFT + 2", hl.dsp.window.move({ workspace = "2", follow = true }))
+hl.bind( mainMod .. " + SHIFT + 3", hl.dsp.window.move({ workspace = "3", follow = true }))
+hl.bind( mainMod .. " + SHIFT + 4", hl.dsp.window.move({ workspace = "4", follow = true }))
+hl.bind( mainMod .. " + SHIFT + 5", hl.dsp.window.move({ workspace = "5", follow = true }))
+hl.bind( mainMod .. " + SHIFT + 6", hl.dsp.window.move({ workspace = "6", follow = true }))
+hl.bind( mainMod .. " + SHIFT + 7", hl.dsp.window.move({ workspace = "7", follow = true }))
+hl.bind( mainMod .. " + SHIFT + 8", hl.dsp.window.move({ workspace = "8", follow = true }))
+hl.bind( mainMod .. " + SHIFT + 9", hl.dsp.window.move({ workspace = "9", follow = true }))
+hl.bind( mainMod .. " + SHIFT + 0", hl.dsp.window.move({ workspace = "10", follow = true }))
