@@ -498636,7 +498636,8 @@ ff02::2    ip6-allrouters
 0.0.0.0	www.amateurest.com
 0.0.0.0	www.dump.xxx
 0.0.0.0	www.erome.com
-0.0.0.0	erome.com
+0.0.0.0	pt.erome.com
+0.0.0.0	es.erome.com
 0.0.0.0	deeplush.com
 0.0.0.0	landing.trueamateurs.com
 0.0.0.0	dirtyship.com
