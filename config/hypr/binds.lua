@@ -7,6 +7,7 @@ local browser = "zen-browser"
 ----------
 --MUSIC--
 ----------
+
 hl.bind("CTRL + ALT + Space", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica play-pause ;  sh ~/.config/dotConfig/scripts/musica notificacao"))
 hl.bind("CTRL + SHIFT + E", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica player"))
 hl.bind("CTRL + ALT + E", hl.dsp.workspace.toggle_special("musica"))
@@ -14,14 +15,18 @@ hl.bind("CTRL + ALT + A", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica
 hl.bind("CTRL + ALT + D", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica next"))
 hl.bind("CTRL + ALT + W", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica volume 0.1+ ;  sh ~/.config/dotConfig/scripts/musica notificacao"))
 hl.bind("CTRL + ALT + S", hl.dsp.exec_cmd("sh ~/.config/dotConfig/scripts/musica volume 0.1- ;  sh ~/.config/dotConfig/scripts/musica notificacao"))
+
 ---------
 --MENUS--
 ---------
+
 hl.bind("SUPER + SUPER_L", hl.dsp.exec_cmd("pkill wofi || wofi -S drun"), { release = true })
 --all
 hl.bind(mainMod .. " + X", hl.dsp.exec_cmd(menu))
 --logout
 hl.bind("CTRL + ALT + Delete", hl.dsp.exec_cmd(menu .." 3"))
+--lock
+hl.bind("CTRL + ALT + L", hl.dsp.exec_cmd("grim '/tmp/fundo.png' ; hyprlock"))
 --themes
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(menu .." 4"))
 --clipboard
@@ -31,10 +36,11 @@ hl.bind("ALT + F", hl.dsp.exec_cmd(menu .." 7"))
 --pin
 hl.bind("ALT + T", hl.dsp.exec_cmd(menu .." 8"))
 --wallpaper
-hl.bind("SUPER + W", hl.dsp.exec_cmd(menu .." 9 $wallpaper"))
+hl.bind( mainMod .." + W", hl.dsp.exec_cmd(menu .." 9 $wallpaper"))
 --ocr
-hl.bind("SUPER + SHIFT + R", hl.dsp.exec_cmd(menu .." 10"))
-hl.bind( mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("$menu 11"))
+hl.bind( mainMod .." + SHIFT + R", hl.dsp.exec_cmd(menu .." 10"))
+hl.bind( mainMod .." + SHIFT + M", hl.dsp.exec_cmd("$menu 11"))
+
 -----------
 --UTILITY--
 -----------
